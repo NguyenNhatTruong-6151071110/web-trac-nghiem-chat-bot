@@ -1,0 +1,1036 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["My pleasure", "You're Welcome"],
+         "context": [""]
+        },
+        {
+            "tag": "OS_overview",
+            "patterns": [
+              "Hệ điều hành (operating systems) là chương trình đóng vai trò trung gian giữa người sử dụng và phần cứng của máy tính. Hệ điều hành che dấu sự phức tạp, đa dạng của phần cứng, giúp việc sử dụng máy tính trở nên đơn giản, hiệu quả. Nhiệm vụ của hệ điều hành là quản lý tài nguyên của máy tính, thực thi các chương trình ứng dụng, hỗ trợ các chức năng mạng, vv …"
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm dựa trên đoạn văn về hệ điều hành:<br><br>1. <strong>Câu hỏi:</strong> Hệ điều hành đóng vai trò gì trong máy tính?<br>&nbsp;&nbsp;- A. Người sử dụng trực tiếp điều khiển phần cứng<br>&nbsp;&nbsp;- B. Chương trình ứng dụng chính của máy tính<br>&nbsp;&nbsp;- C. Trung gian giữa người sử dụng và phần cứng<br>&nbsp;&nbsp;- D. Thiết bị phần cứng của máy tính<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>2. <strong>Câu hỏi:</strong> Một trong những nhiệm vụ của hệ điều hành là gì?<br>&nbsp;&nbsp;- A. Tạo ra phần cứng mới cho máy tính<br>&nbsp;&nbsp;- B. Quản lý tài nguyên của máy tính<br>&nbsp;&nbsp;- C. Xây dựng phần mềm ứng dụng<br>&nbsp;&nbsp;- D. Thay đổi phần cứng của máy tính<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>3. <strong>Câu hỏi:</strong> Hệ điều hành giúp việc sử dụng máy tính trở nên như thế nào?<br>&nbsp;&nbsp;- A. Phức tạp và khó khăn<br>&nbsp;&nbsp;- B. Đơn giản và hiệu quả<br>&nbsp;&nbsp;- C. Tốn kém và chậm chạp<br>&nbsp;&nbsp;- D. Không thay đổi<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>4. <strong>Câu hỏi:</strong> Hệ điều hành che dấu điều gì từ người sử dụng?<br>&nbsp;&nbsp;- A. Các chương trình ứng dụng<br>&nbsp;&nbsp;- B. Sự phức tạp và đa dạng của phần cứng<br>&nbsp;&nbsp;- C. Các tài liệu văn bản<br>&nbsp;&nbsp;- D. Các tệp tin âm thanh<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>5. <strong>Câu hỏi:</strong> Chức năng nào sau đây KHÔNG phải là nhiệm vụ của hệ điều hành?<br>&nbsp;&nbsp;- A. Quản lý tài nguyên của máy tính<br>&nbsp;&nbsp;- B. Thực thi các chương trình ứng dụng<br>&nbsp;&nbsp;- C. Hỗ trợ các chức năng mạng<br>&nbsp;&nbsp;- D. Thiết kế phần cứng máy tính<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> D"            ]
+          },
+          {
+            "tag": "computer_system_components",
+            "patterns": [
+              "Một hệ thống máy tính được chia thành 4 thành phần sau: phần cứng, hệ điều hành, chương trình ứng dụng/chương trình hệ thống, người sử dụng.\n\nPhần cứng (hardware) : CPU, bộ nhớ, các thiết bị nhập/xuất,…\nHệ điều hành (operating systems): điều khiển và phối hợp việc sử dụng phần cứng cho nhiều ứng dụng với nhiều người sử dụng khác nhau.\n\nChương trình ứng dụng và chương trình hệ thống (system and applications programs): là các chương trình giải quyết những vấn đề của người sử dụng như là chương trình dịch, hệ quản trị cơ sở dữ liệu, chương trình trò chơi, chương trình thương mại,…\n\nNgười sử dụng (user): người sử dụng hoặc máy tính."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm dựa trên đoạn văn về các thành phần của hệ thống máy tính:<br><br>1. <strong>Câu hỏi:</strong> Một hệ thống máy tính được chia thành mấy thành phần?<br>&nbsp;&nbsp;- A. 2<br>&nbsp;&nbsp;- B. 3<br>&nbsp;&nbsp;- C. 4<br>&nbsp;&nbsp;- D. 5<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>2. <strong>Câu hỏi:</strong> Phần cứng (hardware) bao gồm các thành phần nào?<br>&nbsp;&nbsp;- A. Hệ điều hành<br>&nbsp;&nbsp;- B. CPU, bộ nhớ, các thiết bị nhập/xuất<br>&nbsp;&nbsp;- C. Chương trình ứng dụng<br>&nbsp;&nbsp;- D. Người sử dụng<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>3. <strong>Câu hỏi:</strong> Hệ điều hành (operating systems) có nhiệm vụ gì?<br>&nbsp;&nbsp;- A. Giải quyết vấn đề của người sử dụng<br>&nbsp;&nbsp;- B. Điều khiển và phối hợp việc sử dụng phần cứng<br>&nbsp;&nbsp;- C. Chơi trò chơi<br>&nbsp;&nbsp;- D. Tạo ra phần cứng mới<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>4. <strong>Câu hỏi:</strong> Chương trình ứng dụng và chương trình hệ thống (system and applications programs) bao gồm những loại chương trình nào?<br>&nbsp;&nbsp;- A. Chương trình dịch, hệ quản trị cơ sở dữ liệu, chương trình trò chơi, chương trình thương mại<br>&nbsp;&nbsp;- B. CPU, bộ nhớ, các thiết bị nhập/xuất<br>&nbsp;&nbsp;- C. Hệ điều hành<br>&nbsp;&nbsp;- D. Người sử dụng<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>5. <strong>Câu hỏi:</strong> Ai là người sử dụng (user) trong hệ thống máy tính?<br>&nbsp;&nbsp;- A. Chỉ có người sử dụng<br>&nbsp;&nbsp;- B. Chỉ có máy tính<br>&nbsp;&nbsp;- C. Cả người sử dụng và máy tính<br>&nbsp;&nbsp;- D. Không ai cả<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C"
+            ]
+          },
+          {
+            "tag": "OS_components",
+            "patterns": [
+              "Hệ điều hành gồm có ba thành phần sau:\n\nBộ cấp phát tài nguyên (Resource allocator): Quản lý và cấp phát tài nguyên.\nChương trình kiểm soát (Control program): Kiểm soát việc thực thi chương trình và kiểm soát hoạt động của các thiết bị nhập/xuất.\nPhần nhân (Kernel): là chương trình “lõi” của hệ điều hành, được thực thi trước tiên và tồn tại trong bộ nhớ cho đến khi tắt máy (các chương trình khác gọi là chương trình ứng dụng)."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm dựa trên đoạn văn về thành phần của hệ điều hành:<br><br>1. <strong>Câu hỏi:</strong> Hệ điều hành gồm bao nhiêu thành phần?<br>&nbsp;&nbsp;- A. 2<br>&nbsp;&nbsp;- B. 3<br>&nbsp;&nbsp;- C. 4<br>&nbsp;&nbsp;- D. 5<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>2. <strong>Câu hỏi:</strong> Thành phần nào của hệ điều hành quản lý và cấp phát tài nguyên?<br>&nbsp;&nbsp;- A. Bộ cấp phát tài nguyên<br>&nbsp;&nbsp;- B. Chương trình kiểm soát<br>&nbsp;&nbsp;- C. Phần nhân<br>&nbsp;&nbsp;- D. Tất cả các phần trên<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>3. <strong>Câu hỏi:</strong> Chương trình kiểm soát của hệ điều hành có nhiệm vụ gì?<br>&nbsp;&nbsp;- A. Quản lý và cấp phát tài nguyên<br>&nbsp;&nbsp;- B. Kiểm soát việc thực thi chương trình và kiểm soát hoạt động của các thiết bị nhập/xuất<br>&nbsp;&nbsp;- C. Là chương trình “lõi” của hệ điều hành<br>&nbsp;&nbsp;- D. Được thực thi trước tiên<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>4. <strong>Câu hỏi:</strong> Phần nhân của hệ điều hành là gì?<br>&nbsp;&nbsp;- A. Bộ cấp phát tài nguyên<br>&nbsp;&nbsp;- B. Chương trình kiểm soát<br>&nbsp;&nbsp;- C. Là chương trình “lõi” của hệ điều hành<br>&nbsp;&nbsp;- D. Kiểm soát việc thực thi chương trình và kiểm soát hoạt động của các thiết bị nhập/xuất<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>5. <strong>Câu hỏi:</strong> Thành phần nào của hệ điều hành được thực thi trước tiên và tồn tại trong bộ nhớ cho đến khi tắt máy?<br>&nbsp;&nbsp;- A. Bộ cấp phát tài nguyên<br>&nbsp;&nbsp;- B. Chương trình kiểm soát<br>&nbsp;&nbsp;- C. Phần nhân<br>&nbsp;&nbsp;- D. Tất cả các phần trên<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C"
+            ]
+          },
+          {
+            "tag": "embedded_systems",
+            "patterns": [
+              "Hệ điều hành được nhúng trong các thiết bị gia dụng, các máy trò chơi,... Do các thiết bị gia dụng có bộ nhớ ít, bộ xử lý tốc độ thấp, kích thước màn hình nhỏ nên hệ điều hành này cần đơn giản, nhỏ gọn, có tính đặc trưng cho từng thiết bị. Ví dụ hệ điều hành dùng cho máy PDAs (Personal Digital Assistants), Mobil phones,… Hệ thống nhúng còn được gọi là hệ thống cầm tay (Handheld Systems)."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm dựa trên đoạn văn về hệ điều hành nhúng và hệ thống cầm tay:<br><br>1. <strong>Câu hỏi:</strong> Hệ điều hành nhúng thường được sử dụng trong những loại thiết bị nào?<br>&nbsp;&nbsp;- A. Máy tính cá nhân<br>&nbsp;&nbsp;- B. Máy chơi game<br>&nbsp;&nbsp;- C. Thiết bị gia dụng, máy trò chơi<br>&nbsp;&nbsp;- D. Tất cả các loại thiết bị trên<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>2. <strong>Câu hỏi:</strong> Đặc điểm nào dưới đây là cần thiết cho hệ điều hành được nhúng vào các thiết bị gia dụng?<br>&nbsp;&nbsp;- A. Phức tạp và lớn<br>&nbsp;&nbsp;- B. Đơn giản và nhỏ gọn<br>&nbsp;&nbsp;- C. Có khả năng thích ứng với mọi loại thiết bị<br>&nbsp;&nbsp;- D. Không cần đặc điểm nào cụ thể<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>3. <strong>Câu hỏi:</strong> Hệ thống nhúng còn được gọi là gì?<br>&nbsp;&nbsp;- A. Hệ thống máy tính<br>&nbsp;&nbsp;- B. Hệ thống cầm tay<br>&nbsp;&nbsp;- C. Hệ thống máy chủ<br>&nbsp;&nbsp;- D. Hệ thống truy cập dữ liệu<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>4. <strong>Câu hỏi:</strong> Một ví dụ về thiết bị sử dụng hệ điều hành nhúng là gì?<br>&nbsp;&nbsp;- A. Máy tính xách tay<br>&nbsp;&nbsp;- B. Máy chơi game<br>&nbsp;&nbsp;- C. Máy in<br>&nbsp;&nbsp;- D. Tất cả các loại thiết bị trên<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>5. <strong>Câu hỏi:</strong> Đặc trưng của hệ điều hành nhúng cho thiết bị cầm tay là gì?<br>&nbsp;&nbsp;- A. Phức tạp và lớn<br>&nbsp;&nbsp;- B. Đơn giản, nhỏ gọn, có tính đặc trưng cho từng thiết bị<br>&nbsp;&nbsp;- C. Có khả năng thích ứng với mọi loại thiết bị<br>&nbsp;&nbsp;- D. Không cần đặc điểm nào cụ thể<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B"
+            ]
+          },
+          {
+            "tag": "OS_services",
+            "patterns": [
+              "Hệ điều hành thông thường cần cung cấp các dịch vụ sau:"
+            ],
+            "responses": [
+              "Dưới đây là một số câu hỏi trắc nghiệm dựa trên các dịch vụ cần cung cấp bởi hệ điều hành:<br><br>1. <strong>Câu hỏi:</strong> Dịch vụ nào được sử dụng để quản lý tiến trình?<br>&nbsp;&nbsp;- A. Quản lý bộ nhớ chính<br>&nbsp;&nbsp;- B. Quản lý hệ thống nhập xuất<br>&nbsp;&nbsp;- C. Quản lý tiến trình<br>&nbsp;&nbsp;- D. Quản lý mạng<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>2. <strong>Câu hỏi:</strong> Quản lý bộ nhớ phụ (DISK) là dịch vụ gì của hệ điều hành?<br>&nbsp;&nbsp;- A. Quản lý hệ thống tập tin<br>&nbsp;&nbsp;- B. Quản lý bộ nhớ chính<br>&nbsp;&nbsp;- C. Quản lý bộ nhớ phụ<br>&nbsp;&nbsp;- D. Bảo vệ hệ thống<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>3. <strong>Câu hỏi:</strong> Dịch vụ nào được sử dụng để quản lý hệ thống nhập xuất?<br>&nbsp;&nbsp;- A. Quản lý hệ thống nhập xuất<br>&nbsp;&nbsp;- B. Hệ thống dòng lệnh<br>&nbsp;&nbsp;- C. Các lời gọi hệ thống<br>&nbsp;&nbsp;- D. Quản lý mạng<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>4. <strong>Câu hỏi:</strong> Quản lý hệ thống tập tin là dịch vụ gì của hệ điều hành?<br>&nbsp;&nbsp;- A. Quản lý hệ thống tập tin<br>&nbsp;&nbsp;- B. Quản lý mạng<br>&nbsp;&nbsp;- C. Bảo vệ hệ thống<br>&nbsp;&nbsp;- D. Hệ thống dòng lệnh<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>5. <strong>Câu hỏi:</strong> Dịch vụ nào được sử dụng để bảo vệ hệ thống?<br>&nbsp;&nbsp;- A. Quản lý tiến trình<br>&nbsp;&nbsp;- B. Quản lý bộ nhớ phụ<br>&nbsp;&nbsp;- C. Bảo vệ hệ thống<br>&nbsp;&nbsp;- D. Hệ thống dòng lệnh<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C"
+            ]
+          },
+          {
+            "tag": "process_management",
+            "patterns": [
+              "Tiến trình là một chương trình đang thi hành. Trong bộ nhớ, tại một thời điểm có thể có nhiều tiến trình, một số tiến trình là của hệ điều hành, một số tiến trình là của người sử dụng. Khi tiến trình được tạo ra hoặc đang thi hành sẽ được hệ điều hành cung cấp các tài nguyên để tiến trình hoạt động như là CPU, bộ nhớ, tập tin, các thiết bị nhập/xuất… Khi tiến trình kết thúc, hệ điều hành sẽ thu hồi lại các tài nguyên đã cấp phát. Một tiến trình khi thực thi lại có thể tạo ra các tiến trình con và hình thành cây tiến trình."
+            ],
+            "responses": [
+              "Dưới đây là một số câu hỏi trắc nghiệm dựa trên đoạn văn về quản lý tiến trình:<br><br>1. <strong>Câu hỏi:</strong> Tiến trình là gì?<br>&nbsp;&nbsp;- A. Một chương trình đang thi hành<br>&nbsp;&nbsp;- B. Một tệp tin trong máy tính<br>&nbsp;&nbsp;- C. Một thiết bị nhập/xuất<br>&nbsp;&nbsp;- D. Một bộ nhớ chính<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>2. <strong>Câu hỏi:</strong> Tiến trình có thể là của ai?<br>&nbsp;&nbsp;- A. Chỉ của hệ điều hành<br>&nbsp;&nbsp;- B. Chỉ của người sử dụng<br>&nbsp;&nbsp;- C. Của cả hệ điều hành và người sử dụng<br>&nbsp;&nbsp;- D. Không thể biết được<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>3. <strong>Câu hỏi:</strong> Hệ điều hành cung cấp cho tiến trình những tài nguyên nào?<br>&nbsp;&nbsp;- A. Chỉ CPU<br>&nbsp;&nbsp;- B. CPU và bộ nhớ<br>&nbsp;&nbsp;- C. CPU, bộ nhớ, tập tin, các thiết bị nhập/xuất<br>&nbsp;&nbsp;- D. Chỉ bộ nhớ<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>4. <strong>Câu hỏi:</strong> Khi tiến trình kết thúc, hệ điều hành thực hiện công việc gì?<br>&nbsp;&nbsp;- A. Tăng cường tài nguyên<br>&nbsp;&nbsp;- B. Thu hồi lại các tài nguyên đã cấp phát<br>&nbsp;&nbsp;- C. Tạo ra các tiến trình con<br>&nbsp;&nbsp;- D. Không làm gì cả<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>5. <strong>Câu hỏi:</strong> Một tiến trình khi thực thi lại có thể làm gì?<br>&nbsp;&nbsp;- A. Thu hồi lại các tài nguyên<br>&nbsp;&nbsp;- B. Tạo ra các tiến trình con<br>&nbsp;&nbsp;- C. Tăng cường tài nguyên<br>&nbsp;&nbsp;- D. Không làm gì cả<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B"
+            ]
+          },
+          {
+            "tag": "process_management_functions",
+            "patterns": [
+              "Các chức năng của dịch vụ quản lý tiến trình:"
+            ],
+            "responses": [
+              "Dưới đây là một số câu hỏi trắc nghiệm dựa trên các chức năng của dịch vụ quản lý tiến trình:<br><br>1. <strong>Câu hỏi:</strong> Chức năng nào của dịch vụ quản lý tiến trình liên quan đến việc tạo và hủy các tiến trình?<br>&nbsp;&nbsp;- A. Tạm ngưng và thực hiện lại một tiến trình<br>&nbsp;&nbsp;- B. Cung cấp cơ chế đồng bộ các tiến trình<br>&nbsp;&nbsp;- C. Tạo và hủy các tiến trình<br>&nbsp;&nbsp;- D. Cung cấp cơ chế kiểm soát tắc nghẽn<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>2. <strong>Câu hỏi:</strong> Chức năng nào của dịch vụ quản lý tiến trình liên quan đến việc tạm ngưng và thực hiện lại một tiến trình?<br>&nbsp;&nbsp;- A. Cung cấp cơ chế liên lạc giữa các tiến trình<br>&nbsp;&nbsp;- B. Tạo và hủy các tiến trình<br>&nbsp;&nbsp;- C. Tạm ngưng và thực hiện lại một tiến trình<br>&nbsp;&nbsp;- D. Cung cấp cơ chế kiểm soát tắc nghẽn<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>3. <strong>Câu hỏi:</strong> Chức năng nào của dịch vụ quản lý tiến trình liên quan đến việc cung cấp cơ chế đồng bộ các tiến trình?<br>&nbsp;&nbsp;- A. Cung cấp cơ chế đồng bộ các tiến trình<br>&nbsp;&nbsp;- B. Cung cấp cơ chế kiểm soát tắc nghẽn<br>&nbsp;&nbsp;- C. Tạo và hủy các tiến trình<br>&nbsp;&nbsp;- D. Cung cấp cơ chế liên lạc giữa các tiến trình<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>4. <strong>Câu hỏi:</strong> Chức năng nào của dịch vụ quản lý tiến trình liên quan đến việc cung cấp cơ chế liên lạc giữa các tiến trình?<br>&nbsp;&nbsp;- A. Tạm ngưng và thực hiện lại một tiến trình<br>&nbsp;&nbsp;- B. Cung cấp cơ chế đồng bộ các tiến trình<br>&nbsp;&nbsp;- C. Cung cấp cơ chế liên lạc giữa các tiến trình<br>&nbsp;&nbsp;- D. Tạo và hủy các tiến trình<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>5. <strong>Câu hỏi:</strong> Chức năng nào của dịch vụ quản lý tiến trình liên quan đến việc cung cấp cơ chế kiểm soát tắc nghẽn?<br>&nbsp;&nbsp;- A. Tạo và hủy các tiến trình<br>&nbsp;&nbsp;- B. Cung cấp cơ chế kiểm soát tắc nghẽn<br>&nbsp;&nbsp;- C. Tạm ngưng và thực hiện lại một tiến trình<br>&nbsp;&nbsp;- D. Cung cấp cơ chế liên lạc giữa các tiến trình<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B"
+            ]
+          },
+          {
+            "tag": "main_memory_management_functions",
+            "patterns": [
+              "Các chức năng của dịch vụ quản lý bộ nhớ chính:"
+            ],
+            "responses": [
+              "Dưới đây là một số câu hỏi trắc nghiệm dựa trên các chức năng của dịch vụ quản lý bộ nhớ chính:<br><br>1. <strong>Câu hỏi:</strong> Chức năng nào của dịch vụ quản lý bộ nhớ chính liên quan đến việc lưu giữ thông tin về các vị trí trong bộ nhớ đã sử dụng và tiến trình nào đang sử dụng?<br>&nbsp;&nbsp;- A. Quyết định chọn tiến trình để nạp vào bộ nhớ chính<br>&nbsp;&nbsp;- B. Cấp phát bộ nhớ cho tiến trình và thu hồi bộ nhớ khi tiến trình thực thi xong<br>&nbsp;&nbsp;- C. Lưu giữ thông tin về các vị trí trong bộ nhớ đã sử dụng và tiến trình nào đang sử dụng<br>&nbsp;&nbsp;- D. Không có chức năng này<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>2. <strong>Câu hỏi:</strong> Chức năng nào của dịch vụ quản lý bộ nhớ chính liên quan đến việc quyết định chọn tiến trình để nạp vào bộ nhớ chính khi bộ nhớ chính có chỗ trống?<br>&nbsp;&nbsp;- A. Cấp phát bộ nhớ cho tiến trình và thu hồi bộ nhớ khi tiến trình thực thi xong<br>&nbsp;&nbsp;- B. Lưu giữ thông tin về các vị trí trong bộ nhớ đã sử dụng và tiến trình nào đang sử dụng<br>&nbsp;&nbsp;- C. Quyết định chọn tiến trình để nạp vào bộ nhớ chính khi bộ nhớ chính có chỗ trống<br>&nbsp;&nbsp;- D. Không có chức năng này<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>3. <strong>Câu hỏi:</strong> Chức năng nào của dịch vụ quản lý bộ nhớ chính liên quan đến việc cấp phát bộ nhớ cho tiến trình và thu hồi bộ nhớ khi tiến trình thực thi xong?<br>&nbsp;&nbsp;- A. Quyết định chọn tiến trình để nạp vào bộ nhớ chính<br>&nbsp;&nbsp;- B. Lưu giữ thông tin về các vị trí trong bộ nhớ đã sử dụng và tiến trình nào đang sử dụng<br>&nbsp;&nbsp;- C. Cấp phát bộ nhớ cho tiến trình và thu hồi bộ nhớ khi tiến trình thực thi xong<br>&nbsp;&nbsp;- D. Không có chức năng này<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C"
+            ]
+          },
+          {
+            "tag": "secondary_memory_management_functions",
+            "patterns": [
+              "Các chức năng của dịch vụ quản lý bộ nhớ phụ:"
+            ],
+            "responses": [
+              "Dưới đây là một số câu hỏi trắc nghiệm dựa trên các chức năng của dịch vụ quản lý bộ nhớ phụ:<br><br>1. <strong>Câu hỏi:</strong> Chức năng nào của dịch vụ quản lý bộ nhớ phụ liên quan đến việc quản lý vùng trống trên đĩa?<br>&nbsp;&nbsp;- A. Xác định vị trí cất giữ dữ liệu<br>&nbsp;&nbsp;- B. Lập lịch cho đĩa<br>&nbsp;&nbsp;- C. Quản lý vùng trống trên đĩa<br>&nbsp;&nbsp;- D. Không có chức năng này<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>2. <strong>Câu hỏi:</strong> Chức năng nào của dịch vụ quản lý bộ nhớ phụ liên quan đến việc xác định vị trí cất giữ dữ liệu?<br>&nbsp;&nbsp;- A. Quản lý vùng trống trên đĩa<br>&nbsp;&nbsp;- B. Lập lịch cho đĩa<br>&nbsp;&nbsp;- C. Xác định vị trí cất giữ dữ liệu<br>&nbsp;&nbsp;- D. Không có chức năng này<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>3. <strong>Câu hỏi:</strong> Chức năng nào của dịch vụ quản lý bộ nhớ phụ liên quan đến việc lập lịch cho đĩa?<br>&nbsp;&nbsp;- A. Quản lý vùng trống trên đĩa<br>&nbsp;&nbsp;- B. Xác định vị trí cất giữ dữ liệu<br>&nbsp;&nbsp;- C. Lập lịch cho đĩa<br>&nbsp;&nbsp;- D. Không có chức năng này<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C"
+            ]
+          },
+          {
+            "tag": "io_system_management",
+            "patterns": [
+              "Dịch vụ quản lý hệ thống nhập/xuất (I/O System Management)"
+            ],
+            "responses": [
+              "Dưới đây là một câu hỏi trắc nghiệm dựa trên dịch vụ quản lý hệ thống nhập/xuất:<br><br>1. <strong>Câu hỏi:</strong> Mục đích chính của dịch vụ quản lý hệ thống nhập/xuất là gì?<br>&nbsp;&nbsp;- A. Tăng cường tính bảo mật của hệ thống<br>&nbsp;&nbsp;- B. Cung cấp các chức năng xử lý nhập xuất đơn giản<br>&nbsp;&nbsp;- C. Giảm thiểu sự phụ thuộc vào chi tiết của mỗi loại thiết bị<br>&nbsp;&nbsp;- D. Tối ưu hóa hiệu suất của hệ thống<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C"
+            ]
+          },
+          {
+            "tag": "storage_access_standardization",
+            "patterns": [
+              "Hệ điều hành cần đồng nhất cách truy xuất hệ thống lưu trữ, định nghĩa một đơn vị lưu trữ là tập tin."
+            ],
+            "responses": [
+              "Dưới đây là một câu hỏi trắc nghiệm dựa trên việc đồng nhất cách truy xuất hệ thống lưu trữ:<br><br>1. <strong>Câu hỏi:</strong> Mục đích chính của việc định nghĩa một đơn vị lưu trữ là gì?<br>&nbsp;&nbsp;- A. Tăng cường tính bảo mật của hệ thống<br>&nbsp;&nbsp;- B. Giảm thiểu sự phụ thuộc vào các thiết bị lưu trữ cụ thể<br>&nbsp;&nbsp;- C. Tối ưu hóa hiệu suất của hệ thống<br>&nbsp;&nbsp;- D. Đồng nhất cách truy xuất hệ thống lưu trữ<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> D"
+            ]
+          },
+          {
+            "tag": "file_system_management_functions",
+            "patterns": [
+              "Các chức năng của dịch vụ quản lý hệ thống tập tin:"
+            ],
+            "responses": [
+              "Dưới đây là một số câu hỏi trắc nghiệm dựa trên các chức năng của dịch vụ quản lý hệ thống tập tin:<br><br>1. <strong>Câu hỏi:</strong> Chức năng nào của dịch vụ quản lý hệ thống tập tin liên quan đến việc hỗ trợ các thao tác trên tập tin và thư mục như tạo, xem, xoá, sao chép, di chuyển, đổi tên?<br>&nbsp;&nbsp;- A. Ánh xạ tập tin trên hệ thống lưu trữ phụ<br>&nbsp;&nbsp;- B. Sao lưu tập tin trên các thiết bị lưu trữ<br>&nbsp;&nbsp;- C. Hỗ trợ các thao tác trên tập tin và thư mục<br>&nbsp;&nbsp;- D. Không có chức năng này<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>2. <strong>Câu hỏi:</strong> Chức năng nào của dịch vụ quản lý hệ thống tập tin liên quan đến việc ánh xạ tập tin trên hệ thống lưu trữ phụ?<br>&nbsp;&nbsp;- A. Sao lưu tập tin trên các thiết bị lưu trữ<br>&nbsp;&nbsp;- B. Ánh xạ tập tin trên hệ thống lưu trữ phụ<br>&nbsp;&nbsp;- C. Hỗ trợ các thao tác trên tập tin và thư mục<br>&nbsp;&nbsp;- D. Không có chức năng này<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>3. <strong>Câu hỏi:</strong> Chức năng nào của dịch vụ quản lý hệ thống tập tin liên quan đến việc sao lưu tập tin trên các thiết bị lưu trữ?<br>&nbsp;&nbsp;- A. Hỗ trợ các thao tác trên tập tin và thư mục<br>&nbsp;&nbsp;- B. Ánh xạ tập tin trên hệ thống lưu trữ phụ<br>&nbsp;&nbsp;- C. Sao lưu tập tin trên các thiết bị lưu trữ<br>&nbsp;&nbsp;- D. Không có chức năng này<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C"
+            ]
+          },
+          {
+            "tag": "system_calls_and_parameter_passing",
+            "patterns": [
+              "Lời gọi hệ thống và chuyển tham số"
+            ],
+            "responses": [
+              "Dưới đây là một câu hỏi trắc nghiệm dựa trên lời gọi hệ thống và phương pháp chuyển tham số:<br><br>1. <strong>Câu hỏi:</strong> Lời gọi hệ thống còn được gọi là gì?<br>&nbsp;&nbsp;- A. Tập lệnh<br>&nbsp;&nbsp;- B. Ngắt<br>&nbsp;&nbsp;- C. Hàm<br>&nbsp;&nbsp;- D. Tham số<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B"
+            ]
+          },
+          {
+            "tag": "io_system_management",
+            "patterns": [
+              "Dịch vụ quản lý hệ thống nhập/xuất (I/O System Management)"
+            ],
+            "responses": [
+              "Dưới đây là một câu hỏi trắc nghiệm dựa trên dịch vụ quản lý hệ thống nhập/xuất:<br><br>1. <strong>Câu hỏi:</strong> Mục đích chính của dịch vụ quản lý hệ thống nhập/xuất là gì?<br>&nbsp;&nbsp;- A. Tăng cường tính bảo mật của hệ thống<br>&nbsp;&nbsp;- B. Cung cấp các chức năng xử lý nhập xuất đơn giản<br>&nbsp;&nbsp;- C. Giảm thiểu sự phụ thuộc vào chi tiết của mỗi loại thiết bị<br>&nbsp;&nbsp;- D. Tối ưu hóa hiệu suất của hệ thống<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C"
+            ]
+          },
+          {
+            "tag": "storage_access_standardization",
+            "patterns": [
+              "Hệ điều hành cần đồng nhất cách truy xuất hệ thống lưu trữ, định nghĩa một đơn vị lưu trữ là tập tin."
+            ],
+            "responses": [
+              "Dưới đây là một câu hỏi trắc nghiệm dựa trên việc đồng nhất cách truy xuất hệ thống lưu trữ:<br><br>1. <strong>Câu hỏi:</strong> Mục đích chính của việc định nghĩa một đơn vị lưu trữ là gì?<br>&nbsp;&nbsp;- A. Tăng cường tính bảo mật của hệ thống<br>&nbsp;&nbsp;- B. Giảm thiểu sự phụ thuộc vào các thiết bị lưu trữ cụ thể<br>&nbsp;&nbsp;- C. Tối ưu hóa hiệu suất của hệ thống<br>&nbsp;&nbsp;- D. Đồng nhất cách truy xuất hệ thống lưu trữ<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> D"
+            ]
+          },
+          {
+            "tag": "file_system_management_functions",
+            "patterns": [
+              "Các chức năng của dịch vụ quản lý hệ thống tập tin:"
+            ],
+            "responses": [
+              "Dưới đây là một số câu hỏi trắc nghiệm dựa trên các chức năng của dịch vụ quản lý hệ thống tập tin:<br><br>1. <strong>Câu hỏi:</strong> Chức năng nào của dịch vụ quản lý hệ thống tập tin liên quan đến việc hỗ trợ các thao tác trên tập tin và thư mục như tạo, xem, xoá, sao chép, di chuyển, đổi tên?<br>&nbsp;&nbsp;- A. Ánh xạ tập tin trên hệ thống lưu trữ phụ<br>&nbsp;&nbsp;- B. Sao lưu tập tin trên các thiết bị lưu trữ<br>&nbsp;&nbsp;- C. Hỗ trợ các thao tác trên tập tin và thư mục<br>&nbsp;&nbsp;- D. Không có chức năng này<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>2. <strong>Câu hỏi:</strong> Chức năng nào của dịch vụ quản lý hệ thống tập tin liên quan đến việc ánh xạ tập tin trên hệ thống lưu trữ phụ?<br>&nbsp;&nbsp;- A. Sao lưu tập tin trên các thiết bị lưu trữ<br>&nbsp;&nbsp;- B. Ánh xạ tập tin trên hệ thống lưu trữ phụ<br>&nbsp;&nbsp;- C. Hỗ trợ các thao tác trên tập tin và thư mục<br>&nbsp;&nbsp;- D. Không có chức năng này<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>3. <strong>Câu hỏi:</strong> Chức năng nào của dịch vụ quản lý hệ thống tập tin liên quan đến việc sao lưu tập tin trên các thiết bị lưu trữ?<br>&nbsp;&nbsp;- A. Hỗ trợ các thao tác trên tập tin và thư mục<br>&nbsp;&nbsp;- B. Ánh xạ tập tin trên hệ thống lưu trữ phụ<br>&nbsp;&nbsp;- C. Sao lưu tập tin trên các thiết bị lưu trữ<br>&nbsp;&nbsp;- D. Không có chức năng này<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C"
+            ]
+          },
+          {
+            "tag": "command_line_interface",
+            "patterns": [
+              "Là tập lệnh cơ bản cùng trình thông dịch lệnh để người sử dụng giao tiếp với hệ điều hành. Các lệnh cơ bản như lệnh quản lý tiến trình, quản lý nhập xuất, quản lý bộ nhớ chính, quản lý bộ nhớ phụ, quản lý tập tin và các lệnh bảo vệ hệ thống… Các lệnh trong hệ thống thông dịch dòng lệnh thực ra cũng sẽ gọi các các lời gọi hệ thống."
+            ],
+            "responses": [
+              "Dưới đây là một số câu hỏi trắc nghiệm dựa trên lệnh giao diện dòng lệnh:<br><br>1. <strong>Câu hỏi:</strong> Lệnh giao diện dòng lệnh thực ra gọi các gì?<br>&nbsp;&nbsp;- A. Các hàm<br>&nbsp;&nbsp;- B. Ngắt<br>&nbsp;&nbsp;- C. Lời gọi hệ thống<br>&nbsp;&nbsp;- D. Tham số<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>2. <strong>Câu hỏi:</strong> Lệnh giao diện dòng lệnh được sử dụng để làm gì?<br>&nbsp;&nbsp;- A. Quản lý tiến trình<br>&nbsp;&nbsp;- B. Quản lý nhập xuất<br>&nbsp;&nbsp;- C. Quản lý bộ nhớ chính<br>&nbsp;&nbsp;- D. Tất cả các phương án trên<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> D<br><br>3. <strong>Câu hỏi:</strong> Các lệnh trong hệ thống thông dịch dòng lệnh thực ra thực hiện như thế nào?<br>&nbsp;&nbsp;- A. Sử dụng các hàm trực tiếp từ hệ điều hành<br>&nbsp;&nbsp;- B. Thực hiện ngắt để giao tiếp với hệ điều hành<br>&nbsp;&nbsp;- C. Gọi các lời gọi hệ thống<br>&nbsp;&nbsp;- D. Truyền các tham số trực tiếp vào CPU<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C"
+            ]
+          },
+          {
+            "tag": "operating_system_structure",
+            "patterns": [
+              "Cấu trúc đơn giản của hệ điều hành",
+              "Hệ điều hành không được chia thành những lớp (phần) rõ rệt, một lớp có thể gọi hàm thuộc bất kỳ lớp nào khác. Hệ điều hành này đơn giản, dễ thiết kế, dễ cài đặt nhưng khó bảo vệ, khó mở rộng, và khó nâng cấp. Ví dụ hệ điều hành MSDOS là hệ điều hành có cấu trúc đơn giản: chương trình ứng dụng có thể truy xuất trực tiếp các hàm nhập/xuất trong ROM BIOS để ghi trực tiếp lên màn hình hay bộ điều khiển đĩa. "
+            ],
+            "responses": [
+              "Dưới đây là một số câu hỏi dựa trên cấu trúc đơn giản của hệ điều hành:<br><br>1. <strong>Câu hỏi:</strong> Tại sao hệ điều hành không được chia thành các lớp rõ rệt trong cấu trúc đơn giản?<br>&nbsp;&nbsp;- A. Vì không cần thiết<br>&nbsp;&nbsp;- B. Vì việc chia thành các lớp làm tăng sự phức tạp<br>&nbsp;&nbsp;- C. Vì nguyên tắc thiết kế đơn giản<br>&nbsp;&nbsp;- D. Vì yêu cầu của người sử dụng<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>2. <strong>Câu hỏi:</strong> Hệ điều hành có cấu trúc đơn giản thường có những đặc điểm nào?<br>&nbsp;&nbsp;- A. Dễ bảo vệ và mở rộng<br>&nbsp;&nbsp;- B. Dễ cài đặt và nâng cấp<br>&nbsp;&nbsp;- C. Phức tạp trong thiết kế và cài đặt<br>&nbsp;&nbsp;- D. Không gặp khó khăn trong việc bảo vệ<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>3. <strong>Câu hỏi:</strong> Hệ điều hành MSDOS là một ví dụ cho loại hệ điều hành nào?<br>&nbsp;&nbsp;- A. Hệ điều hành có cấu trúc phân lớp<br>&nbsp;&nbsp;- B. Hệ điều hành có cấu trúc mở rộng<br>&nbsp;&nbsp;- C. Hệ điều hành có cấu trúc đơn giản<br>&nbsp;&nbsp;- D. Hệ điều hành có cấu trúc phức tạp<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>4. <strong>Câu hỏi:</strong> Trong hệ điều hành MSDOS, chương trình ứng dụng thường truy xuất trực tiếp đến điều gì để ghi trực tiếp lên màn hình hoặc bộ điều khiển đĩa?<br>&nbsp;&nbsp;- A. Các hàm từ lớp quản lý bộ nhớ<br>&nbsp;&nbsp;- B. Các hàm từ lớp quản lý tiến trình<br>&nbsp;&nbsp;- C. Các hàm nhập/xuất trong ROM BIOS<br>&nbsp;&nbsp;- D. Các hàm từ lớp quản lý tập tin<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C"
+            ]
+          },
+          {
+            "tag": "operating_system_layers",
+            "patterns": [
+              "Chia thành nhiều lớp trong hệ điều hành",
+              "Hệ điều hành được chia thành nhiều lớp, mỗi lớp được xây dựng dựa vào những lớp thấp hơn. Lớp dưới cùng là phần cứng, lớp trên cùng là lớp giao tiếp với người sử dụng. Mỗi lớp chỉ sử dụng những hàm do lớp dưới cung cấp. Hạt nhân ở lớp kế lớp phần cứng, dùng các lệnh của phần cứng để tạo các lời gọi hệ thống. Hãy cho tôi nhiều câu hỏi"
+            ],
+            "responses": [
+              "Dưới đây là một số câu hỏi dựa trên cấu trúc lớp của hệ điều hành:<br><br>1. <strong>Câu hỏi:</strong> Hệ điều hành được chia thành bao nhiêu lớp?<br>&nbsp;&nbsp;- A. Một lớp<br>&nbsp;&nbsp;- B. Hai lớp<br>&nbsp;&nbsp;- C. Ba lớp<br>&nbsp;&nbsp;- D. Nhiều hơn ba lớp<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>2. <strong>Câu hỏi:</strong> Lớp dưới cùng trong cấu trúc của hệ điều hành là gì?<br>&nbsp;&nbsp;- A. Lớp quản lý tài nguyên<br>&nbsp;&nbsp;- B. Lớp giao tiếp với người dùng<br>&nbsp;&nbsp;- C. Lớp phần cứng<br>&nbsp;&nbsp;- D. Lớp hạt nhân<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>3. <strong>Câu hỏi:</strong> Hạt nhân của hệ điều hành được đặt ở vị trí nào trong cấu trúc lớp?<br>&nbsp;&nbsp;- A. Lớp trên cùng<br>&nbsp;&nbsp;- B. Lớp giữa<br>&nbsp;&nbsp;- C. Lớp dưới cùng<br>&nbsp;&nbsp;- D. Lớp không xác định<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>4. <strong>Câu hỏi:</strong> Mỗi lớp trong cấu trúc của hệ điều hành chỉ sử dụng những gì?<br>&nbsp;&nbsp;- A. Những hàm do lớp trên cung cấp<br>&nbsp;&nbsp;- B. Những hàm do lớp dưới cung cấp<br>&nbsp;&nbsp;- C. Những hàm tự định nghĩa<br>&nbsp;&nbsp;- D. Những hàm từ bên ngoài hệ thống<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B"
+            ]
+          },
+          {
+            "tag": "Virtual_Machine_Overview",
+            "patterns": [
+              "Với hệ điều hành máy ảo, một máy được giả lập thành nhiều máy, tài nguyên của hệ thống như là CPU, bộ nhớ, đĩa,… được chia xẻ để tạo các máy ảo. Mỗi máy ảo được cô lập với máy ảo khác nên tài nguyên dùng chung được bảo vệ nhưng cũng dẫn đến việc không được chia xẻ tài nguyên trực tiếp."
+            ],
+            "responses": [
+              "Dưới đây là một số câu hỏi trắc nghiệm dựa trên đoạn văn về hệ điều hành máy ảo:<br><br>1. <strong>Câu hỏi:</strong> Trong một hệ điều hành máy ảo, các tài nguyên nào của hệ thống được chia sẻ để tạo ra các máy ảo?<br>&nbsp;&nbsp;- A. CPU, bộ nhớ, đĩa<br>&nbsp;&nbsp;- B. Màn hình, bàn phím, chuột<br>&nbsp;&nbsp;- C. Mạng, phần mềm ứng dụng<br>&nbsp;&nbsp;- D. Tất cả các lựa chọn trên<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>2. <strong>Câu hỏi:</strong> Trong hệ điều hành máy ảo, các máy ảo được:<br>&nbsp;&nbsp;- A. Kết nối trực tiếp với nhau<br>&nbsp;&nbsp;- B. Hoạt động độc lập và cô lập với nhau<br>&nbsp;&nbsp;- C. Chia sẻ trực tiếp tài nguyên với nhau<br>&nbsp;&nbsp;- D. Không sử dụng tài nguyên chung<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>3. <strong>Câu hỏi:</strong> Lợi ích của việc cô lập các máy ảo trong hệ điều hành máy ảo là gì?<br>&nbsp;&nbsp;- A. Giúp các máy ảo chia sẻ tài nguyên một cách hiệu quả<br>&nbsp;&nbsp;- B. Bảo vệ tài nguyên dùng chung<br>&nbsp;&nbsp;- C. Giảm chi phí phần cứng<br>&nbsp;&nbsp;- D. Tăng tốc độ xử lý của hệ thống<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>4. <strong>Câu hỏi:</strong> Điều nào sau đây là một hạn chế của việc cô lập các máy ảo trong hệ điều hành máy ảo?<br>&nbsp;&nbsp;- A. Không thể bảo vệ tài nguyên dùng chung<br>&nbsp;&nbsp;- B. Không thể chia sẻ tài nguyên trực tiếp<br>&nbsp;&nbsp;- C. Không thể tạo nhiều máy ảo<br>&nbsp;&nbsp;- D. Không thể sử dụng tài nguyên hệ thống<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>5. <strong>Câu hỏi:</strong> Trong hệ điều hành máy ảo, việc chia sẻ tài nguyên hệ thống như CPU, bộ nhớ và đĩa nhằm mục đích:<br>&nbsp;&nbsp;- A. Tăng cường bảo mật và sự cô lập giữa các máy ảo<br>&nbsp;&nbsp;- B. Tăng tốc độ truy cập dữ liệu<br>&nbsp;&nbsp;- C. Giảm chi phí bảo trì phần cứng<br>&nbsp;&nbsp;- D. Cải thiện hiệu năng của mỗi máy ảo<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A"
+            ]
+          },
+          {
+            "tag": "Operating_System_Processes",
+            "patterns": [
+              "Hệ điều hành được chia thành nhiều phần (gọi là các tiến trình server), mỗi tiến trình thực hiện một dịch vụ như là dịch vụ quản lý tập tin, quản lý tiến trình, quản lý bộ nhớ, … Các tiến trình yêu cầu (gọi là tiến trình client) sẽ gửi yêu cầu đến một tiến trình server, tiến trình server thực hiện và gửi kết quả trở lại cho tiến trình client. Hạt nhân chỉ có nhiệm vụ kiểm soát quá trình liên lạc giữa các tiến trình client và server."
+            ],
+            "responses": [
+              "Dưới đây là một số câu hỏi trắc nghiệm dựa trên đoạn văn về các tiến trình trong hệ điều hành:<br><br>1. <strong>Câu hỏi:</strong> Hệ điều hành được chia thành nhiều phần gọi là gì?<br>&nbsp;&nbsp;- A. Các dịch vụ<br>&nbsp;&nbsp;- B. Các tiến trình server<br>&nbsp;&nbsp;- C. Các tiến trình client<br>&nbsp;&nbsp;- D. Hạt nhân<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>2. <strong>Câu hỏi:</strong> Một tiến trình server trong hệ điều hành thực hiện nhiệm vụ gì?<br>&nbsp;&nbsp;- A. Gửi yêu cầu đến các tiến trình khác<br>&nbsp;&nbsp;- B. Thực hiện một dịch vụ như quản lý tập tin, quản lý tiến trình<br>&nbsp;&nbsp;- C. Kiểm soát quá trình liên lạc giữa các tiến trình<br>&nbsp;&nbsp;- D. Quản lý giao diện người dùng<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>3. <strong>Câu hỏi:</strong> Tiến trình client trong hệ điều hành có nhiệm vụ gì?<br>&nbsp;&nbsp;- A. Quản lý bộ nhớ<br>&nbsp;&nbsp;- B. Thực hiện dịch vụ quản lý tập tin<br>&nbsp;&nbsp;- C. Gửi yêu cầu đến một tiến trình server<br>&nbsp;&nbsp;- D. Kiểm soát quá trình liên lạc giữa các tiến trình<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>4. <strong>Câu hỏi:</strong> Hạt nhân của hệ điều hành có nhiệm vụ gì?<br>&nbsp;&nbsp;- A. Thực hiện dịch vụ quản lý tiến trình<br>&nbsp;&nbsp;- B. Gửi yêu cầu đến tiến trình server<br>&nbsp;&nbsp;- C. Thực hiện và gửi kết quả trở lại cho tiến trình client<br>&nbsp;&nbsp;- D. Kiểm soát quá trình liên lạc giữa các tiến trình client và server<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> D<br><br>5. <strong>Câu hỏi:</strong> Các dịch vụ trong hệ điều hành như quản lý tập tin, quản lý tiến trình được thực hiện bởi:<br>&nbsp;&nbsp;- A. Tiến trình client<br>&nbsp;&nbsp;- B. Hạt nhân<br>&nbsp;&nbsp;- C. Tiến trình server<br>&nbsp;&nbsp;- D. Giao diện người dùng<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C"
+            ]
+          },
+          {
+            "tag": "RAM_Disk_Overview",
+            "patterns": [
+              "Hệ điều hành có thể dùng một phần của bộ nhớ chính để lưu trữ các khối đĩa, phần bộ nhớ này gọi là Ram Disk. Ram Disk cũng được chia làm nhiều khối, mỗi khối có kích thước bằng kích thước của khối trên đĩa. Khi driver nhận được lệnh đọc/ghi khối, sẽ tìm trong bộ nhớ Ram Disk vị trí của khối, và thực hiện việc đọc/ ghi trong đó thay vì từ đĩa. RAM disk có ưu điểm là cho phép truy xuất nhanh, không phải chờ quay hay tìm kiếm, thích hợp cho việc lưu trữ những chương trình hay dữ liệu được truy xuất thường xuyên."
+            ],
+            "responses": [
+              "Dưới đây là một số câu hỏi trắc nghiệm dựa trên đoạn văn về Ram Disk:<br><br>1. <strong>Câu hỏi:</strong> Ram Disk là gì?<br>&nbsp;&nbsp;- A. Một phần của bộ nhớ chính dùng để lưu trữ các khối đĩa<br>&nbsp;&nbsp;- B. Một loại đĩa cứng<br>&nbsp;&nbsp;- C. Một phần của bộ nhớ ngoài<br>&nbsp;&nbsp;- D. Một phần của hệ điều hành<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>2. <strong>Câu hỏi:</strong> Kích thước của mỗi khối trong Ram Disk được xác định như thế nào?<br>&nbsp;&nbsp;- A. Kích thước của mỗi khối là cố định<br>&nbsp;&nbsp;- B. Kích thước của mỗi khối bằng kích thước của khối trên đĩa<br>&nbsp;&nbsp;- C. Kích thước của mỗi khối phụ thuộc vào hệ điều hành<br>&nbsp;&nbsp;- D. Kích thước của mỗi khối có thể thay đổi theo thời gian<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>3. <strong>Câu hỏi:</strong> Khi driver nhận được lệnh đọc/ghi khối, nó sẽ làm gì?<br>&nbsp;&nbsp;- A. Thực hiện việc đọc/ghi từ đĩa<br>&nbsp;&nbsp;- B. Tìm trong bộ nhớ Ram Disk vị trí của khối và thực hiện việc đọc/ghi trong đó<br>&nbsp;&nbsp;- C. Gửi lệnh đọc/ghi đến hệ điều hành<br>&nbsp;&nbsp;- D. Tạo một khối mới trong Ram Disk<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>4. <strong>Câu hỏi:</strong> Ưu điểm của Ram Disk là gì?<br>&nbsp;&nbsp;- A. Cho phép truy xuất nhanh, không phải chờ quay hay tìm kiếm<br>&nbsp;&nbsp;- B. Tăng dung lượng bộ nhớ chính<br>&nbsp;&nbsp;- C. Giảm tiêu thụ năng lượng của hệ thống<br>&nbsp;&nbsp;- D. Tăng tốc độ quay của đĩa cứng<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>5. <strong>Câu hỏi:</strong> Ram Disk thích hợp cho việc lưu trữ gì?<br>&nbsp;&nbsp;- A. Dữ liệu lớn không được truy xuất thường xuyên<br>&nbsp;&nbsp;- B. Những chương trình hay dữ liệu được truy xuất thường xuyên<br>&nbsp;&nbsp;- C. Các tập tin hệ thống không quan trọng<br>&nbsp;&nbsp;- D. Các tệp sao lưu hàng ngày<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B"
+            ]
+          },
+          {
+            "tag": "Hard_Disk_Structure",
+            "patterns": [
+              "Đĩa cứng được định dạng thành các vòng tròn đồng tâm gọi là rãnh (track), mỗi rãnh được chia thành nhiều phần bằng nhau gọi là cung (sector). Một khối (cluster) gồm một hoặc nhiều cung và dữ liệu được đọc/ghi theo đơn vị khối. Việc sử dụng đơn vị khối để tăng hiệu quả trong việc đọc/ghi và giảm chi phí quản lý số địa chỉ trên đĩa. Ngoài ra khi đĩa cứng lớn, có thể chia thành nhiều phân vùng (partition), mỗi phân vùng gồm một số từ trụ (cylinder) liên tiếp. Một từ trụ là tập hợp các rãnh cùng bán kính."
+            ],
+            "responses": [
+              "Dưới đây là một số câu hỏi trắc nghiệm dựa trên đoạn văn về cấu trúc đĩa cứng:<br><br>1. <strong>Câu hỏi:</strong> Đĩa cứng được định dạng thành các vòng tròn đồng tâm gọi là gì?<br>&nbsp;&nbsp;- A. Khối (cluster)<br>&nbsp;&nbsp;- B. Phân vùng (partition)<br>&nbsp;&nbsp;- C. Rãnh (track)<br>&nbsp;&nbsp;- D. Cung (sector)<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>2. <strong>Câu hỏi:</strong> Mỗi rãnh được chia thành nhiều phần bằng nhau gọi là gì?<br>&nbsp;&nbsp;- A. Khối (cluster)<br>&nbsp;&nbsp;- B. Phân vùng (partition)<br>&nbsp;&nbsp;- C. Từ trụ (cylinder)<br>&nbsp;&nbsp;- D. Cung (sector)<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> D<br><br>3. <strong>Câu hỏi:</strong> Một khối (cluster) gồm một hoặc nhiều:<br>&nbsp;&nbsp;- A. Rãnh (track)<br>&nbsp;&nbsp;- B. Từ trụ (cylinder)<br>&nbsp;&nbsp;- C. Cung (sector)<br>&nbsp;&nbsp;- D. Phân vùng (partition)<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>4. <strong>Câu hỏi:</strong> Tại sao việc sử dụng đơn vị khối giúp tăng hiệu quả trong việc đọc/ghi dữ liệu?<br>&nbsp;&nbsp;- A. Giúp tăng tốc độ quay của đĩa cứng<br>&nbsp;&nbsp;- B. Giúp giảm chi phí quản lý số địa chỉ trên đĩa<br>&nbsp;&nbsp;- C. Giúp giảm kích thước của đĩa cứng<br>&nbsp;&nbsp;- D. Giúp tăng dung lượng bộ nhớ<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>5. <strong>Câu hỏi:</strong> Khi đĩa cứng lớn, có thể chia thành nhiều gì?<br>&nbsp;&nbsp;- A. Khối (cluster)<br>&nbsp;&nbsp;- B. Rãnh (track)<br>&nbsp;&nbsp;- C. Cung (sector)<br>&nbsp;&nbsp;- D. Phân vùng (partition)<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> D<br><br>6. <strong>Câu hỏi:</strong> Một từ trụ (cylinder) là gì?<br>&nbsp;&nbsp;- A. Một tập hợp các cung có cùng bán kính<br>&nbsp;&nbsp;- B. Một tập hợp các rãnh cùng bán kính<br>&nbsp;&nbsp;- C. Một tập hợp các khối cùng bán kính<br>&nbsp;&nbsp;- D. Một tập hợp các phân vùng cùng bán kính<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B"
+            ]
+          },
+          {
+            "tag": "File_Attributes",
+            "patterns": [
+              "Thuộc tính của file là các thông tin liên quan đến file, số thuộc tính của file tùy theo hệ điều hành, nhưng thường thì file có các thuộc tính sau: Tên file (file name) Tên file dùng để phân biệt file này với file khác, UNIX phân biệt tên file chữ thường với tên file chữ hoa nhưng WINDOWS thì không phân biệt. Trong UNIX tên file có thể có nhiều phân cách (ví dụ prog.c.Z), WINDOWS chỉ có một phân cách. Hệ điều hành dùng phần mở rộng để nhận dạng kiểu của file và các thao tác có thể thực hiện trên kiểu file đó, ví dụ phần mở rộng là *.exe,*.com thì hệ điều hành hiểu là file kiểu nhị phân có thể thực thi nhưng nếu không thực thi được thì là do cấu trúc file không đúng qui định của file *.exe, *.com. Kiểu file (file type) Có hai loại file là file văn bản và file nhị phân. File văn bản chứa các dòng văn bản cuối dòng có ký tự xuống dòng (kí tự enter). File nhị phân gồm dãy các byte, có cấu trúc tùy theo chương trình tạo ra file. Ví dụ file .com, .exe, .wav, .bmp,…. hệ điều hành chỉ thực thi được file .com, .exe nếu nó có cấu trúc đúng qui định. Vị trí file: Danh sách các khối (cluster) trên đĩa đã cấp cho file. Kích thước file: Kích thước hiện thời, kích thước tối đa của file tính bằng bytes/words/blocks,… Ngày giờ tạo file, người tạo file: Ngày, giờ tạo file; ngày, giờ cập nhật file gần nhất; ngày, giờ sử dụng file sau cùng, người tạo file. Loai file: file ẩn, chỉ đọc, hệ thống, lưu trữ, file/thư mục Bảo vệ file: Dùng account (username, password), owner/creator hoặc dùng quyền đã cấp cho user, group trên file hay thư mục, gồm các quyền sau: quyền đọc (Read), ghi (Write), xóa (Delete), thực thi (Execute), liệt kê (List), thêm (Append)..."
+            ],
+            "responses": [
+              "Dưới đây là một số câu hỏi trắc nghiệm dựa trên đoạn văn về thuộc tính của file:<br><br>1. <strong>Câu hỏi:</strong> Tên file dùng để làm gì?<br>&nbsp;&nbsp;- A. Để nhận diện kiểu của file<br>&nbsp;&nbsp;- B. Để phân biệt file này với file khác<br>&nbsp;&nbsp;- C. Để xác định vị trí của file trên đĩa<br>&nbsp;&nbsp;- D. Để đặt quyền truy cập cho file<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>2. <strong>Câu hỏi:</strong> Hệ điều hành nào phân biệt tên file chữ thường và chữ hoa?<br>&nbsp;&nbsp;- A. WINDOWS<br>&nbsp;&nbsp;- B. UNIX<br>&nbsp;&nbsp;- C. Cả WINDOWS và UNIX<br>&nbsp;&nbsp;- D. Không hệ điều hành nào<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>3. <strong>Câu hỏi:</strong> Trong UNIX, tên file có thể có bao nhiêu phân cách?<br>&nbsp;&nbsp;- A. Chỉ có một phân cách<br>&nbsp;&nbsp;- B. Không có phân cách<br>&nbsp;&nbsp;- C. Có thể có nhiều phân cách<br>&nbsp;&nbsp;- D. Tùy thuộc vào người dùng<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>4. <strong>Câu hỏi:</strong> Hệ điều hành dùng phần mở rộng để làm gì?<br>&nbsp;&nbsp;- A. Nhận dạng kiểu của file và các thao tác có thể thực hiện trên file đó<br>&nbsp;&nbsp;- B. Để xác định kích thước của file<br>&nbsp;&nbsp;- C. Để phân biệt file với thư mục<br>&nbsp;&nbsp;- D. Để quản lý quyền truy cập của file<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>5. <strong>Câu hỏi:</strong> Có bao nhiêu loại file?<br>&nbsp;&nbsp;- A. Một loại<br>&nbsp;&nbsp;- B. Hai loại<br>&nbsp;&nbsp;- C. Ba loại<br>&nbsp;&nbsp;- D. Bốn loại<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>6. <strong>Câu hỏi:</strong> File văn bản chứa gì?<br>&nbsp;&nbsp;- A. Dãy các byte không có cấu trúc<br>&nbsp;&nbsp;- B. Các dòng văn bản cuối dòng có ký tự xuống dòng<br>&nbsp;&nbsp;- C. Các lệnh hệ điều hành<br>&nbsp;&nbsp;- D. Các hình ảnh và âm thanh<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>7. <strong>Câu hỏi:</strong> Vị trí file được xác định như thế nào?<br>&nbsp;&nbsp;- A. Bằng danh sách các khối (cluster) trên đĩa đã cấp cho file<br>&nbsp;&nbsp;- B. Bằng tên file và phần mở rộng<br>&nbsp;&nbsp;- C. Bằng kích thước của file<br>&nbsp;&nbsp;- D. Bằng ngày giờ tạo file<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>8. <strong>Câu hỏi:</strong> Kích thước file được tính bằng gì?<br>&nbsp;&nbsp;- A. Bytes<br>&nbsp;&nbsp;- B. Words<br>&nbsp;&nbsp;- C. Blocks<br>&nbsp;&nbsp;- D. Tất cả các đáp án trên<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> D<br><br>9. <strong>Câu hỏi:</strong> Thuộc tính nào cho biết thời gian sử dụng file sau cùng?<br>&nbsp;&nbsp;- A. Ngày giờ tạo file<br>&nbsp;&nbsp;- B. Người tạo file<br>&nbsp;&nbsp;- C. Ngày giờ cập nhật file gần nhất<br>&nbsp;&nbsp;- D. Ngày giờ sử dụng file sau cùng<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> D<br><br>10. <strong>Câu hỏi:</strong> Các quyền bảo vệ file bao gồm quyền nào?<br>&nbsp;&nbsp;- A. Quyền đọc (Read)<br>&nbsp;&nbsp;- B. Quyền ghi (Write)<br>&nbsp;&nbsp;- C. Quyền xóa (Delete)<br>&nbsp;&nbsp;- D. Tất cả các đáp án trên<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> D"
+            ]
+          },
+          {
+            "tag": "File_System_Calls",
+            "patterns": [
+              "Hệ điều hành cần cung cấp các các lời gọi hệ thống (system call) xử lý file như là: tạo/xóa/mở/đóng/đọc/ghi/thêm/dời con trỏ file/lấy thuộc tính/đặt thuộc tính/đổi tên file,… Tạo file (create): Ghi một mục chứa thông tin file vào cấu trúc thư mục và tìm một khối trống cấp cho file. Xóa file (delete): Tìm tên file trong cấu trúc thư mục, giải phóng tất cả khối đĩa mà file chiếm giữ, xoá mục tương ứng trong cấu trúc thư mục. Mở file (open): Khi lần đầu tiên file được truy xuất, thông tin về file được đọc từ cấu trúc thư mục và lưu vào bảng open-files trong bộ nhớ. Nếu file chưa đóng, thì những lần truy xuất sau sẽ không phải tìm thông tin về file trong cấu trúc thư mục nữa mà lấy trong bảng open-files. Thao tác mở file sẽ trả về chỉ mục trong bảng open-files Đóng file (close): Ghi mục tương ứng trong bảng open-files vào cấu trúc thư mục, và hủy mục này trong bảng open-files. Đọc file (read): Tìm tên file trong cấu trúc thư mục, biết được vị trí lưu trữ file, đọc file vào bộ nhớ, dùng một con trỏ đọc (read pointer) để ghi nhận vị trí cho lần đọc kế tiếp. Ghi file (write): Tìm tên file trong cấu trúc thư mục, lấy được số hiệu khối nhớ đầu tiên cấp phát cho file, ghi dữ liệu của file vào vị trí này, dùng một con trỏ ghi (write pointer) để ghi nhận vị trí cho lần ghi kế tiếp. Ghi thêm vào cuối (append) Lấy thuộc tính (get attribute) Đặt thuộc tính (set attribute) Đổi tên file (rename)"
+            ],
+            "responses": [
+              "Lời gọi hệ thống nào không thuộc về xử lý file?<br>- a) Tạo file (create)<br>- b) Xóa file (delete)<br>- c) Thay đổi mật khẩu (change password)<br>- d) Đọc file (read)<br>- <b>Đáp án</b>: c) Thay đổi mật khẩu (change password)",
+              "Thao tác nào ghi một mục chứa thông tin file vào cấu trúc thư mục và tìm một khối trống cấp cho file?<br>- a) Xóa file (delete)<br>- b) Mở file (open)<br>- c) Tạo file (create)<br>- d) Đóng file (close)<br>- <b>Đáp án</b>: c) Tạo file (create)",
+              "Điều gì xảy ra khi xóa file (delete)?<br>- a) Thông tin về file được lưu vào bảng open-files<br>- b) Giải phóng tất cả khối đĩa mà file chiếm giữ<br>- c) Ghi mục tương ứng trong bảng open-files vào cấu trúc thư mục<br>- d) Đọc file vào bộ nhớ<br>- <b>Đáp án</b>: b) Giải phóng tất cả khối đĩa mà file chiếm giữ",
+              "Khi mở file (open), hệ điều hành làm gì nếu file chưa đóng?<br>- a) Tìm tên file trong cấu trúc thư mục mỗi lần truy xuất<br>- b) Lưu thông tin về file vào bảng open-files trong bộ nhớ<br>- c) Giải phóng tất cả khối đĩa mà file chiếm giữ<br>- d) Đọc file vào bộ nhớ<br>- <b>Đáp án</b>: b) Lưu thông tin về file vào bảng open-files trong bộ nhớ",
+              "Thao tác đóng file (close) bao gồm:<br>- a) Ghi dữ liệu của file vào vị trí này<br>- b) Ghi mục tương ứng trong bảng open-files vào cấu trúc thư mục<br>- c) Đọc file vào bộ nhớ<br>- d) Dùng một con trỏ đọc để ghi nhận vị trí cho lần đọc kế tiếp<br>- <b>Đáp án</b>: b) Ghi mục tương ứng trong bảng open-files vào cấu trúc thư mục",
+              "Con trỏ nào được dùng để ghi nhận vị trí cho lần đọc kế tiếp?<br>- a) Con trỏ đọc (read pointer)<br>- b) Con trỏ ghi (write pointer)<br>- c) Con trỏ mở (open pointer)<br>- d) Con trỏ đóng (close pointer)<br>- <b>Đáp án</b>: a) Con trỏ đọc (read pointer)",
+              "Khi ghi file (write), hệ điều hành làm gì với số hiệu khối nhớ đầu tiên cấp phát cho file?<br>- a) Đọc file vào bộ nhớ<br>- b) Ghi dữ liệu của file vào vị trí này<br>- c) Ghi mục tương ứng trong bảng open-files vào cấu trúc thư mục<br>- d) Dùng một con trỏ đọc để ghi nhận vị trí cho lần đọc kế tiếp<br>- <b>Đáp án</b>: b) Ghi dữ liệu của file vào vị trí này",
+              "Lệnh nào dùng để ghi thêm vào cuối file?<br>- a) Đọc file (read)<br>- b) Tạo file (create)<br>- c) Đóng file (close)<br>- d) Ghi thêm vào cuối (append)<br>- <b>Đáp án</b>: d) Ghi thêm vào cuối (append)",
+              "Lệnh nào dùng để lấy thuộc tính của file?<br>- a) Ghi file (write)<br>- b) Lấy thuộc tính (get attribute)<br>- c) Đổi tên file (rename)<br>- d) Xóa file (delete)<br>- <b>Đáp án</b>: b) Lấy thuộc tính (get attribute)",
+              "Lệnh nào dùng để đổi tên file?<br>- a) Ghi file (write)<br>- b) Lấy thuộc tính (get attribute)<br>- c) Đổi tên file (rename)<br>- d) Xóa file (delete)<br>- <b>Đáp án</b>: c) Đổi tên file (rename)"
+            ]
+          },
+          {
+            "tag": "Scheduling_Algorithm",
+            "patterns": [
+              "Bộ điều phối lần lượt cấp phát cho mỗi tiến trình trong danh sách RL một khoảng thời gian sử dụng CPU gọi là quantum. Khi một tiến trình sử dụng CPU đến hết thời gian quantum dành cho nó, hệ điều hành thu hồi CPU và cấp cho tiến trình kế tiếp trong danh sách. Nếu tiến trình bị khóa (blocked) hay kết thúc trước khi sử dụng hết thời gian quantum, hệ điều hành cũng lập tức cấp phát CPU cho tiến trình khác. Khi tiến trình tiêu thụ hết thời gian CPU dành cho nó mà chưa hoàn tất, tiến trình được đưa trở lại vào cuối danh sách sẵn sàng để đợi được cấp CPU trong lượt kế tiếp. Đây là một giải thuật điều phối không độc quyền."
+            ],
+            "responses": [
+              "Thời gian sử dụng CPU được cấp phát cho mỗi tiến trình trong danh sách RL gọi là gì?<br>- a) Time slice<br>- b) Interval<br>- c) Quantum<br>- d) Epoch<br>- <b>Đáp án</b>: c) Quantum",
+              "Điều gì xảy ra khi một tiến trình sử dụng hết thời gian quantum?<br>- a) Tiến trình sẽ bị treo<br>- b) Hệ điều hành thu hồi CPU và cấp cho tiến trình kế tiếp<br>- c) Tiến trình được đưa trở lại vào cuối danh sách sẵn sàng<br>- d) Tiến trình sẽ kết thúc<br>- <b>Đáp án</b>: b) Hệ điều hành thu hồi CPU và cấp cho tiến trình kế tiếp",
+              "Nếu một tiến trình bị khóa (blocked) hay kết thúc trước khi sử dụng hết thời gian quantum, hệ điều hành sẽ làm gì?<br>- a) Đưa tiến trình trở lại vào danh sách RL<br>- b) Chờ cho đến khi tiến trình hoàn thành<br>- c) Lập tức cấp phát CPU cho tiến trình khác<br>- d) Không làm gì<br>- <b>Đáp án</b>: c) Lập tức cấp phát CPU cho tiến trình khác",
+              "Khi tiến trình tiêu thụ hết thời gian CPU dành cho nó mà chưa hoàn tất, hệ điều hành sẽ làm gì với tiến trình đó?<br>- a) Kết thúc tiến trình<br>- b) Đưa tiến trình trở lại vào cuối danh sách sẵn sàng để đợi lượt kế tiếp<br>- c) Chạy tiến trình liên tục mà không cấp phát cho tiến trình khác<br>- d) Tăng thời gian quantum cho tiến trình đó<br>- <b>Đáp án</b>: b) Đưa tiến trình trở lại vào cuối danh sách sẵn sàng để đợi lượt kế tiếp",
+              "Giải thuật điều phối này thuộc loại nào?<br>- a) Độc quyền (Preemptive)<br>- b) Không độc quyền (Non-preemptive)<br>- c) FIFO<br>- d) LIFO<br>- <b>Đáp án</b>: b) Không độc quyền (Non-preemptive)"
+            ]
+          },
+          {
+            "tag": "Process_Dispatcher",
+            "patterns": [
+              "Chọn một tiến trình ở trạng thái sẵn sàng (đã được nạp vào bộ nhớ chính, và có đủ tài nguyên để hoạt động) và cấp phát CPU cho tiến trình đó thực hiện. Bộ điều phối tiến trình có tần suất hoạt động cao, sau mỗi lần xảy ra ngắt (do đồng hồ báo giờ, do các thiết bị ngoại vi...), thường là 1 lần trong khoảng 100ms. Do vậy để nâng cao hiệu suất của hệ thống, bộ điều phối tiến trình cần sử dụng các thuật toán tốt nhất."
+            ],
+            "responses": [
+              "Một tiến trình ở trạng thái sẵn sàng có nghĩa là gì?<br>- a) Đã được nạp vào bộ nhớ chính và có đủ tài nguyên để hoạt động<br>- b) Đang chờ được nạp vào bộ nhớ chính<br>- c) Đang chờ để được giải phóng tài nguyên<br>- d) Đã hoàn thành và chờ bị xóa<br>- <b>Đáp án</b>: a) Đã được nạp vào bộ nhớ chính và có đủ tài nguyên để hoạt động",
+              "Bộ điều phối tiến trình có tần suất hoạt động như thế nào?<br>- a) Sau mỗi lần xảy ra ngắt<br>- b) Mỗi khi tiến trình kết thúc<br>- c) Mỗi khi hệ điều hành khởi động lại<br>- d) Khi không còn tiến trình nào đang chạy<br>- <b>Đáp án</b>: a) Sau mỗi lần xảy ra ngắt",
+              "Thường thì bộ điều phối tiến trình hoạt động bao lâu một lần?<br>- a) 1 lần trong khoảng 10ms<br>- b) 1 lần trong khoảng 50ms<br>- c) 1 lần trong khoảng 100ms<br>- d) 1 lần trong khoảng 200ms<br>- <b>Đáp án</b>: c) 1 lần trong khoảng 100ms",
+              "Để nâng cao hiệu suất của hệ thống, bộ điều phối tiến trình cần sử dụng gì?<br>- a) Các tiến trình ngẫu nhiên<br>- b) Các thuật toán tốt nhất<br>- c) Các tiến trình ưu tiên thấp<br>- d) Các tiến trình ưu tiên cao<br>- <b>Đáp án</b>: b) Các thuật toán tốt nhất"
+            ]
+          },
+          {
+            "tag": "Task_Scheduling",
+            "patterns": [
+              "Là lựa chọn tác vụ nào được đưa vào bộ nhớ chính để thực hiện. Chức năng điều phối tác vụ quyết định mức độ đa chương của hệ thống (số lượng tiến trình trong bộ nhớ chính). Khi hệ thống tạo lập một tiến trình, hay có một tiến trình kết thúc xử lý thì chức năng điều phối tác vụ mới được kích hoạt. Vì mức độ đa chương tương đối ổn định nên chức năng điều phối tác vụ có tần suất hoạt động thấp. Để cân bằng hoạt động của CPU và các thiết bị ngoại vi, bộ điều phối tác vụ nên lựa chọn các tiến trình để nạp vào bộ nhớ sao cho là sự pha trộn hợp lý giữa các tiến trình hướng nhập xuất và các tiến trình hướng xử lý."
+            ],
+            "responses": [
+              "Chức năng điều phối tác vụ quyết định điều gì?<br>- a) Số lượng tiến trình trong danh sách chờ<br>- b) Số lượng tiến trình trong bộ nhớ chính<br>- c) Thứ tự tiến trình kết thúc<br>- d) Thứ tự tiến trình trong danh sách RL<br>- <b>Đáp án</b>: b) Số lượng tiến trình trong bộ nhớ chính",
+              "Khi nào chức năng điều phối tác vụ được kích hoạt?<br>- a) Khi hệ thống tạo lập một tiến trình mới hoặc có một tiến trình kết thúc xử lý<br>- b) Khi một tiến trình bị khóa<br>- c) Khi hệ điều hành khởi động<br>- d) Khi tiến trình chuyển từ trạng thái chờ sang trạng thái sẵn sàng<br>- <b>Đáp án</b>: a) Khi hệ thống tạo lập một tiến trình mới hoặc có một tiến trình kết thúc xử lý",
+              "Mức độ đa chương của hệ thống thường như thế nào?<br>- a) Thay đổi liên tục<br>- b) Ổn định<br>- c) Rất thấp<br>- d) Rất cao<br>- <b>Đáp án</b>: b) Ổn định",
+              "Tần suất hoạt động của chức năng điều phối tác vụ như thế nào?<br>- a) Cao<br>- b) Thấp<br>- c) Trung bình<br>- d) Không xác định<br>- <b>Đáp án</b>: b) Thấp",
+              "Bộ điều phối tác vụ nên lựa chọn các tiến trình như thế nào để cân bằng hoạt động của CPU và các thiết bị ngoại vi?<br>- a) Chỉ các tiến trình hướng nhập xuất<br>- b) Chỉ các tiến trình hướng xử lý<br>- c) Pha trộn hợp lý giữa các tiến trình hướng nhập xuất và các tiến trình hướng xử lý<br>- d) Tiến trình ngẫu nhiên<br>- <b>Đáp án</b>: c) Pha trộn hợp lý giữa các tiến trình hướng nhập xuất và các tiến trình hướng xử lý"
+            ]
+          },
+          {
+            "tag": "PLSQL_Code_Example",
+            "patterns": [
+              "DECLARE<br>a integer := 10;<br>b integer := 20;<br>c integer; f real; <br>BEGIN<br>c := a + b;<br>dbms_output.put_line('Value of c: ' || c); f := 70.0/3.0;<br>dbms_output.put_line('Value of f: ' || f); <br>END;"
+            ],
+            "responses": [
+              "Trong đoạn mã PL/SQL, giá trị ban đầu của biến a là gì?<br>- a) 0<br>- b) 10<br>- c) 20<br>- d) Chưa được khởi tạo<br>- <b>Đáp án</b>: b) 10",
+              "Giá trị của biến c sau khi thực hiện lệnh c := a + b là bao nhiêu?<br>- a) 10<br>- b) 20<br>- c) 30<br>- d) 70<br>- <b>Đáp án</b>: c) 30",
+              "Giá trị của biến f sau khi thực hiện lệnh f := 70.0/3.0 là bao nhiêu?<br>- a) 23.33<br>- b) 23<br>- c) 21<br>- d) 21.33<br>- <b>Đáp án</b>: a) 23.33",
+              "Hàm nào được sử dụng để xuất giá trị của biến c và f ra màn hình?<br>- a) put_line<br>- b) print<br>- c) write<br>- d) display<br>- <b>Đáp án</b>: a) put_line",
+              "Đoạn mã PL/SQL kết thúc bằng từ khóa nào?<br>- a) STOP<br>- b) END<br>- c) FINISH<br>- d) COMPLETE<br>- <b>Đáp án</b>: b) END"
+            ]
+          },
+          {
+            "tag": "PLSQL_Nested_Blocks",
+            "patterns": [
+              "PL/SQL cho phép sự lồng nhau của các khối lệnh, mỗi khối chương trình có thể chứa các khối lệnh bên trong. Nếu một biến được định nghĩa trong khối lệnh con, nó không có tác dụng ở bên ngoài khối lệnh đó. Nếu biến được định nghĩa ở khối lệnh ngoài, thì nó có tác dụng ở tất cả các khối con lồng trong nó. Có 2 loại phạm vi biến: <br>+ Biến cục bộ (Local variable): Biến được định nghĩa trong1 khối lệnh con và không thể truy cập được khối lệnh ngoài.<br>+ Biến toàn cục (Global variable): Biến được định nghĩa ở khối lệnh ngoài cùng của chương trình hoặc của gói (package)"
+            ],
+            "responses": [
+              "PL/SQL cho phép sự lồng nhau của các khối lệnh, điều này có nghĩa là gì?<br>- a) Một khối lệnh có thể chứa các khối lệnh khác bên trong<br>- b) Các khối lệnh không thể chứa nhau<br>- c) Chỉ có hai cấp độ khối lệnh<br>- d) Khối lệnh ngoài cùng không thể chứa khối lệnh con<br>- <b>Đáp án</b>: a) Một khối lệnh có thể chứa các khối lệnh khác bên trong",
+              "Nếu một biến được định nghĩa trong khối lệnh con, phạm vi của biến này là gì?<br>- a) Toàn cục<br>- b) Cục bộ<br>- c) Toàn bộ chương trình<br>- d) Chỉ trong package<br>- <b>Đáp án</b>: b) Cục bộ",
+              "Nếu biến được định nghĩa ở khối lệnh ngoài, phạm vi của biến này là gì?<br>- a) Chỉ trong khối lệnh ngoài<br>- b) Chỉ trong khối lệnh con<br>- c) Tất cả các khối con lồng trong nó<br>- d) Không có tác dụng<br>- <b>Đáp án</b>: c) Tất cả các khối con lồng trong nó",
+              "Biến cục bộ (Local variable) là gì?<br>- a) Biến được định nghĩa trong khối lệnh ngoài cùng<br>- b) Biến được định nghĩa trong khối lệnh con và không thể truy cập được khối lệnh ngoài<br>- c) Biến có thể truy cập từ bất kỳ khối lệnh nào<br>- d) Biến được định nghĩa trong package<br>- <b>Đáp án</b>: b) Biến được định nghĩa trong khối lệnh con và không thể truy cập được khối lệnh ngoài",
+              "Biến toàn cục (Global variable) là gì?<br>- a) Biến được định nghĩa trong khối lệnh ngoài cùng của chương trình hoặc của gói (package)<br>- b) Biến được định nghĩa trong khối lệnh con<br>- c) Biến không có phạm vi xác định<br>- d) Biến chỉ có tác dụng trong một hàm<br>- <b>Đáp án</b>: a) Biến được định nghĩa trong khối lệnh ngoài cùng của chương trình hoặc của gói (package)"
+            ]
+          },
+          {
+            "tag": "PLSQL_Inner_Outer_Variables",
+            "patterns": [
+              "DECLARE<br>-- Global variables<br>num1 number := 95;<br>num2 number := 85;<br>BEGIN<br>dbms_output.put_line('Outer Variable num1: ' || num1);<br>dbms_output.put_line('Outer Variable num2: ' || num2);<br>DECLARE<br>-- Local variables<br>num1 number := 195;<br>num2 number := 185;<br>BEGIN<br>dbms_output.put_line('Inner Variable num1: ' || num1);<br>dbms_output.put_line('Inner Variable num2: ' || num2);<br>END;<br>END;"
+            ],
+            "responses": [
+              "Dòng nào còn thiếu trong đoạn mã sau?<br>DECLARE<br>-- Global variables<br>num1 number := 95;<br>num2 number := 85;<br>BEGIN<br>dbms_output.put_line('Outer Variable num1: ' || num1);<br>dbms_output.put_line('Outer Variable num2: ' || num2);<br>DECLARE<br>...<br>BEGIN<br>dbms_output.put_line('Inner Variable num1: ' || num1);<br>dbms_output.put_line('Inner Variable num2: ' || num2);<br>END;<br>END;<br>- a) num1 number := 195; num2 number := 185;<br>- b) dbms_output.put_line('Inner Variable: ' || num1);<br>- c) num1 number := 105; num2 number := 205;<br>- d) dbms_output.put_line('Outer Variable: ' || num1);<br>- <b>Đáp án</b>: a) num1 number := 195; num2 number := 185;",
+              "Giá trị của biến toàn cục num1 trong đoạn mã là bao nhiêu?<br>- a) 195<br>- b) 85<br>- c) 95<br>- d) 185<br>- <b>Đáp án</b>: c) 95",
+              "Giá trị của biến toàn cục num2 trong đoạn mã là bao nhiêu?<br>- a) 195<br>- b) 85<br>- c) 95<br>- d) 185<br>- <b>Đáp án</b>: b) 85",
+              "Giá trị của biến cục bộ num1 trong đoạn mã là bao nhiêu?<br>- a) 195<br>- b) 85<br>- c) 95<br>- d) 185<br>- <b>Đáp án</b>: a) 195",
+              "Giá trị của biến cục bộ num2 trong đoạn mã là bao nhiêu?<br>- a) 195<br>- b) 85<br>- c) 95<br>- d) 185<br>- <b>Đáp án</b>: d) 185",
+              "Biến num1 được định nghĩa ở đâu trong đoạn mã?<br>- a) Chỉ trong khối lệnh ngoài<br>- b) Chỉ trong khối lệnh trong<br>- c) Cả trong khối lệnh ngoài và khối lệnh trong<br>- d) Không xác định<br>- <b>Đáp án</b>: c) Cả trong khối lệnh ngoài và khối lệnh trong",
+              "Biến num2 được định nghĩa ở đâu trong đoạn mã?<br>- a) Chỉ trong khối lệnh ngoài<br>- b) Chỉ trong khối lệnh trong<br>- c) Cả trong khối lệnh ngoài và khối lệnh trong<br>- d) Không xác định<br>- <b>Đáp án</b>: c) Cả trong khối lệnh ngoài và khối lệnh trong"
+            ]
+          },
+          {
+            "tag": "PLSQL_Select_Into",
+            "patterns": [
+              "DECLARE<br>v_empno integer := 7788;<br>v_ename emp.ename%type;<br>/*Khai báo biến v_ename có kiểu dữ liệu giống của cột ename trong bảng emp.*/<br>v_hiredate emp.hiredate%type;<br>v_sal emp.sal%type;<br>BEGIN<br>SELECT ename, hiredate, sal INTO v_ename, v_hiredate, v_sal FROM emp WHERE empno = v_empno;<br>dbms_output.put_line('Employer ' || v_ename || ' - Hiredate: ' || v_hiredate || ' - Sal: ' || v_sal);<br>END;"
+            ],
+            "responses": [
+              "Dòng nào còn thiếu trong đoạn mã sau?<br>DECLARE<br>v_empno integer := 7788;<br>v_ename emp.ename%type;<br>v_hiredate emp.hiredate%type;<br>v_sal emp.sal%type;<br>BEGIN<br>...<br>dbms_output.put_line('Employer ' || v_ename || ' - Hiredate: ' || v_hiredate || ' - Sal: ' || v_sal);<br>END;<br>- a) SELECT ename,hiredate,sal INTO v_ename, v_hiredate, v_sal FROM emp WHERE empno = v_empno;<br>- b) dbms_output.put_line('Employer: ' || v_ename);<br>- c) SELECT * FROM emp;<br>- d) DELETE FROM emp WHERE empno = v_empno;<br>- <b>Đáp án</b>: a) SELECT ename,hiredate,sal INTO v_ename, v_hiredate, v_sal FROM emp WHERE empno = v_empno;",
+              "Giá trị ban đầu của biến v_empno trong đoạn mã là gì?<br>- a) 1234<br>- b) 5678<br>- c) 7788<br>- d) 9999<br>- <b>Đáp án</b>: c) 7788",
+              "Biến v_ename được khai báo với kiểu dữ liệu nào?<br>- a) varchar2<br>- b) integer<br>- c) emp.ename%type<br>- d) date<br>- <b>Đáp án</b>: c) emp.ename%type",
+              "Mục đích của câu lệnh SELECT INTO trong đoạn mã này là gì?<br>- a) Cập nhật bảng emp<br>- b) Xóa dữ liệu từ bảng emp<br>- c) Chọn dữ liệu từ bảng emp và gán vào các biến<br>- d) Chèn dữ liệu vào bảng emp<br>- <b>Đáp án</b>: c) Chọn dữ liệu từ bảng emp và gán vào các biến",
+              "Giá trị của biến v_hiredate được lấy từ cột nào trong bảng emp?<br>- a) ename<br>- b) hiredate<br>- c) sal<br>- d) empno<br>- <b>Đáp án</b>: b) hiredate",
+              "Câu lệnh dbms_output.put_line trong đoạn mã này làm gì?<br>- a) Hiển thị giá trị của các biến lên màn hình<br>- b) Gán giá trị cho các biến<br>- c) Xóa giá trị của các biến<br>- d) Lưu trữ giá trị của các biến<br>- <b>Đáp án</b>: a) Hiển thị giá trị của các biến lên màn hình"
+            ]
+          },
+          {
+            "tag": "AI_Research",
+            "patterns": [
+              "Trí tuệ nhân tạo (TTNT) là một lĩnh vực nghiên cứu của khoa học máy tính và khoa học tính toán nói chung. Có nhiều quan điểm khác nhau về trí tuệ nhân tạo và do vậy có nhiều định nghĩa khác nhau về lĩnh vực khoa học này."
+            ],
+            "responses": [
+              "Trí tuệ nhân tạo (TTNT) là một lĩnh vực nghiên cứu của khoa học nào?<br>- a) Khoa học xã hội<br>- b) Khoa học máy tính<br>- c) Khoa học tự nhiên<br>- d) Khoa học y tế<br>- <b>Đáp án</b>: b) Khoa học máy tính",
+              "TTNT cũng là một lĩnh vực của khoa học nào khác ngoài khoa học máy tính?<br>- a) Khoa học xã hội<br>- b) Khoa học vật lý<br>- c) Khoa học tính toán<br>- d) Khoa học sinh học<br>- <b>Đáp án</b>: c) Khoa học tính toán",
+              "Tại sao có nhiều định nghĩa khác nhau về trí tuệ nhân tạo?<br>- a) Vì TTNT rất dễ hiểu<br>- b) Vì có nhiều quan điểm khác nhau về TTNT<br>- c) Vì TTNT không quan trọng<br>- d) Vì TTNT chỉ là lý thuyết<br>- <b>Đáp án</b>: b) Vì có nhiều quan điểm khác nhau về TTNT",
+              "TTNT thuộc lĩnh vực nghiên cứu của khoa học nào?<br>- a) Khoa học máy tính và khoa học tính toán<br>- b) Khoa học xã hội và khoa học tự nhiên<br>- c) Khoa học y tế và khoa học xã hội<br>- d) Khoa học tự nhiên và khoa học tính toán<br>- <b>Đáp án</b>: a) Khoa học máy tính và khoa học tính toán",
+              "Điều gì làm cho có nhiều định nghĩa khác nhau về TTNT?<br>- a) TTNT rất dễ hiểu<br>- b) Sự phát triển của khoa học máy tính<br>- c) Các quan điểm khác nhau về TTNT<br>- d) Sự thiếu hụt tài liệu nghiên cứu<br>- <b>Đáp án</b>: c) Các quan điểm khác nhau về TTNT"
+            ]
+          },
+          {
+            "tag": "AI_Purpose_Definitions",
+            "patterns": [
+              "Mục đích của trí tuệ nhân tạo là xây dựng các thực thể thông minh. Tuy nhiên, do rất khó định nghĩa thế nào là thực thể thông minh nên cũng khó thống nhất định nghĩa trí tuệ nhân tạo. Theo một tài liệu được sử dụng rộng rãi trong giảng dạy trí tuệ nhân tạo hiện nay, các định nghĩa có thể nhóm thành bốn nhóm khác nhau, theo đó, trí tuệ nhân tạo là lĩnh vực nghiên cứu việc xây dựng các hệ thống máy tính có đặc điểm sau:<br>1) Hệ thống hành động như người.<br>2) Hệ thống có thể suy nghĩ như người.<br>3) Hệ thống có thể suy nghĩ hợp lý.<br>4) Hệ thống hành động hợp lý."
+            ],
+            "responses": [
+              "Mục đích của trí tuệ nhân tạo là gì?<br>- a) Xây dựng các hệ thống phần mềm<br>- b) Xây dựng các thực thể thông minh<br>- c) Xây dựng các máy móc tự động<br>- d) Xây dựng các hệ thống mạng<br>- <b>Đáp án</b>: b) Xây dựng các thực thể thông minh",
+              "Tại sao khó thống nhất định nghĩa trí tuệ nhân tạo?<br>- a) Vì nó không quan trọng<br>- b) Vì có nhiều ứng dụng khác nhau<br>- c) Vì rất khó định nghĩa thế nào là thực thể thông minh<br>- d) Vì không có ai nghiên cứu về nó<br>- <b>Đáp án</b>: c) Vì rất khó định nghĩa thế nào là thực thể thông minh",
+              "Theo tài liệu giảng dạy trí tuệ nhân tạo, có bao nhiêu nhóm định nghĩa chính về trí tuệ nhân tạo?<br>- a) Hai nhóm<br>- b) Ba nhóm<br>- c) Bốn nhóm<br>- d) Năm nhóm<br>- <b>Đáp án</b>: c) Bốn nhóm",
+              "Một trong những đặc điểm của hệ thống máy tính trong trí tuệ nhân tạo là gì?<br>- a) Hệ thống có thể tự sửa lỗi<br>- b) Hệ thống hành động như người<br>- c) Hệ thống tự động nâng cấp<br>- d) Hệ thống bảo mật cao<br>- <b>Đáp án</b>: b) Hệ thống hành động như người",
+              "Nhóm nào trong các định nghĩa về trí tuệ nhân tạo đề cập đến khả năng suy nghĩ hợp lý?<br>- a) Hệ thống hành động như người<br>- b) Hệ thống có thể suy nghĩ như người<br>- c) Hệ thống có thể suy nghĩ hợp lý<br>- d) Hệ thống hành động hợp lý<br>- <b>Đáp án</b>: c) Hệ thống có thể suy nghĩ hợp lý"
+            ]
+          },
+          {
+            "tag": "Turing_Test",
+            "patterns": [
+              "Phép thử Turing (Turing test): Vào năm 1950, Alan Turing – nhà toán học người Anh có nhiều đóng góp cho khoa học máy tính – đã xây dựng thủ tục cho phép định nghĩa trí tuệ. Thủ tục này sau đó được gọi là phép thử Turing (Turing test), và được thực hiện như sau. Hệ thống được gọi là thông minh, hay có trí tuệ nếu hệ thống có thể hành động tương tự con người trong các công việc đòi hỏi trí tuệ. Trong quá trình thử, một người kiểm tra sẽ đặt các câu hỏi (dưới dạng văn bản) và nhận câu trả lời cũng dưới dạng văn bản từ hệ thống, tương tự khi ta chat hay nhắn tin. Nếu người kiểm tra không phân biệt được câu trả lời là do người thật trả lời hay do máy sinh ra thì hệ thống qua được phép thử và được gọi là có trí tuệ."
+            ],
+            "responses": [
+              "Mục đích của phép thử Turing là gì?<br>- a) Để kiểm tra tốc độ của hệ thống<br>- b) Để kiểm tra trí nhớ của hệ thống<br>- c) Để xác định xem hệ thống có trí tuệ hay không<br>- d) Để xác định khả năng tính toán của hệ thống<br>- <b>Đáp án</b>: c) Để xác định xem hệ thống có trí tuệ hay không",
+              "Trong phép thử Turing, người kiểm tra sẽ làm gì?<br>- a) Đặt câu hỏi dưới dạng văn bản và nhận câu trả lời dưới dạng văn bản<br>- b) Đặt câu hỏi bằng giọng nói và nhận câu trả lời bằng giọng nói<br>- c) Kiểm tra phần cứng của hệ thống<br>- d) Kiểm tra tốc độ xử lý của hệ thống<br>- <b>Đáp án</b>: a) Đặt câu hỏi dưới dạng văn bản và nhận câu trả lời dưới dạng văn bản",
+              "Khi nào một hệ thống được xem là qua phép thử Turing?<br>- a) Khi hệ thống trả lời nhanh nhất<br>- b) Khi người kiểm tra không phân biệt được câu trả lời của máy hay người<br>- c) Khi hệ thống trả lời đúng tất cả các câu hỏi<br>- d) Khi hệ thống tự động sửa lỗi trong câu trả lời<br>- <b>Đáp án</b>: b) Khi người kiểm tra không phân biệt được câu trả lời của máy hay người"
+            ]
+          },
+          {
+            "tag": "Turing_Test_Requirements",
+            "patterns": [
+              "Để qua được phép thử Turing, hệ thống cần có những khả năng sau:<br>- Xử lý ngôn ngữ tự nhiên: để có thể phân tích, hiểu câu hỏi và tổng hợp câu trả lời trên một ngôn ngữ giao tiếp thông thường như tiếng Việt hay tiếng Anh.<br>- Biểu diễn tri thức: phục vụ việc lưu tri thức và thông tin trong hệ thống.<br>- Suy diễn: sử dụng tri thức để trả lời câu hỏi.<br>- Học máy: để có thể thích nghi với hoàn cảnh và học những mẫu trả lời."
+            ],
+            "responses": [
+              "Để qua được phép thử Turing, hệ thống cần có khả năng gì để phân tích, hiểu câu hỏi và tổng hợp câu trả lời?<br>- a) Xử lý hình ảnh<br>- b) Xử lý ngôn ngữ tự nhiên<br>- c) Xử lý âm thanh<br>- d) Xử lý dữ liệu<br>- <b>Đáp án</b>: b) Xử lý ngôn ngữ tự nhiên",
+              "Biểu diễn tri thức trong hệ thống phục vụ mục đích gì?<br>- a) Lưu trữ dữ liệu hình ảnh<br>- b) Lưu tri thức và thông tin trong hệ thống<br>- c) Lưu trữ âm thanh<br>- d) Lưu trữ video<br>- <b>Đáp án</b>: b) Lưu tri thức và thông tin trong hệ thống",
+              "Khả năng suy diễn trong hệ thống giúp làm gì?<br>- a) Tạo ra âm thanh<br>- b) Tạo ra hình ảnh<br>- c) Trả lời câu hỏi<br>- d) Chơi game<br>- <b>Đáp án</b>: c) Trả lời câu hỏi",
+              "Học máy trong hệ thống giúp hệ thống làm gì?<br>- a) Thích nghi với hoàn cảnh và học những mẫu trả lời<br>- b) Thích nghi với dữ liệu âm thanh<br>- c) Thích nghi với dữ liệu hình ảnh<br>- d) Thích nghi với dữ liệu video<br>- <b>Đáp án</b>: a) Thích nghi với hoàn cảnh và học những mẫu trả lời",
+              "Một trong những khả năng cần thiết để hệ thống qua được phép thử Turing là gì?<br>- a) Xử lý âm thanh<br>- b) Xử lý hình ảnh<br>- c) Biểu diễn tri thức<br>- d) Biểu diễn video<br>- <b>Đáp án</b>: c) Biểu diễn tri thức"
+            ]
+          },
+          {
+            "tag": "Toast_Message",
+            "patterns": [
+              "Toast có thể được tạo và hiển thị trong Activity hoặc trong Service.<br>Không cho phép người sử dụng tương tác, hiển thị sau khoảng thời gian nào đó sẽ tự đóng lại.<br>Có 2 giá trị mặc định:<br>• Toast.LENGTH_SHORT,<br>• Toast.LENGTH_LONG."
+            ],
+            "responses": [
+              "Toast có thể được tạo và hiển thị trong đâu?<br>- a) Activity<br>- b) Service<br>- c) Fragment<br>- d) Cả A và B<br>- <b>Đáp án</b>: d) Cả A và B",
+              "Toast có cho phép người sử dụng tương tác không?<br>- a) Có<br>- b) Không<br>- <b>Đáp án</b>: b) Không",
+              "Sau một khoảng thời gian nào đó, điều gì sẽ xảy ra với Toast?<br>- a) Nó sẽ tự động đóng lại<br>- b) Nó sẽ yêu cầu người dùng đóng<br>- c) Nó sẽ hiển thị mãi mãi<br>- d) Nó sẽ chuyển sang thông báo khác<br>- <b>Đáp án</b>: a) Nó sẽ tự động đóng lại",
+              "Có bao nhiêu giá trị mặc định cho thời gian hiển thị của Toast?<br>- a) Một<br>- b) Hai<br>- c) Ba<br>- d) Bốn<br>- <b>Đáp án</b>: b) Hai",
+              "Giá trị mặc định nào sau đây không phải là giá trị của Toast?<br>- a) Toast.LENGTH_SHORT<br>- b) Toast.LENGTH_LONG<br>- c) Toast.LENGTH_MEDIUM<br>- d) Cả A và B đều đúng<br>- <b>Đáp án</b>: c) Toast.LENGTH_MEDIUM"
+            ]
+          },
+          {
+            "tag": "AlertDialog_Example",
+            "patterns": [
+              "AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);<br>builder.setTitle(\"Xác nhận thoát\");<br>builder.setIcon(android.R.drawable.ic_dialog_info);<br>builder.setMessage(\"Bạn chắc chắn muốn đóng ứng dụng?\");<br>builder.setPositiveButton(\"Yes\", new DialogInterface.OnClickListener() {<br>@Override<br>public void onClick(DialogInterface dialogInterface, int i) {<br>finish();<br>}<br>});<br>builder.setNegativeButton(\"No\", new DialogInterface.OnClickListener() {<br>@Override<br>public void onClick(DialogInterface dialogInterface, int i) {<br>dialogInterface.dismiss();<br>}<br>});<br>AlertDialog dialog = builder.create();<br>dialog.show();"
+            ],
+            "responses": [
+              "Tiêu đề của AlertDialog trong đoạn mã trên là gì?<br>- a) Xác nhận đóng<br>- b) Xác nhận thoát<br>- c) Xác nhận hủy<br>- d) Xác nhận lưu<br>- <b>Đáp án</b>: b) Xác nhận thoát",
+              "Icon của AlertDialog được thiết lập bằng cách sử dụng phương thức nào?<br>- a) setTitle<br>- b) setIcon<br>- c) setMessage<br>- d) setPositiveButton<br>- <b>Đáp án</b>: b) setIcon",
+              "Khi người dùng nhấn vào nút \"Yes\", hành động nào sẽ được thực hiện?<br>- a) Hiển thị thông báo<br>- b) Đóng AlertDialog<br>- c) Kết thúc hoạt động (finish)<br>- d) Đóng ứng dụng<br>- <b>Đáp án</b>: c) Kết thúc hoạt động (finish)",
+              "Khi người dùng nhấn vào nút \"No\", hành động nào sẽ được thực hiện?<br>- a) Hiển thị thông báo<br>- b) Đóng AlertDialog (dismiss)<br>- c) Kết thúc hoạt động (finish)<br>- d) Đóng ứng dụng<br>- <b>Đáp án</b>: b) Đóng AlertDialog (dismiss)",
+              "Phương thức nào được gọi để hiển thị AlertDialog?<br>- a) create<br>- b) show<br>- c) dismiss<br>- d) finish<br>- <b>Đáp án</b>: b) show"
+            ]
+          },
+          {
+            "tag": "Activity_Lifecycle",
+            "patterns": [
+              "Trong một ứng dụng có thể có nhiều Activity, mỗi Activity<br>có thể hiểu như một màn hình ứng dụng.<br>Mỗi Activity sẽ có vòng đời riêng độc lập hoàn toàn so với<br>Activity khác.<br>Mỗi Activity được triệu gọi trong ứng dụng bắt buộc phải<br>được khai báo trong Manifest."
+            ],
+            "responses": [
+              "Trong một ứng dụng Android, mỗi Activity có thể hiểu như gì?<br>- a) Một nút bấm<br>- b) Một màn hình ứng dụng<br>- c) Một dịch vụ nền<br>- d) Một tệp tin cấu hình<br>- <b>Đáp án</b>: b) Một màn hình ứng dụng",
+              "Mỗi Activity trong ứng dụng Android có vòng đời như thế nào so với Activity khác?<br>- a) Phụ thuộc<br>- b) Liên kết chặt chẽ<br>- c) Độc lập hoàn toàn<br>- d) Tương tác liên tục<br>- <b>Đáp án</b>: c) Độc lập hoàn toàn",
+              "Điều gì bắt buộc phải làm đối với mỗi Activity được triệu gọi trong ứng dụng?<br>- a) Được khai báo trong tệp strings.xml<br>- b) Được khai báo trong tệp styles.xml<br>- c) Được khai báo trong Manifest<br>- d) Được khai báo trong tệp build.gradle<br>- <b>Đáp án</b>: c) Được khai báo trong Manifest",
+              "Mỗi Activity trong ứng dụng Android có vai trò gì?<br>- a) Điều khiển phần cứng<br>- b) Quản lý cơ sở dữ liệu<br>- c) Hiển thị giao diện người dùng<br>- d) Quản lý kết nối mạng<br>- <b>Đáp án</b>: c) Hiển thị giao diện người dùng",
+              "Tệp nào cần phải khai báo các Activity trong ứng dụng Android?<br>- a) styles.xml<br>- b) strings.xml<br>- c) AndroidManifest.xml<br>- d) build.gradle<br>- <b>Đáp án</b>: c) AndroidManifest.xml"
+            ]
+          },
+          {
+            "tag": "Java_Camera_Code_Missing_Lines",
+            "patterns": [
+              "public void openCamera(View view) {<br>Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);<br>startActivityForResult(intent, REQUEST_CODE_ID);<br>}<br>@Override<br>protected void onActivityResult(int requestCode, int resultCode,<br>@Nullable Intent data) {<br>super.onActivityResult(requestCode, resultCode, data);<br>if(requestCode == REQUEST_CODE_ID && resultCode == RESULT_OK<br>&& data != null){<br>Bitmap bitmap = (Bitmap) data.getExtras().get(\"data\");<br>// imvPhoto.setImageBitmap(bitmap); // Missing line<br>}<br>}"
+            ],
+            "responses": [
+              "Dòng nào còn thiếu trong đoạn mã sau?<br>public void openCamera(View view) {<br>Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);<br>startActivityForResult(intent, REQUEST_CODE_ID);<br>}<br>@Override<br>protected void onActivityResult(int requestCode, int resultCode,<br>@Nullable Intent data) {<br>super.onActivityResult(requestCode, resultCode, data);<br>if(requestCode == REQUEST_CODE_ID && resultCode == RESULT_OK<br>&& data != null){<br>Bitmap bitmap = (Bitmap) data.getExtras().get(\"data\");<br>...<br>}<br>}<br>- a) imvPhoto.setImageBitmap(bitmap);<br>- b) imvPhoto.setBitmap(bitmap);<br>- c) imageView.setBitmap(bitmap);<br>- d) imgView.setImageBitmap(bitmap);<br>- <b>Đáp án</b>: a) imvPhoto.setImageBitmap(bitmap);",
+      
+              "Hàm nào được sử dụng để mở camera?<br>- a) openGallery()<br>- b) openCamera()<br>- c) startCamera()<br>- d) launchCamera()<br>- <b>Đáp án</b>: b) openCamera()",
+      
+              "Ý nghĩa của REQUEST_CODE_ID là gì trong đoạn mã?<br>- a) Để xác định loại ảnh được chụp<br>- b) Để xác định xem kết quả trả về có từ đúng activity hay không<br>- c) Để xác định kiểu ảnh cần lưu<br>- d) Để xác định ứng dụng camera cần mở<br>- <b>Đáp án</b>: b) Để xác định xem kết quả trả về có từ đúng activity hay không",
+      
+              "Điều kiện nào kiểm tra xem ảnh đã được chụp thành công?<br>- a) requestCode == REQUEST_CODE_ID && resultCode == RESULT_OK && data != null<br>- b) requestCode == REQUEST_CODE_ID || resultCode == RESULT_OK<br>- c) requestCode != REQUEST_CODE_ID && resultCode == RESULT_OK<br>- d) requestCode == REQUEST_CODE_ID && resultCode != RESULT_OK<br>- <b>Đáp án</b>: a) requestCode == REQUEST_CODE_ID && resultCode == RESULT_OK && data != null",
+      
+              "Kiểu dữ liệu nào được sử dụng để lưu ảnh chụp trong đoạn mã này?<br>- a) Drawable<br>- b) Bitmap<br>- c) ImageView<br>- d) File<br>- <b>Đáp án</b>: b) Bitmap",
+      
+              "Hàm nào được ghi đè trong đoạn mã này?<br>- a) onCreate()<br>- b) onStart()<br>- c) onActivityResult()<br>- d) onResume()<br>- <b>Đáp án</b>: c) onActivityResult()",
+      
+              "Hàm imvPhoto.setImageBitmap(bitmap); có chức năng gì trong đoạn mã?<br>- a) Chụp ảnh<br>- b) Hiển thị ảnh vừa chụp lên ImageView<br>- c) Lưu ảnh vào bộ nhớ<br>- d) Xóa ảnh<br>- <b>Đáp án</b>: b) Hiển thị ảnh vừa chụp lên ImageView"
+            ]
+          },
+          {
+            "tag": "Shared_Preferences",
+            "patterns": [
+              "Shared Preferences cho phép lưu trữ dữ liệu ứng dụng bằng file XML.<br>Dữ liệu được lưu trữ và truy xuất theo cặp khóa key-value với các kiểu dữ liệu như: Boolean, Float, Int, Long, String.<br>Dữ liệu vẫn được bảo toàn ngay cả khi ứng dụng đóng hoàn toàn."
+            ],
+            "responses": [
+              "Shared Preferences lưu trữ dữ liệu ứng dụng bằng file gì?<br>- a) JSON<br>- b) XML<br>- c) TXT<br>- d) CSV<br>- <b>Đáp án</b>: b) XML",
+      
+              "Dữ liệu trong Shared Preferences được lưu trữ và truy xuất theo cặp gì?<br>- a) Cặp khóa key-value<br>- b) Cặp giá trị key-pair<br>- c) Cặp dữ liệu data-value<br>- d) Cặp file-data<br>- <b>Đáp án</b>: a) Cặp khóa key-value",
+      
+              "Các kiểu dữ liệu nào sau đây được hỗ trợ bởi Shared Preferences?<br>- a) Boolean, Float, Int, Long, String<br>- b) Boolean, Double, Char, Short, String<br>- c) Boolean, Integer, Float, Long, Char<br>- d) Boolean, Float, Int, Long, Byte<br>- <b>Đáp án</b>: a) Boolean, Float, Int, Long, String",
+      
+              "Dữ liệu trong Shared Preferences có được bảo toàn khi ứng dụng đóng hoàn toàn không?<br>- a) Có<br>- b) Không<br>- <b>Đáp án</b>: a) Có"
+            ]
+          },
+          {
+            "tag": "Broadcast_Receiver",
+            "patterns": [
+              "Broadcast Receiver là một thành phần giúp lan truyền thông tin trong hệ thống và chỉ những ứng dụng đã đăng ký mới nhận được thông tin.<br>Broadcast Receiver giúp các ứng dụng được đăng ký lắng nghe các sự kiện, trạng thái của hệ thống (trạng thái kết nối wifi, cắm sạc, tin nhắn đến, ...) phát ra thông qua Intent.<br>Broadcast Receiver có thể được tùy biến để truyền tải thông tin theo chủ đích của lập trình viên."
+            ],
+            "responses": [
+              "Broadcast Receiver là một thành phần giúp gì trong hệ thống?<br>- a) Lưu trữ dữ liệu<br>- b) Lan truyền thông tin<br>- c) Xử lý đồ họa<br>- d) Quản lý bộ nhớ<br>- <b>Đáp án</b>: b) Lan truyền thông tin",
+      
+              "Chỉ những ứng dụng nào mới nhận được thông tin từ Broadcast Receiver?<br>- a) Đã đăng ký<br>- b) Chưa đăng ký<br>- c) Đang chạy nền<br>- d) Đang chạy foreground<br>- <b>Đáp án</b>: a) Đã đăng ký",
+      
+              "Broadcast Receiver giúp các ứng dụng lắng nghe gì?<br>- a) Thời gian hệ thống<br>- b) Các sự kiện, trạng thái của hệ thống<br>- c) Hiệu năng của CPU<br>- d) Dung lượng bộ nhớ<br>- <b>Đáp án</b>: b) Các sự kiện, trạng thái của hệ thống",
+      
+              "Thông qua gì mà Broadcast Receiver phát ra các sự kiện, trạng thái của hệ thống?<br>- a) Service<br>- b) ContentProvider<br>- c) Intent<br>- d) Activity<br>- <b>Đáp án</b>: c) Intent",
+      
+              "Broadcast Receiver có thể được tùy biến để làm gì?<br>- a) Tối ưu hiệu năng<br>- b) Truyền tải thông tin theo chủ đích của lập trình viên<br>- c) Quản lý bộ nhớ<br>- d) Cải thiện giao diện người dùng<br>- <b>Đáp án</b>: b) Truyền tải thông tin theo chủ đích của lập trình viên"
+            ]
+          },
+          {
+            "tag": "Main_Thread",
+            "patterns": [
+              "Trong android, khi ứng dụng được khởi chạy, hệ thống sẽ start một Thread ban đầu cùng với một Process, Thread này được gọi là Main Thread."
+            ],
+            "responses": [
+              "Khi ứng dụng Android được khởi chạy, hệ thống sẽ start một Thread ban đầu cùng với gì?<br>- a) Một Activity<br>- b) Một Service<br>- c) Một Process<br>- d) Một BroadcastReceiver<br>- <b>Đáp án</b>: c) Một Process",
+              "Thread ban đầu được hệ thống start khi ứng dụng Android khởi chạy được gọi là gì?<br>- a) Worker Thread<br>- b) UI Thread<br>- c) Background Thread<br>- d) Main Thread<br>- <b>Đáp án</b>: d) Main Thread",
+              "Main Thread trong Android có vai trò gì?<br>- a) Thực hiện các tác vụ nền<br>- b) Xử lý giao diện người dùng<br>- c) Quản lý cơ sở dữ liệu<br>- d) Xử lý mạng<br>- <b>Đáp án</b>: b) Xử lý giao diện người dùng",
+              "Main Thread trong Android được khởi tạo khi nào?<br>- a) Khi một Activity được tạo<br>- b) Khi một Service được tạo<br>- c) Khi ứng dụng được khởi chạy<br>- d) Khi một BroadcastReceiver được tạo<br>- <b>Đáp án</b>: c) Khi ứng dụng được khởi chạy",
+              "Process nào đi kèm với Main Thread khi ứng dụng Android được khởi chạy?<br>- a) Worker Process<br>- b) UI Process<br>- c) Background Process<br>- d) Application Process<br>- <b>Đáp án</b>: d) Application Process"
+            ]
+          },
+          {
+            "tag": "UI_Thread",
+            "patterns": [
+              "Main Thread cũng thường được gọi là UI Thread vì thread này có nhiệm vụ xử lý nạp giao diện ứng dụng cũng như tương tác với bộ công cụ Android UI (Android UI Toolkit)."
+            ],
+            "responses": [
+              "Main Thread trong Android còn được gọi là gì?<br>- a) Worker Thread<br>- b) Background Thread<br>- c) UI Thread<br>- d) Service Thread<br>- <b>Đáp án</b>: c) UI Thread",
+              "Nhiệm vụ của UI Thread là gì?<br>- a) Thực hiện các tác vụ nền<br>- b) Quản lý cơ sở dữ liệu<br>- c) Xử lý nạp giao diện ứng dụng và tương tác với Android UI Toolkit<br>- d) Xử lý kết nối mạng<br>- <b>Đáp án</b>: c) Xử lý nạp giao diện ứng dụng và tương tác với Android UI Toolkit",
+              "Tại sao Main Thread còn được gọi là UI Thread?<br>- a) Vì nó thực hiện các tác vụ nền<br>- b) Vì nó quản lý cơ sở dữ liệu<br>- c) Vì nó xử lý nạp giao diện ứng dụng và tương tác với bộ công cụ Android UI<br>- d) Vì nó xử lý kết nối mạng<br>- <b>Đáp án</b>: c) Vì nó xử lý nạp giao diện ứng dụng và tương tác với bộ công cụ Android UI",
+              "Thread nào có nhiệm vụ tương tác với bộ công cụ Android UI Toolkit?<br>- a) Worker Thread<br>- b) Background Thread<br>- c) UI Thread<br>- d) Service Thread<br>- <b>Đáp án</b>: c) UI Thread",
+              "Thread nào chịu trách nhiệm xử lý giao diện ứng dụng trong Android?<br>- a) Worker Thread<br>- b) Background Thread<br>- c) UI Thread<br>- d) Service Thread<br>- <b>Đáp án</b>: c) UI Thread"
+            ]
+          },
+          {
+            "tag": "Worker_Thread",
+            "patterns": [
+              "Worker Thread là thread mà lập trình viên tạo thêm cho chương trình để thực thi một công việc nào đó không liên quan đến giao diện. Thread này cũng được gọi là Background Thread."
+            ],
+            "responses": [
+              "Worker Thread là gì?<br>- a) Thread mặc định của hệ thống<br>- b) Thread xử lý giao diện<br>- c) Thread lập trình viên tạo thêm cho chương trình để thực thi công việc không liên quan đến giao diện<br>- d) Thread quản lý cơ sở dữ liệu<br>- <b>Đáp án</b>: c) Thread lập trình viên tạo thêm cho chương trình để thực thi công việc không liên quan đến giao diện",
+              "Worker Thread còn được gọi là gì?<br>- a) Main Thread<br>- b) UI Thread<br>- c) Service Thread<br>- d) Background Thread<br>- <b>Đáp án</b>: d) Background Thread",
+              "Worker Thread được sử dụng để làm gì?<br>- a) Thực hiện các tác vụ giao diện<br>- b) Thực hiện các công việc không liên quan đến giao diện<br>- c) Quản lý cơ sở dữ liệu<br>- d) Xử lý kết nối mạng<br>- <b>Đáp án</b>: b) Thực hiện các công việc không liên quan đến giao diện",
+              "Thread nào trong Android được lập trình viên tạo thêm để thực thi các công việc không liên quan đến giao diện?<br>- a) Main Thread<br>- b) UI Thread<br>- c) Worker Thread<br>- d) Service Thread<br>- <b>Đáp án</b>: c) Worker Thread",
+              "Thread nào trong Android có thể được gọi là Background Thread?<br>- a) Main Thread<br>- b) UI Thread<br>- c) Service Thread<br>- d) Worker Thread<br>- <b>Đáp án</b>: d) Worker Thread"
+            ]
+          },
+          {
+            "tag": "ANR_Issue",
+            "patterns": [
+              "Khi UI Thread thực thi nhiều công việc (task) và có 1 công việc đòi hỏi cần nhiều thời gian xử lý (kết nối Internet, truy vấn csdl, ...) thì khi đó UI sẽ bị block à xảy ra hiện tượng ANR (ứng dụng treo) nhưng thật ra chương trình vẫn đang được thực thi.<br>Khi UI bị block khoảng vài giây (trung bình 5 giây) hệ thống sẽ hiển thị hộp thoại thông báo cho phép người dùng đóng ứng dụng hoặc chờ đợi."
+            ],
+            "responses": [
+              "Điều gì xảy ra khi UI Thread thực thi một công việc đòi hỏi nhiều thời gian xử lý?<br>- a) UI sẽ trở nên mượt mà hơn<br>- b) UI sẽ bị block và xảy ra hiện tượng ANR<br>- c) UI sẽ tự động tắt<br>- d) UI sẽ hiển thị ngay lập tức<br>- <b>Đáp án</b>: b) UI sẽ bị block và xảy ra hiện tượng ANR",
+              "ANR trong Android là viết tắt của gì?<br>- a) Application Not Responding<br>- b) Application Not Running<br>- c) Android Network Request<br>- d) Android Not Ready<br>- <b>Đáp án</b>: a) Application Not Responding",
+              "Khi xảy ra hiện tượng ANR, hệ thống sẽ hiển thị gì?<br>- a) Thông báo hoàn tất công việc<br>- b) Hộp thoại thông báo cho phép người dùng đóng ứng dụng hoặc chờ đợi<br>- c) Màn hình trắng<br>- d) Thông báo lỗi trên thanh trạng thái<br>- <b>Đáp án</b>: b) Hộp thoại thông báo cho phép người dùng đóng ứng dụng hoặc chờ đợi",
+              "Thời gian trung bình mà hệ thống sẽ hiển thị hộp thoại thông báo ANR nếu UI bị block là bao lâu?<br>- a) 2 giây<br>- b) 3 giây<br>- c) 5 giây<br>- d) 10 giây<br>- <b>Đáp án</b>: c) 5 giây",
+              "Tại sao UI Thread có thể bị block dẫn đến hiện tượng ANR?<br>- a) Do thực thi các tác vụ nhanh<br>- b) Do thực thi các tác vụ nặng như kết nối Internet, truy vấn cơ sở dữ liệu<br>- c) Do chạy quá nhiều thread phụ<br>- d) Do thiếu bộ nhớ<br>- <b>Đáp án</b>: b) Do thực thi các tác vụ nặng như kết nối Internet, truy vấn cơ sở dữ liệu"
+            ]
+          },
+          {
+            "tag": "Handler_Usage",
+            "patterns": [
+              "Handler là một đối tượng dùng để liên kết, trao đổi giữa các Thread với nhau, thường là Main Thread (UI Thread) với các Worker Thread (Background Thread).<br>Các phương thức thường dùng khi sử dụng Handler:<br>- sendMessage(Message)<br>- sendEmptyMessage(int)<br>- sendMessageAtTime(Message, long)<br>- sendMessageDelayed(Message, long)<br>- post(Runnable)<br>- postAtTime(Runnable, long)<br>- postDelayed(Runnable, Object, long)"
+            ],
+            "responses": [
+              "Handler là gì trong Android?<br>- a) Một loại Activity<br>- b) Đối tượng dùng để liên kết, trao đổi giữa các Thread<br>- c) Một loại Service<br>- d) Đối tượng dùng để quản lý cơ sở dữ liệu<br>- <b>Đáp án</b>: b) Đối tượng dùng để liên kết, trao đổi giữa các Thread",
+              "Handler thường liên kết giữa các Thread nào?<br>- a) Main Thread và Network Thread<br>- b) UI Thread và Database Thread<br>- c) Main Thread và Worker Thread<br>- d) UI Thread và Service Thread<br>- <b>Đáp án</b>: c) Main Thread và Worker Thread",
+              "Phương thức nào của Handler được dùng để gửi một thông điệp?<br>- a) sendEmptyMessage(int)<br>- b) sendMessage(Message)<br>- c) post(Runnable)<br>- d) postDelayed(Runnable, Object, long)<br>- <b>Đáp án</b>: b) sendMessage(Message)",
+              "Phương thức nào của Handler được dùng để gửi một thông điệp rỗng?<br>- a) sendEmptyMessage(int)<br>- b) sendMessageAtTime(Message, long)<br>- c) postAtTime(Runnable, long)<br>- d) sendMessageDelayed(Message, long)<br>- <b>Đáp án</b>: a) sendEmptyMessage(int)",
+              "Phương thức nào của Handler được dùng để thực thi một Runnable ngay lập tức?<br>- a) post(Runnable)<br>- b) postAtTime(Runnable, long)<br>- c) postDelayed(Runnable, Object, long)<br>- d) sendMessageDelayed(Message, long)<br>- <b>Đáp án</b>: a) post(Runnable)"
+            ]
+          },
+          {
+            "tag": "AsyncTask_Usage",
+            "patterns": [
+              "AsyncTask là một lớp trừu tượng cho phép thực hiện khai báo các tiến trình xử lý ngầm và cập nhật giao diện một cách tự động.<br>Các giai đoạn xử lý tác vụ trong AsyncTask được thực hiện thông qua các phương thức sau theo đúng trình tự:<br>- onPreExcute: tiến trình tiền xử lý<br>- doInBackground: tiến trình xử lý ngầm<br>- onProgessUpdate: tiến trình xử lý cập nhật<br>- onPostExcute: tiến trình cập nhật UI à hoàn tất"
+            ],
+            "responses": [
+              "AsyncTask là gì?<br>- a) Một loại Activity<br>- b) Một lớp trừu tượng cho phép thực hiện các tiến trình xử lý ngầm và cập nhật giao diện<br>- c) Một loại Service<br>- d) Một lớp để quản lý cơ sở dữ liệu<br>- <b>Đáp án</b>: b) Một lớp trừu tượng cho phép thực hiện các tiến trình xử lý ngầm và cập nhật giao diện",
+              "Phương thức nào trong AsyncTask được gọi để thực hiện tiến trình tiền xử lý?<br>- a) onPreExecute<br>- b) doInBackground<br>- c) onProgressUpdate<br>- d) onPostExecute<br>- <b>Đáp án</b>: a) onPreExecute",
+              "Phương thức nào trong AsyncTask được gọi để thực hiện tiến trình xử lý ngầm?<br>- a) onPreExecute<br>- b) doInBackground<br>- c) onProgressUpdate<br>- d) onPostExecute<br>- <b>Đáp án</b>: b) doInBackground",
+              "Phương thức nào trong AsyncTask được gọi để cập nhật tiến trình xử lý?<br>- a) onPreExecute<br>- b) doInBackground<br>- c) onProgressUpdate<br>- d) onPostExecute<br>- <b>Đáp án</b>: c) onProgressUpdate",
+              "Phương thức nào trong AsyncTask được gọi để cập nhật UI và hoàn tất tiến trình?<br>- a) onPreExecute<br>- b) doInBackground<br>- c) onProgressUpdate<br>- d) onPostExecute<br>- <b>Đáp án</b>: d) onPostExecute"
+            ]
+          },
+          {
+            "tag": "Internet_Overview",
+            "patterns": [
+              "Internet:<br>– Là mạng của các mạng<br>– Phân quyền quản lý và kết nối giữa các ISP"
+            ],
+            "responses": [
+              "Internet là gì?<br>- a) Một mạng máy tính đơn lẻ<br>- b) Mạng của các mạng<br>- c) Một loại phần mềm<br>- d) Một loại phần cứng<br>- <b>Đáp án</b>: b) Mạng của các mạng",
+              "Quản lý và kết nối Internet được thực hiện như thế nào?<br>- a) Bởi một tổ chức duy nhất<br>- b) Phân quyền quản lý và kết nối giữa các ISP<br>- c) Chỉ do chính phủ quản lý<br>- d) Chỉ do các công ty tư nhân quản lý<br>- <b>Đáp án</b>: b) Phân quyền quản lý và kết nối giữa các ISP"
+            ]
+          },
+          {
+            "tag": "Protocols_Overview",
+            "patterns": [
+              "Giao thức:<br>– Điều khiển quá trình gửi/nhận các thông điệp<br>– Vd: TCP, IP, HTTP, Skype, 802.11"
+            ],
+            "responses": [
+              "Giao thức là gì?<br>- a) Một phần mềm<br>- b) Một phần cứng<br>- c) Điều khiển quá trình gửi/nhận các thông điệp<br>- d) Một loại mạng<br>- <b>Đáp án</b>: c) Điều khiển quá trình gửi/nhận các thông điệp",
+              "Ví dụ nào sau đây là một giao thức?<br>- a) TCP<br>- b) Microsoft Word<br>- c) Windows 10<br>- d) Photoshop<br>- <b>Đáp án</b>: a) TCP",
+              "Giao thức nào sau đây không thuộc nhóm giao thức điều khiển quá trình gửi/nhận các thông điệp?<br>- a) HTTP<br>- b) Skype<br>- c) IP<br>- d) SQL<br>- <b>Đáp án</b>: d) SQL"
+            ]
+          },
+          {
+            "tag": "Internet_Standards",
+            "patterns": [
+              "Chuẩn Internet:<br>– RFC: Request for comments<br>– IETF: Internet Engineering Task Force"
+            ],
+            "responses": [
+              "RFC trong chuẩn Internet là viết tắt của từ gì?<br>- a) Ready for Communication<br>- b) Request for Comments<br>- c) Required for Connection<br>- d) Ready for Connection<br>- <b>Đáp án</b>: b) Request for Comments",
+              "IETF là viết tắt của cụm từ nào sau đây?<br>- a) Internet Engineering Task Force<br>- b) Internet Electronics Task Force<br>- c) International Engineering Task Force<br>- d) Internet Emergency Task Force<br>- <b>Đáp án</b>: a) Internet Engineering Task Force",
+              "IETF có vai trò gì trong việc phát triển chuẩn Internet?<br>- a) Phát triển phần cứng<br>- b) Quản lý tài chính của Internet<br>- c) Thiết lập các tiêu chuẩn kỹ thuật<br>- d) Xây dựng các trang web<br>- <b>Đáp án</b>: c) Thiết lập các tiêu chuẩn kỹ thuật"
+            ]
+          },
+          {
+            "tag": "Network_Protocols",
+            "patterns": [
+              "Giao thức (protocol) = Cách thức giao tiếp<br>Protocol quy định cấu trúc thông điệp (message), thứ tự thông điệp và cách ứng sử trên mỗi thông điệp trong quá trình gửi/nhận thông tin.<br>Mọi hoạt động của các thực thể mạng đều tuân theo các giao thức"
+            ],
+            "responses": [
+              "Giao thức (protocol) trong mạng máy tính là gì?<br>- a) Cách thức giao tiếp<br>- b) Danh sách các máy tính<br>- c) Tên miền Internet<br>- d) Một loại phần mềm<br>- <b>Đáp án</b>: a) Cách thức giao tiếp",
+              "Giao thức quy định những gì trong quá trình gửi/nhận thông tin?<br>- a) Cấu trúc thông điệp, thứ tự thông điệp và cách ứng xử trên mỗi thông điệp<br>- b) Loại máy tính<br>- c) Tên miền Internet<br>- d) Danh sách địa chỉ IP<br>- <b>Đáp án</b>: a) Cấu trúc thông điệp, thứ tự thông điệp và cách ứng xử trên mỗi thông điệp",
+              "Mọi hoạt động của các thực thể mạng tuân theo điều gì?<br>- a) Luật pháp<br>- b) Các quy tắc do nhà cung cấp dịch vụ đặt ra<br>- c) Các giao thức<br>- d) Quyết định của người dùng<br>- <b>Đáp án</b>: c) Các giao thức"
+            ]
+          },
+          {
+            "tag": "Network_Protocols_Common",
+            "patterns": [
+              "Một số giao thức phổ biến<br>- ICMP: Internet Control Management Protocol<br>- TCP: Transmission Control Protocol<br>- IP: Internet Protocol<br>- HTTP: Hypertext Transfer Protocol<br>- SMTP: Simple Mail Transfer Protocol<br>- FTP: File Transfer Protocol"
+            ],
+            "responses": [
+              "Giao thức nào được sử dụng để kiểm soát và quản lý mạng Internet?<br>- a) ICMP<br>- b) TCP<br>- c) IP<br>- d) HTTP<br>- <b>Đáp án</b>: a) ICMP",
+              "TCP là viết tắt của gì?<br>- a) Transfer Computer Protocol<br>- b) Telecommunication Control Protocol<br>- c) Transmission Control Protocol<br>- d) Textual Communication Protocol<br>- <b>Đáp án</b>: c) Transmission Control Protocol",
+              "Giao thức nào được sử dụng để truyền tải trang web và dữ liệu trên Internet?<br>- a) IP<br>- b) TCP<br>- c) HTTP<br>- d) SMTP<br>- <b>Đáp án</b>: c) HTTP"
+            ]
+          },
+          {
+            "tag": "Data_Transmission_Host",
+            "patterns": [
+              "Host: Gửi các gói (packet) dữ liệu<br>­ Nhận các message từ ứng dụng<br>­ Chia nhỏ message thành các gói có độ dài L bits<br>­ Gửi các gói đó qua đường kết nối có tốc độ (băng thông) R"
+            ],
+            "responses": [
+              "Host làm gì trong quá trình truyền dữ liệu?<br>- a) Nhận message từ ứng dụng<br>- b) Gửi các gói dữ liệu<br>- c) Chia nhỏ message<br>- d) Gửi các gói qua kết nối mạng<br>- <b>Đáp án</b>: b) Gửi các gói dữ liệu",
+              "Quá trình chia nhỏ message thành các gói được thực hiện như thế nào?<br>- a) Chia đều thành các phần nhỏ<br>- b) Chia ngẫu nhiên<br>- c) Chia thành các gói có độ dài L bits<br>- d) Chia thành các gói có độ dài R bits<br>- <b>Đáp án</b>: c) Chia thành các gói có độ dài L bits",
+              "Các gói dữ liệu được gửi qua đường kết nối có tốc độ bao nhiêu?<br>- a) Tốc độ tùy ý<br>- b) Tốc độ cố định<br>- c) Tốc độ R bits/giây<br>- d) Tốc độ L bits/giây<br>- <b>Đáp án</b>: c) Tốc độ R bits/giây"
+            ]
+          },
+          {
+            "tag": "Physical_Connection",
+            "patterns": [
+              "Bit: lan truyền giữa bộ phát và bộ thu<br>Kết nối vật lý: là môi trường kết nối giữa bộ phát và bộ thu<br>Tín hiệu được dẫn<br>­ Tín hiệu được truyền trong đường dây đặt sẵn: dây đồng, cáp quang, cáp đồng trục<br>Tín hiệu không được dẫn tín hiệu truyền tự do, vd: sóng radio"
+            ],
+            "responses": [
+              "Bit là gì trong hệ thống truyền thông?<br>- a) Môi trường truyền thông<br>- b) Tín hiệu truyền đi<br>- c) Thiết bị thu sóng<br>- d) Khoảng cách truyền dẫn<br>- <b>Đáp án</b>: b) Tín hiệu truyền đi",
+              "Kết nối vật lý là gì?<br>- a) Môi trường kết nối giữa bộ phát và bộ thu<br>- b) Tín hiệu truyền đi<br>- c) Hệ thống mạng<br>- d) Khoảng cách truyền dẫn<br>- <b>Đáp án</b>: a) Môi trường kết nối giữa bộ phát và bộ thu",
+              "Tín hiệu được dẫn được truyền qua các phương tiện gì?<br>- a) Sóng radio<br>- b) Đường dây đặt sẵn<br>- c) Cả A và B<br>- d) Không có câu trả lời đúng<br>- <b>Đáp án</b>: b) Đường dây đặt sẵn"
+            ]
+          },
+          {
+            "tag": "Twisted_Pair_Cable",
+            "patterns": [
+              "Cáp đôi dây xoắn (twisted pair)<br>Hai dây đồng cách điện<br>• Loại 3: cáp điện thoại truyền thống, 10 Mbps Ethernet<br>• Loại 5: cáp mạng, 100Mbps Ethernet"
+            ],
+            "responses": [
+              "Cáp đôi dây xoắn (twisted pair) được tạo thành từ những gì?<br>- a) Một dây đồng<br>- b) Một dây đồng và một dây nhôm<br>- c) Hai dây đồng cách điện<br>- d) Một dây đồng và một dây thép<br>- <b>Đáp án</b>: c) Hai dây đồng cách điện",
+              "Loại cáp đôi dây xoắn nào được sử dụng cho cáp điện thoại truyền thống và 10 Mbps Ethernet?<br>- a) Loại 1<br>- b) Loại 3<br>- c) Loại 5<br>- d) Loại 7<br>- <b>Đáp án</b>: b) Loại 3",
+              "Loại cáp đôi dây xoắn nào được sử dụng cho cáp mạng và 100Mbps Ethernet?<br>- a) Loại 1<br>- b) Loại 3<br>- c) Loại 5<br>- d) Loại 7<br>- <b>Đáp án</b>: c) Loại 5"
+            ]
+          },
+          {
+            "tag": "Electromagnetic_Waves",
+            "patterns": [
+              "Tín hiệu được mang trong dải tần số của sóng điện từ<br>Không có “dây dẫn”<br>Chịu ảnh hưởng nhiều từ tác nhân bên ngoài:<br>- Phản xạ<br>- Cản trở bởi vật thể<br>- Giao thoa/nhiễu"
+            ],
+            "responses": [
+              "Tín hiệu được mang trong dải tần số của sóng điện từ được truyền qua gì?<br>- a) Dây đồng<br>- b) Dây dẫn<br>- c) Không có \"dây dẫn\"<br>- d) Cáp quang<br>- <b>Đáp án</b>: c) Không có \"dây dẫn\"",
+              "Tín hiệu sóng điện từ chịu ảnh hưởng nhiều từ các tác nhân bên ngoài nào sau đây?<br>- a) Phản xạ, dây đồng<br>- b) Phản xạ, cản trở bởi vật thể, dây dẫn<br>- c) Giao thoa, nhiễu, cáp quang<br>- d) Phản xạ, cản trở bởi vật thể, giao thoa/nhiễu<br>- <b>Đáp án</b>: d) Phản xạ, cản trở bởi vật thể, giao thoa/nhiễu",
+              "Tín hiệu sóng điện từ thường chịu ảnh hưởng như thế nào từ hiện tượng phản xạ?<br>- a) Tăng độ mạnh<br>- b) Giảm độ mạnh<br>- c) Không ảnh hưởng<br>- d) Biến dạng<br>- <b>Đáp án</b>: b) Giảm độ mạnh"
+            ]
+          },
+          {
+            "tag": "Radio_Connections",
+            "patterns": [
+              "Phân loại liên kết radio:<br>- Sóng ngắn (ví dụ: vi ba)<br>  - Lên tới 45 Mbps<br>- Wireless LAN (ví dụ: Wifi)<br>  - 11 Mbps, 54 Mbps<br>- Diện rộng (ví dụ: mạng di động)<br>  - Công nghệ 3G: ~ 1 Mbps<br>- Vệ tinh<br>  - Từ vài Kbps tới 45 Mbps<br>  - 270 msec độ trễ đầu cuối-đầu cuối"
+            ],
+            "responses": [
+              "Tốc độ truyền dữ liệu của kết nối Wireless LAN có thể đạt được lên đến bao nhiêu Mbps?<br>- A. 11 Mbps<br>- B. 45 Mbps<br>- C. 1 Mbps<br>- D. 270 msec<br>- <b>Đáp án</b>: A. 11 Mbps",
+              "Công nghệ nào được sử dụng trong mạng di động để đạt được tốc độ trung bình khoảng 1 Mbps?<br>- A. 3G<br>- B. Wifi<br>- C. Sóng ngắn<br>- D. Vệ tinh<br>- <b>Đáp án</b>: A. 3G",
+              "Kết nối radio với tốc độ lên tới 45 Mbps thường được thực hiện thông qua công nghệ nào?<br>- A. Wifi<br>- B. 3G<br>- C. Sóng ngắn<br>- D. Vệ tinh<br>- <b>Đáp án</b>: D. Vệ tinh"
+            ]
+          },
+          {
+            "tag": "network_types",
+            "patterns": [
+              "Theo quy mô mạng:<br>­- Mạng cục bộ (LAN – Local Network Area)<br>­- Mạng đô thị (MAN – Metropolitan Network Area)<br>­- Mạng diện rộng (WAN – Wide Network Area)<br><br>Theo kỹ thuật chuyển:<br>­- Mạng chuyển mạch kênh (ảo)<br>­- Mạng chuyển mạch gói<br><br>Theo cách thức truyền tin:<br>­- Mạng quảng bá (broadcast)<br>­- Mạng điểm-điểm (point-to-point)<br>­- Multicast"
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm dựa trên đoạn văn về các loại mạng:<br><br>1. <strong>Câu hỏi:</strong> Mạng cục bộ (LAN) là viết tắt của cụm từ nào?<br>&nbsp;&nbsp;- A. Local Area Network<br>&nbsp;&nbsp;- B. Local Network Area<br>&nbsp;&nbsp;- C. Local Access Network<br>&nbsp;&nbsp;- D. Local Area Node<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>2. <strong>Câu hỏi:</strong> Mạng đô thị (MAN) là viết tắt của cụm từ nào?<br>&nbsp;&nbsp;- A. Metropolitan Area Network<br>&nbsp;&nbsp;- B. Metropolitan Network Area<br>&nbsp;&nbsp;- C. Metropolitan Access Network<br>&nbsp;&nbsp;- D. Metropolitan Area Node<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>3. <strong>Câu hỏi:</strong> Mạng diện rộng (WAN) là viết tắt của cụm từ nào?<br>&nbsp;&nbsp;- A. Wide Area Network<br>&nbsp;&nbsp;- B. Wide Network Area<br>&nbsp;&nbsp;- C. Wide Access Network<br>&nbsp;&nbsp;- D. Wide Area Node<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>4. <strong>Câu hỏi:</strong> Mạng nào sau đây thuộc loại mạng theo kỹ thuật chuyển?<br>&nbsp;&nbsp;- A. Mạng quảng bá<br>&nbsp;&nbsp;- B. Mạng điểm-điểm<br>&nbsp;&nbsp;- C. Mạng chuyển mạch kênh<br>&nbsp;&nbsp;- D. Multicast<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>5. <strong>Câu hỏi:</strong> Mạng quảng bá (broadcast) thuộc loại mạng nào?<br>&nbsp;&nbsp;- A. Theo quy mô mạng<br>&nbsp;&nbsp;- B. Theo kỹ thuật chuyển<br>&nbsp;&nbsp;- C. Theo cách thức truyền tin<br>&nbsp;&nbsp;- D. Theo cách thức bảo mật<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>6. <strong>Câu hỏi:</strong> Multicast là một ví dụ của loại mạng nào?<br>&nbsp;&nbsp;- A. Mạng cục bộ<br>&nbsp;&nbsp;- B. Mạng chuyển mạch gói<br>&nbsp;&nbsp;- C. Mạng diện rộng<br>&nbsp;&nbsp;- D. Theo cách thức truyền tin<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> D"
+            ]
+          },
+          {
+            "tag": "LAN_features",
+            "patterns": [
+              "Mạng LAN<br>­- Băng thông lớn;<br>­- Kích thước mạng bị giới hạn;<br>­- Chi phí triển khai lắp đặt rẻ;<br>­- Quản trị đơn giản."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm dựa trên đoạn văn về các đặc điểm của mạng LAN:<br><br>1. <strong>Câu hỏi:</strong> Mạng LAN có đặc điểm gì về băng thông?<br>&nbsp;&nbsp;- A. Băng thông nhỏ<br>&nbsp;&nbsp;- B. Băng thông lớn<br>&nbsp;&nbsp;- C. Băng thông trung bình<br>&nbsp;&nbsp;- D. Không có băng thông<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>2. <strong>Câu hỏi:</strong> Kích thước mạng LAN như thế nào?<br>&nbsp;&nbsp;- A. Không giới hạn<br>&nbsp;&nbsp;- B. Bị giới hạn<br>&nbsp;&nbsp;- C. Rất lớn<br>&nbsp;&nbsp;- D. Rất nhỏ<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>3. <strong>Câu hỏi:</strong> Chi phí triển khai lắp đặt mạng LAN như thế nào?<br>&nbsp;&nbsp;- A. Rất đắt<br>&nbsp;&nbsp;- B. Trung bình<br>&nbsp;&nbsp;- C. Rẻ<br>&nbsp;&nbsp;- D. Không có chi phí<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>4. <strong>Câu hỏi:</strong> Việc quản trị mạng LAN có đặc điểm gì?<br>&nbsp;&nbsp;- A. Phức tạp<br>&nbsp;&nbsp;- B. Đơn giản<br>&nbsp;&nbsp;- C. Khó khăn<br>&nbsp;&nbsp;- D. Không cần quản trị<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B"
+            ]
+          },
+          {
+            "tag": "MAN_features",
+            "patterns": [
+              "Mạng MAN<br>­- Gần giống như mạng LAN nhưng giới hạn kích thước của nó là một thành phố hay một quốc gia. Mạng MAN kết nối các mạng LAN lại với nhau thông qua môi trường truyền dẫn và các phương thức truyền thông khác nhau.<br>­- Băng thông ở mức trung bình, đủ để phục vụ các ứng dụng cấp thành phố hay quốc gia như chính phủ điện tử, thương mại điện tử, các ứng dụng của các ngân hàng...<br>­- Do MAN kết nối nhiều LAN nên việc quản trị sẽ gặp khó khăn hơn, đồng thời độ phức tạp cũng tăng theo.<br>­- Chi phí các thiết bị MAN tương đối đắt tiền."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm dựa trên đoạn văn về các đặc điểm của mạng MAN:<br><br>1. <strong>Câu hỏi:</strong> Mạng MAN giới hạn kích thước ở mức nào?<br>&nbsp;&nbsp;- A. Một phòng<br>&nbsp;&nbsp;- B. Một tòa nhà<br>&nbsp;&nbsp;- C. Một thành phố hay một quốc gia<br>&nbsp;&nbsp;- D. Một khu vực nhỏ<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>2. <strong>Câu hỏi:</strong> Mạng MAN kết nối các mạng LAN lại với nhau thông qua điều gì?<br>&nbsp;&nbsp;- A. Các thiết bị phần cứng<br>&nbsp;&nbsp;- B. Các phần mềm ứng dụng<br>&nbsp;&nbsp;- C. Môi trường truyền dẫn và các phương thức truyền thông khác nhau<br>&nbsp;&nbsp;- D. Các kết nối không dây<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>3. <strong>Câu hỏi:</strong> Băng thông của mạng MAN ở mức nào?<br>&nbsp;&nbsp;- A. Cao<br>&nbsp;&nbsp;- B. Thấp<br>&nbsp;&nbsp;- C. Trung bình<br>&nbsp;&nbsp;- D. Không xác định<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>4. <strong>Câu hỏi:</strong> Mạng MAN thường được sử dụng cho các ứng dụng nào?<br>&nbsp;&nbsp;- A. Ứng dụng gia đình<br>&nbsp;&nbsp;- B. Ứng dụng văn phòng<br>&nbsp;&nbsp;- C. Ứng dụng cấp thành phố hay quốc gia<br>&nbsp;&nbsp;- D. Ứng dụng cá nhân<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>5. <strong>Câu hỏi:</strong> Việc quản trị mạng MAN có đặc điểm gì so với mạng LAN?<br>&nbsp;&nbsp;- A. Đơn giản hơn<br>&nbsp;&nbsp;- B. Khó khăn hơn và phức tạp hơn<br>&nbsp;&nbsp;- C. Không có sự khác biệt<br>&nbsp;&nbsp;- D. Không cần quản trị<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>6. <strong>Câu hỏi:</strong> Chi phí các thiết bị mạng MAN như thế nào?<br>&nbsp;&nbsp;- A. Rất rẻ<br>&nbsp;&nbsp;- B. Trung bình<br>&nbsp;&nbsp;- C. Tương đối đắt tiền<br>&nbsp;&nbsp;- D. Không có chi phí<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C"
+            ]
+          },
+          {
+            "tag": "WAN_features",
+            "patterns": [
+              "Mạng WAN<br>­- Băng thông thấp, dễ mất kết nối thường chỉ phù hợp với các ứng dụng online như email, FTP, web....<br>­- Phạm vi hoạt động không giới hạn<br>­- Do kết nối nhiều LAN và MAN với nhau nên mạng rất phức tạp và các tổ chức toàn cầu phải đứng ra quy định và quản lý<br>­- Chi phí cho các thiết bị và công nghệ WAN rất đắt."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm dựa trên đoạn văn về các đặc điểm của mạng WAN:<br><br>1. <strong>Câu hỏi:</strong> Băng thông của mạng WAN như thế nào?<br>&nbsp;&nbsp;- A. Cao<br>&nbsp;&nbsp;- B. Trung bình<br>&nbsp;&nbsp;- C. Thấp<br>&nbsp;&nbsp;- D. Không xác định<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>2. <strong>Câu hỏi:</strong> Mạng WAN thường phù hợp với các ứng dụng nào?<br>&nbsp;&nbsp;- A. Ứng dụng offline<br>&nbsp;&nbsp;- B. Ứng dụng online như email, FTP, web<br>&nbsp;&nbsp;- C. Ứng dụng văn phòng<br>&nbsp;&nbsp;- D. Ứng dụng cá nhân<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>3. <strong>Câu hỏi:</strong> Phạm vi hoạt động của mạng WAN như thế nào?<br>&nbsp;&nbsp;- A. Giới hạn trong một thành phố<br>&nbsp;&nbsp;- B. Giới hạn trong một quốc gia<br>&nbsp;&nbsp;- C. Không giới hạn<br>&nbsp;&nbsp;- D. Giới hạn trong một khu vực nhỏ<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>4. <strong>Câu hỏi:</strong> Mạng WAN kết nối gì với nhau?<br>&nbsp;&nbsp;- A. Các thiết bị phần cứng<br>&nbsp;&nbsp;- B. Các phần mềm ứng dụng<br>&nbsp;&nbsp;- C. Nhiều LAN và MAN<br>&nbsp;&nbsp;- D. Các kết nối không dây<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>5. <strong>Câu hỏi:</strong> Ai chịu trách nhiệm quy định và quản lý mạng WAN?<br>&nbsp;&nbsp;- A. Chính phủ địa phương<br>&nbsp;&nbsp;- B. Các tổ chức toàn cầu<br>&nbsp;&nbsp;- C. Các doanh nghiệp tư nhân<br>&nbsp;&nbsp;- D. Người dùng cá nhân<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>6. <strong>Câu hỏi:</strong> Chi phí cho các thiết bị và công nghệ WAN như thế nào?<br>&nbsp;&nbsp;- A. Rất rẻ<br>&nbsp;&nbsp;- B. Trung bình<br>&nbsp;&nbsp;- C. Rất đắt<br>&nbsp;&nbsp;- D. Không có chi phí<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C"
+            ]
+          },
+          {
+            "tag": "Internet_features",
+            "patterns": [
+              "Internet là gì?<br>­- Là mạng của các mạng<br>­- Hàng triệu/hàng tỉ thiết bị/hệ thống đầu cuối<br>­ +Các trạm làm việc (workstation)<br>­ +Các thiết bị PDA, thiết bị sinh hoạt,...<br>­- Hệ thống đường truyền trải khắp toàn cầu<br>­- Rất nhiều thiết bị “định tuyến” phục vụ nhu cầu “vận chuyển” tin tức giữa các nút."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm dựa trên đoạn văn về Internet:<br><br>1. <strong>Câu hỏi:</strong> Internet là gì?<br>&nbsp;&nbsp;- A. Là mạng của các mạng<br>&nbsp;&nbsp;- B. Là một mạng cục bộ<br>&nbsp;&nbsp;- C. Là một mạng riêng tư<br>&nbsp;&nbsp;- D. Là một mạng quốc gia<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>2. <strong>Câu hỏi:</strong> Internet bao gồm hàng triệu/hàng tỉ thiết bị/hệ thống đầu cuối nào?<br>&nbsp;&nbsp;- A. Chỉ các trạm làm việc (workstation)<br>&nbsp;&nbsp;- B. Chỉ các thiết bị PDA<br>&nbsp;&nbsp;- C. Các trạm làm việc (workstation), các thiết bị PDA, thiết bị sinh hoạt,...<br>&nbsp;&nbsp;- D. Chỉ các thiết bị sinh hoạt<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>3. <strong>Câu hỏi:</strong> Hệ thống đường truyền của Internet trải khắp nơi nào?<br>&nbsp;&nbsp;- A. Một quốc gia<br>&nbsp;&nbsp;- B. Một thành phố<br>&nbsp;&nbsp;- C. Một khu vực<br>&nbsp;&nbsp;- D. Toàn cầu<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> D<br><br>4. <strong>Câu hỏi:</strong> Thiết bị nào phục vụ nhu cầu “vận chuyển” tin tức giữa các nút trên Internet?<br>&nbsp;&nbsp;- A. Máy chủ<br>&nbsp;&nbsp;- B. Thiết bị định tuyến<br>&nbsp;&nbsp;- C. Máy tính cá nhân<br>&nbsp;&nbsp;- D. Điện thoại di động<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B"
+            ]
+          },
+          {
+            "tag": "packet_switching",
+            "patterns": [
+              "Hàng triệu thiết bị định tuyến kết nối với nhau<br>Chuyển mạch các gói (packet) từ đầu gửi đến đầu nhận<br>­- chuyển tiếp các gói từ router này tới router kế tiếp (trên trục đường link từ source đến destination)<br>­- Sử dụng toàn bộ băng thông của đường link khi gửi các packets"
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm dựa trên đoạn văn về chuyển mạch gói:<br><br>1. <strong>Câu hỏi:</strong> Thiết bị nào kết nối với nhau trong hệ thống chuyển mạch gói?<br>&nbsp;&nbsp;- A. Máy chủ<br>&nbsp;&nbsp;- B. Điện thoại di động<br>&nbsp;&nbsp;- C. Thiết bị định tuyến (router)<br>&nbsp;&nbsp;- D. Máy tính cá nhân<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>2. <strong>Câu hỏi:</strong> Chuyển mạch gói thực hiện chuyển tiếp gói tin từ đâu đến đâu?<br>&nbsp;&nbsp;- A. Từ máy chủ đến máy tính cá nhân<br>&nbsp;&nbsp;- B. Từ router này đến router kế tiếp<br>&nbsp;&nbsp;- C. Từ điện thoại di động đến máy tính cá nhân<br>&nbsp;&nbsp;- D. Từ máy chủ đến điện thoại di động<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>3. <strong>Câu hỏi:</strong> Chuyển mạch gói sử dụng toàn bộ băng thông của đường link khi nào?<br>&nbsp;&nbsp;- A. Khi không có gói tin được gửi<br>&nbsp;&nbsp;- B. Khi gửi các packets<br>&nbsp;&nbsp;- C. Khi nhận các packets<br>&nbsp;&nbsp;- D. Khi kết nối bị gián đoạn<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>4. <strong>Câu hỏi:</strong> Trong chuyển mạch gói, các gói tin được chuyển tiếp từ router này tới router kế tiếp trên trục đường link từ đâu đến đâu?<br>&nbsp;&nbsp;- A. Từ source đến destination<br>&nbsp;&nbsp;- B. Từ nguồn đến máy chủ<br>&nbsp;&nbsp;- C. Từ đích đến máy tính cá nhân<br>&nbsp;&nbsp;- D. Từ nguồn đến điện thoại di động<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A"
+            ]
+          },
+          {
+            "tag": "packet_transmission",
+            "patterns": [
+              "- Thời gian để đẩy 1 packet vào đường link có băng thông R là: L/R (giây)<br>- Giữ và chuyển tiếp: Mỗi packet phải được nhận đủ tại bộ chuyển mạch trước khi nó tiếp tục được truyền đi<br>- Độ trễ truyền tải = 2*L/R (giây) nếu độ trễ lan truyền = 0"
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm dựa trên đoạn văn về truyền tải gói tin:<br><br>1. <strong>Câu hỏi:</strong> Thời gian để đẩy 1 packet vào đường link có băng thông R là bao nhiêu?<br>&nbsp;&nbsp;- A. L*R (giây)<br>&nbsp;&nbsp;- B. L/R (giây)<br>&nbsp;&nbsp;- C. R/L (giây)<br>&nbsp;&nbsp;- D. 2*L/R (giây)<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>2. <strong>Câu hỏi:</strong> Trong quá trình giữ và chuyển tiếp, điều gì cần phải xảy ra trước khi packet tiếp tục được truyền đi?<br>&nbsp;&nbsp;- A. Packet phải được phân tích<br>&nbsp;&nbsp;- B. Packet phải được mã hóa<br>&nbsp;&nbsp;- C. Packet phải được nhận đủ tại bộ chuyển mạch<br>&nbsp;&nbsp;- D. Packet phải được nén<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>3. <strong>Câu hỏi:</strong> Công thức tính độ trễ truyền tải khi độ trễ lan truyền = 0 là gì?<br>&nbsp;&nbsp;- A. L/R<br>&nbsp;&nbsp;- B. 2*L/R<br>&nbsp;&nbsp;- C. L*R<br>&nbsp;&nbsp;- D. R/L<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B"
+            ]
+          },
+          {
+            "tag": "network_node_processing",
+            "patterns": [
+              "Xử lý tại node mạng<br>­- Kiểm tra lỗi<br>­- Xác định cổng ra<br>Xếp hàng (hàng đợi)<br>­- Gói tin đến phải phải chờ vì cổng ra đang bận<br>­- Do tắc nghẽn của bộ định tuyến<br>Trễ do thời gian truyền tải<br>­- L: độ dài gói tin (bits)<br>­- R: băng thông đường truyền<br>­- Thời gian đẩy hết gói tin lên đường truyền = L/R<br>Trễ do thời gian lan truyền tín hiệu<br>­- Tốc độ truyền tín hiệu điện từ khoảng s = 2*10^8m/s<br>­- Thời gian lan truyền tín hiệu trên đường truyền dài d(m) là d/s"
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm dựa trên đoạn văn về xử lý tại node mạng:<br><br>1. <strong>Câu hỏi:</strong> Một trong những nhiệm vụ xử lý tại node mạng là gì?<br>&nbsp;&nbsp;- A. Mã hóa gói tin<br>&nbsp;&nbsp;- B. Kiểm tra lỗi<br>&nbsp;&nbsp;- C. Nén dữ liệu<br>&nbsp;&nbsp;- D. Giải mã gói tin<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>2. <strong>Câu hỏi:</strong> Tại sao gói tin đến phải chờ trong hàng đợi?<br>&nbsp;&nbsp;- A. Vì lỗi phần cứng<br>&nbsp;&nbsp;- B. Vì cổng ra đang bận<br>&nbsp;&nbsp;- C. Vì mất kết nối<br>&nbsp;&nbsp;- D. Vì thiếu băng thông<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>3. <strong>Câu hỏi:</strong> Độ trễ truyền tải được tính bằng công thức nào?<br>&nbsp;&nbsp;- A. L*R<br>&nbsp;&nbsp;- B. L/R<br>&nbsp;&nbsp;- C. R/L<br>&nbsp;&nbsp;- D. L+R<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>4. <strong>Câu hỏi:</strong> Tốc độ truyền tín hiệu điện từ là bao nhiêu?<br>&nbsp;&nbsp;- A. 2*10^6m/s<br>&nbsp;&nbsp;- B. 2*10^7m/s<br>&nbsp;&nbsp;- C. 2*10^8m/s<br>&nbsp;&nbsp;- D. 2*10^9m/s<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>5. <strong>Câu hỏi:</strong> Thời gian lan truyền tín hiệu trên đường truyền dài d(m) được tính bằng công thức nào?<br>&nbsp;&nbsp;- A. d*s<br>&nbsp;&nbsp;- B. d/s<br>&nbsp;&nbsp;- C. s/d<br>&nbsp;&nbsp;- D. d+s<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B"
+            ]
+          },
+          {
+            "tag": "peer_to_peer_network",
+            "patterns": [
+              "- Không có máy dịch vụ cố định, các máy tính trong mạng lúc này là server (nhận yêu cầu kết nối) nhưng lúc khác lại là client (yêu cầu máy khác kết nối).<br>- Các máy tính là ngang hàng, tự do kết nối và giao tiếp đôi một.<br>- Địa chỉ của các máy tính tham gia giao tiếp liên tục thay đổi."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm dựa trên đoạn văn về mạng ngang hàng (peer-to-peer):<br><br>1. <strong>Câu hỏi:</strong> Trong mạng ngang hàng (peer-to-peer), máy tính trong mạng có vai trò gì?<br>&nbsp;&nbsp;- A. Chỉ là server<br>&nbsp;&nbsp;- B. Chỉ là client<br>&nbsp;&nbsp;- C. Lúc là server, lúc là client<br>&nbsp;&nbsp;- D. Không có vai trò cụ thể<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>2. <strong>Câu hỏi:</strong> Các máy tính trong mạng ngang hàng (peer-to-peer) kết nối và giao tiếp như thế nào?<br>&nbsp;&nbsp;- A. Theo thứ tự ưu tiên<br>&nbsp;&nbsp;- B. Theo lệnh từ server trung tâm<br>&nbsp;&nbsp;- C. Tự do kết nối và giao tiếp đôi một<br>&nbsp;&nbsp;- D. Không thể kết nối với nhau<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>3. <strong>Câu hỏi:</strong> Địa chỉ của các máy tính trong mạng ngang hàng (peer-to-peer) như thế nào?<br>&nbsp;&nbsp;- A. Cố định<br>&nbsp;&nbsp;- B. Thay đổi liên tục<br>&nbsp;&nbsp;- C. Do người dùng tự đặt<br>&nbsp;&nbsp;- D. Do server trung tâm cấp phát<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B"
+            ]
+          },
+          {
+            "tag": "application_layer",
+            "patterns": [
+              "Có thể coi tầng application (Internet) = tầng application + presentation + session trong mô hình OSI.<br>Các dịch vụ với application:<br>- Presentation: gắn liền với application trong TCP/IP<br>- File formats: picture (JPEG, GIF...), audio (MP3, RM...), video (MPEG, MOV...), document (HTML, XML...).<br>- Data encryption & compression.<br>- Session: gắn liền với application trong TCP/IP<br>- NFS (Network File System), RPC (Remote Procedure Call), SQL (Structured Query Language), SSL (Secure Socket Layer).<br>- Transport (*)<br>- Cung cấp dịch vụ vận chuyển cho application (TCP/IP).<br>- Hai giao thức: TCP và UDP."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm dựa trên đoạn văn về tầng application:<br><br>1. <strong>Câu hỏi:</strong> Tầng application (Internet) trong mô hình TCP/IP tương đương với các tầng nào trong mô hình OSI?<br>&nbsp;&nbsp;- A. Tầng application<br>&nbsp;&nbsp;- B. Tầng presentation<br>&nbsp;&nbsp;- C. Tầng session<br>&nbsp;&nbsp;- D. Cả ba tầng application, presentation và session<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> D<br><br>2. <strong>Câu hỏi:</strong> Trong TCP/IP, dịch vụ Presentation gắn liền với tầng nào?<br>&nbsp;&nbsp;- A. Tầng network<br>&nbsp;&nbsp;- B. Tầng transport<br>&nbsp;&nbsp;- C. Tầng application<br>&nbsp;&nbsp;- D. Tầng data link<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>3. <strong>Câu hỏi:</strong> Các định dạng file nào được xử lý ở tầng application trong TCP/IP?<br>&nbsp;&nbsp;- A. Picture (JPEG, GIF...)<br>&nbsp;&nbsp;- B. Audio (MP3, RM...)<br>&nbsp;&nbsp;- C. Video (MPEG, MOV...)<br>&nbsp;&nbsp;- D. Tất cả các loại trên<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> D<br><br>4. <strong>Câu hỏi:</strong> Dịch vụ nào dưới đây được gắn liền với tầng session trong TCP/IP?<br>&nbsp;&nbsp;- A. Data encryption & compression<br>&nbsp;&nbsp;- B. NFS (Network File System)<br>&nbsp;&nbsp;- C. File formats<br>&nbsp;&nbsp;- D. SSL (Secure Socket Layer)<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>5. <strong>Câu hỏi:</strong> Hai giao thức nào được sử dụng ở tầng transport trong TCP/IP?<br>&nbsp;&nbsp;- A. HTTP và FTP<br>&nbsp;&nbsp;- B. TCP và UDP<br>&nbsp;&nbsp;- C. SMTP và IMAP<br>&nbsp;&nbsp;- D. ICMP và ARP<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B"
+            ]
+          },
+          {
+            "tag": "data_loss",
+            "patterns": [
+              "Data loss<br>- Các ứng dụng audio/video có thể chấp nhận mất mát, sai lệch dữ liệu trong khoảng cho phép.<br>- Email, file transfer yêu cầu dữ liệu phải chính xác."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm dựa trên đoạn văn về data loss:<br><br>1. <strong>Câu hỏi:</strong> Loại ứng dụng nào có thể chấp nhận mất mát, sai lệch dữ liệu trong khoảng cho phép?<br>&nbsp;&nbsp;- A. Email<br>&nbsp;&nbsp;- B. File transfer<br>&nbsp;&nbsp;- C. Audio/video<br>&nbsp;&nbsp;- D. Cả A và B<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>2. <strong>Câu hỏi:</strong> Ứng dụng nào yêu cầu dữ liệu phải chính xác?<br>&nbsp;&nbsp;- A. Email<br>&nbsp;&nbsp;- B. File transfer<br>&nbsp;&nbsp;- C. Audio/video<br>&nbsp;&nbsp;- D. Cả A và B<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> D"
+            ]
+          },
+          {
+            "tag": "timing",
+            "patterns": [
+              "Timing<br>- Các ứng dụng online cần độ trễ (delay) nhỏ (phone, games)."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm dựa trên đoạn văn về timing:<br><br>1. <strong>Câu hỏi:</strong> Loại ứng dụng nào cần độ trễ (delay) nhỏ?<br>&nbsp;&nbsp;- A. Email<br>&nbsp;&nbsp;- B. File transfer<br>&nbsp;&nbsp;- C. Phone<br>&nbsp;&nbsp;- D. Documents<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>2. <strong>Câu hỏi:</strong> Đối với ứng dụng nào, độ trễ (delay) là không quan trọng?<br>&nbsp;&nbsp;- A. Email<br>&nbsp;&nbsp;- B. Games<br>&nbsp;&nbsp;- C. Video streaming<br>&nbsp;&nbsp;- D. Cả B và C<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> D"
+            ]
+          },
+          {
+            "tag": "bandwidth",
+            "patterns": [
+              "Bandwidth<br>- Các ứng dụng multimedia cần đường truyền tốc độ cao để đảm bảo chất lượng.<br>- Các ứng dụng email, file transfer mềm dẻo hơn, tuỳ theo tốc độ."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm dựa trên đoạn văn về Bandwidth:<br><br>1. <strong>Câu hỏi:</strong> Loại ứng dụng nào cần đường truyền tốc độ cao để đảm bảo chất lượng?<br>&nbsp;&nbsp;- A. Email<br>&nbsp;&nbsp;- B. File transfer<br>&nbsp;&nbsp;- C. Multimedia<br>&nbsp;&nbsp;- D. Documents<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>2. <strong>Câu hỏi:</strong> Ứng dụng nào linh hoạt hơn về tốc độ đường truyền?<br>&nbsp;&nbsp;- A. Email<br>&nbsp;&nbsp;- B. Multimedia<br>&nbsp;&nbsp;- C. File transfer<br>&nbsp;&nbsp;- D. Cả A và C<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> D"
+            ]
+          },
+          {
+            "tag": "FTP",
+            "patterns": [
+              "FTP sử dụng TCP.<br>- FTP sử dụng đồng thời 2 liên kết TCP tại 2 cổng:<br>&nbsp;&nbsp;+TCP control connection, port 21: trao đổi các thông điệp điều khiển (commands, responses...).<br>&nbsp;&nbsp;+ TCP data connection, port 20: truyền tải tệp.<br>- FTP lưu giữ trạng thái client trong phiên làm việc (state vs. HTTP is stateless)."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm dựa trên đoạn văn về FTP:<br><br>1. <strong>Câu hỏi:</strong> FTP sử dụng giao thức nào?<br>&nbsp;&nbsp;- A. UDP<br>&nbsp;&nbsp;- B. TCP<br>&nbsp;&nbsp;- C. HTTP<br>&nbsp;&nbsp;- D. SMTP<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>2. <strong>Câu hỏi:</strong> Liên kết TCP control connection của FTP sử dụng cổng nào?<br>&nbsp;&nbsp;- A. 20<br>&nbsp;&nbsp;- B. 21<br>&nbsp;&nbsp;- C. 22<br>&nbsp;&nbsp;- D. 23<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>3. <strong>Câu hỏi:</strong> FTP lưu giữ trạng thái client trong phiên làm việc hay không?<br>&nbsp;&nbsp;- A. Có<br>&nbsp;&nbsp;- B. Không<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A"
+            ]
+          },
+          {
+            "tag": "FTP_process",
+            "patterns": [
+              "FTP server nghe tại cổng 21.<br>- FTP client yêu cầu kết nối với FTP server qua TCP tại cổng 21. Gửi user & password để đăng nhập.<br>- FTP server chấp nhận, liên kết điều khiển (control connection) được thiết lập. Quá trình trao đổi có thể bắt đầu.<br>- Khi server nhận được lệnh truyền tệp, nó mở liên kết dữ liệu (data connection) tới client, tệp được truyền qua liên kết này.<br>- Sau khi truyền xong một tệp, server ngắt liên kết dữ liệu (mỗi liên kết chỉ sử dụng để truyền một tệp)."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm dựa trên quy trình truyền tải tệp trong FTP:<br><br>1. <strong>Câu hỏi:</strong> FTP server nghe ở cổng nào?<br>&nbsp;&nbsp;- A. 20<br>&nbsp;&nbsp;- B. 21<br>&nbsp;&nbsp;- C. 22<br>&nbsp;&nbsp;- D. 23<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>2. <strong>Câu hỏi:</strong> FTP client yêu cầu kết nối với FTP server qua giao thức nào?<br>&nbsp;&nbsp;- A. UDP<br>&nbsp;&nbsp;- B. TCP<br>&nbsp;&nbsp;- C. HTTP<br>&nbsp;&nbsp;- D. SMTP<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>3. <strong>Câu hỏi:</strong> Khi server nhận được lệnh truyền tệp, điều gì xảy ra tiếp theo?<br>&nbsp;&nbsp;- A. Server mở liên kết điều khiển<br>&nbsp;&nbsp;- B. Server mở liên kết dữ liệu<br>&nbsp;&nbsp;- C. Client mở liên kết điều khiển<br>&nbsp;&nbsp;- D. Client mở liên kết dữ liệu<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B"
+            ]
+          },
+          {
+            "tag": "SMTP_process",
+            "patterns": [
+              "SMTP sử dụng persistent connection: một liên kết, nhiều thông điệp.<br>- Thông điệp (kể cả nội dung thư) phải được mã hoá dạng ASCII 7 bit (US-ASCII).<br>- Đánh dấu kết thúc msg bởi CRLF.CRLF<br>- Một số dữ liệu nhị phân (vd: picture) có thể chứa CRLF.CRLF à cần mã hoá để đảm bảo không có dữ liệu nào trùng với ký hiệu kết thúc message"
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm dựa trên quy trình gửi email trong SMTP:<br><br>1. <strong>Câu hỏi:</strong> SMTP sử dụng loại kết nối nào?<br>&nbsp;&nbsp;- A. Non-persistent connection<br>&nbsp;&nbsp;- B. Persistent connection<br>&nbsp;&nbsp;- C. UDP connection<br>&nbsp;&nbsp;- D. FTP connection<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>2. <strong>Câu hỏi:</strong> Kết thúc một thông điệp trong SMTP được đánh dấu bằng cách nào?<br>&nbsp;&nbsp;- A. CRLF.CRLF<br>&nbsp;&nbsp;- B. LF.LF<br>&nbsp;&nbsp;- C. CR.CR<br>&nbsp;&nbsp;- D. CRLF.CR<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>3. <strong>Câu hỏi:</strong> Dữ liệu nhị phân trong email cần được mã hoá như thế nào để đảm bảo tính toàn vẹn của thông điệp?<br>&nbsp;&nbsp;- A. Base64 encoding<br>&nbsp;&nbsp;- B. ASCII encoding<br>&nbsp;&nbsp;- C. UTF-8 encoding<br>&nbsp;&nbsp;- D. Binary encoding<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A"
+            ]
+          },
+          {
+            "tag": "HTTP_SMTP_comparison",
+            "patterns": [
+              "So sánh với HTTP:<br>- HTTP: pull protocol <> SMTP: push protocol.<br>- Cùng sử dụng ASCII (command/req/resp/status code).<br>- HTTP: mỗi obj chứa trong một msg <> SMTP: cho phép nhiều obj (text, picture...) trong một msg (multipart msg)."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm so sánh giữa HTTP và SMTP:<br><br>1. <strong>Câu hỏi:</strong> HTTP và SMTP khác nhau như thế nào về giao thức truyền thông?<br>&nbsp;&nbsp;- A. HTTP là push protocol, SMTP là pull protocol<br>&nbsp;&nbsp;- B. HTTP là pull protocol, SMTP là push protocol<br>&nbsp;&nbsp;- C. Cả hai đều là push protocol<br>&nbsp;&nbsp;- D. Cả hai đều là pull protocol<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>2. <strong>Câu hỏi:</strong> Cả HTTP và SMTP sử dụng loại mã hóa nào cho các thông điệp của mình?<br>&nbsp;&nbsp;- A. Base64 encoding<br>&nbsp;&nbsp;- B. ASCII encoding<br>&nbsp;&nbsp;- C. UTF-8 encoding<br>&nbsp;&nbsp;- D. Binary encoding<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>3. <strong>Câu hỏi:</strong> Đặc điểm nào dưới đây là khác biệt giữa cách HTTP và SMTP xử lý các đối tượng trong các thông điệp?<br>&nbsp;&nbsp;- A. HTTP cho phép nhiều đối tượng trong một thông điệp, trong khi SMTP chỉ cho phép một đối tượng<br>&nbsp;&nbsp;- B. HTTP cho phép một đối tượng trong một thông điệp, trong khi SMTP cho phép nhiều đối tượng<br>&nbsp;&nbsp;- C. Cả hai đều cho phép nhiều đối tượng trong một thông điệp<br>&nbsp;&nbsp;- D. Cả hai đều chỉ cho phép một đối tượng trong một thông điệp<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A"
+            ]
+          },
+          {
+            "tag": "DNS_management",
+            "patterns": [
+              "- Thuộc quản lý của ISP (ISP, company, university...).<br>- Khi một host muốn biết IP của một host nào đó, trước tiên, nó “hỏi” local name server.<br>- Không nhất thiết phải nằm trong kiến trúc DNS servers (độc lập).<br>- “Gần” máy tính của người sử dụng nhất nên thường được “hỏi thăm” đầu tiên mỗi khi có truy vấn DNS.<br>- Xem Windows Local DNS: ipconfig"
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm về quản lý DNS:<br><br>1. <strong>Câu hỏi:</strong> DNS servers thường nằm dưới quản lý của các tổ chức nào?<br>&nbsp;&nbsp;- A. Các doanh nghiệp lớn<br>&nbsp;&nbsp;- B. ISP (Nhà cung cấp dịch vụ Internet)<br>&nbsp;&nbsp;- C. Trường đại học<br>&nbsp;&nbsp;- D. Tất cả các phương án trên<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> D<br><br>2. <strong>Câu hỏi:</strong> Khi một host muốn biết địa chỉ IP của một máy chủ nào đó, host đó thường làm gì đầu tiên?<br>&nbsp;&nbsp;- A. Gửi yêu cầu trực tiếp tới máy chủ cục bộ của nó<br>&nbsp;&nbsp;- B. Gửi yêu cầu tới một máy chủ DNS cục bộ<br>&nbsp;&nbsp;- C. Gửi yêu cầu tới một máy chủ DNS công cộng<br>&nbsp;&nbsp;- D. Gửi yêu cầu tới máy chủ DNS trung tâm<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>3. <strong>Câu hỏi:</strong> Đặc điểm nào sau đây là đúng về kiến trúc của DNS servers?<br>&nbsp;&nbsp;- A. Tất cả các DNS servers phải nằm trong cùng một kiến trúc toàn cầu<br>&nbsp;&nbsp;- B. DNS servers là độc lập và không nhất thiết phải nằm trong cùng một kiến trúc<br>&nbsp;&nbsp;- C. DNS servers chỉ có thể nằm trong kiến trúc của một tổ chức duy nhất<br>&nbsp;&nbsp;- D. DNS servers phải được quản lý bởi tổ chức chính phủ<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B"
+            ]
+          },
+          {
+            "tag": "DNS_cache",
+            "patterns": [
+              "Mỗi khi DNS server nhận được yêu cầu tra cứu IP, IP mà nó tìm được sẽ được lưu lại phục vụ cho những lần tra cứu tiếp theo.<br>+ Timeout: thời gian hết hạn (sau một khoảng thời gian, bản ghi cache tương ứng bị xoá).<br>+ TLD servers thường được cache tại local name servers."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm về lưu cache trong DNS:<br><br>1. <strong>Câu hỏi:</strong> Điều gì xảy ra khi một DNS server nhận được yêu cầu tra cứu IP?<br>&nbsp;&nbsp;- A. Nó lưu IP vào cache để sử dụng cho các yêu cầu sau<br>&nbsp;&nbsp;- B. Nó loại bỏ IP khỏi cache để giải phóng bộ nhớ<br>&nbsp;&nbsp;- C. Nó báo cho client rằng không tìm thấy IP tương ứng<br>&nbsp;&nbsp;- D. Nó gửi yêu cầu tra cứu tiếp theo tới một DNS server khác<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>2. <strong>Câu hỏi:</strong> Cache của một DNS server có thể bị xoá khi nào?<br>&nbsp;&nbsp;- A. Sau mỗi yêu cầu tra cứu IP<br>&nbsp;&nbsp;- B. Sau mỗi lần khởi động DNS server<br>&nbsp;&nbsp;- C. Sau khi hết hạn theo thời gian Timeout<br>&nbsp;&nbsp;- D. Không bao giờ xoá<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>3. <strong>Câu hỏi:</strong> Thông tin về các TLD servers thường được lưu ở đâu?<br>&nbsp;&nbsp;- A. Trên máy tính của mỗi người dùng<br>&nbsp;&nbsp;- B. Tại các trung tâm dữ liệu toàn cầu<br>&nbsp;&nbsp;- C. Trên các DNS servers cục bộ (local name servers)<br>&nbsp;&nbsp;- D. Trên các DNS servers tương tác<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C"
+            ]
+          },
+          {
+            "tag": "DNS_message_header",
+            "patterns": [
+              "Msg header (12 bytes)<br>- Identification: số 16 bit reply msg sử dụng cùng id với req msg.<br>- Flags: nhiều bit, mỗi bit có một ý nghĩa:<br>+ Query (0) hay reply (1)<br>+ Authoritative DNS.<br>+ recursion desired: client mong muốn DNS server tra cứu đệ quy.<br>+ recursion available: server hỗ trợ tra cứu đệ quy."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm từ đoạn văn về header của tin nhắn DNS:<br><br>1. <strong>Câu hỏi:</strong> Đặc điểm nào dùng để xác định reply message trong header của tin nhắn DNS?<br>&nbsp;&nbsp;- A. Identification<br>&nbsp;&nbsp;- B. Flags<br>&nbsp;&nbsp;- C. Query<br>&nbsp;&nbsp;- D. Authoritative DNS<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>2. <strong>Câu hỏi:</strong> Trong header của tin nhắn DNS, bit nào cho biết tin nhắn là một query hay là một reply?<br>&nbsp;&nbsp;- A. Query<br>&nbsp;&nbsp;- B. Authoritative DNS<br>&nbsp;&nbsp;- C. Recursion desired<br>&nbsp;&nbsp;- D. Recursion available<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>3. <strong>Câu hỏi:</strong> Đặc điểm nào cho biết tin nhắn DNS được tạo ra từ một server có quyền lực?<br>&nbsp;&nbsp;- A. Query<br>&nbsp;&nbsp;- B. Authoritative DNS<br>&nbsp;&nbsp;- C. Recursion desired<br>&nbsp;&nbsp;- D. Recursion available<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B"
+            ]
+          },
+          {
+            "tag": "Logical_communication",
+            "patterns": [
+              "Cung cấp phương tiện truyền thông logic (logical communication) giữa các applications.<br>- PDUs<br>+ application: messages.<br>+ transport: segments (đoạn).<br>- Các msg từ tầng application gửi xuống được chia nhỏ thành các đoạn (segments).<br>- Transport protocol được thực thi tại các trạm cuối (end system)."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm từ đoạn văn về phương tiện truyền thông logic giữa các ứng dụng:<br><br>1. <strong>Câu hỏi:</strong> Trong logical communication, PDUs của tầng application tương ứng với gì?<br>&nbsp;&nbsp;- A. Segments<br>&nbsp;&nbsp;- B. Messages<br>&nbsp;&nbsp;- C. Packets<br>&nbsp;&nbsp;- D. Frames<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>2. <strong>Câu hỏi:</strong> Transport protocol được thực thi ở đâu trong hệ thống mạng?<br>&nbsp;&nbsp;- A. Ở các trạm cuối (end system)<br>&nbsp;&nbsp;- B. Ở tất cả các router<br>&nbsp;&nbsp;- C. Ở tất cả các switch<br>&nbsp;&nbsp;- D. Ở tầng network<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>3. <strong>Câu hỏi:</strong> PDUs của tầng transport trong logical communication là gì?<br>&nbsp;&nbsp;- A. Messages<br>&nbsp;&nbsp;- B. Segments<br>&nbsp;&nbsp;- C. Packets<br>&nbsp;&nbsp;- D. Frames<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B"
+            ]
+          },
+          {
+            "tag": "Network_and_Transport_Layers",
+            "patterns": [
+              "- Network layer:<br>+ Truyền thông logic giữa các trạm làm việc (host).<br>+ PDUs = packets (gói).<br>+ IP (Internet Protocol) là giao thức truyền không tin cậy.<br>- Transport layer:<br>+ Tạo phương thức truyền thông logic giữa các ứng dụng (application/process).<br>+ Nhận các gói tin từ tầng Network gửi lên."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm từ đoạn văn về tầng Network và tầng Transport:<br><br>1. <strong>Câu hỏi:</strong> PDUs của tầng Network tương ứng với gì?<br>&nbsp;&nbsp;- A. Messages<br>&nbsp;&nbsp;- B. Packets<br>&nbsp;&nbsp;- C. Segments<br>&nbsp;&nbsp;- D. Frames<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>2. <strong>Câu hỏi:</strong> Giao thức nào là giao thức truyền không tin cậy được sử dụng tại tầng Network?<br>&nbsp;&nbsp;- A. TCP (Transmission Control Protocol)<br>&nbsp;&nbsp;- B. UDP (User Datagram Protocol)<br>&nbsp;&nbsp;- C. IP (Internet Protocol)<br>&nbsp;&nbsp;- D. FTP (File Transfer Protocol)<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>3. <strong>Câu hỏi:</strong> Tầng Transport tạo phương thức truyền thông logic giữa những gì?<br>&nbsp;&nbsp;- A. Giữa các trạm làm việc (host)<br>&nbsp;&nbsp;- B. Giữa các ứng dụng (application/process)<br>&nbsp;&nbsp;- C. Giữa các router<br>&nbsp;&nbsp;- D. Giữa các switch<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B"
+            ]
+          },
+          {
+            "tag": "TCP_UDP_Protocols",
+            "patterns": [
+              "- TCP (Transmission Control Protocol)<br>+ Connection-oriented (có liên kết).<br>+ Flow control (điều khiển luồng).<br>+ Congestion control (điều khiển chống nghẽn mạng). -> reliable transport protocol (tin cậy)<br>- UDP (User Datagram Protocol)<br>+ Connectionless.<br>+ Không có kiểm soát luồng và kiểm soát nghẽn mạng.-> unreliable transport protocol."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm từ đoạn văn về giao thức TCP và UDP:<br><br>1. <strong>Câu hỏi:</strong> TCP là giao thức nào trong hai giao thức đã được nêu?<br>&nbsp;&nbsp;- A. User Datagram Protocol (UDP)<br>&nbsp;&nbsp;- B. Transmission Control Protocol (TCP)<br>&nbsp;&nbsp;- C. Internet Protocol (IP)<br>&nbsp;&nbsp;- D. File Transfer Protocol (FTP)<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>2. <strong>Câu hỏi:</strong> UDP có phải là giao thức có liên kết không?<br>&nbsp;&nbsp;- A. Có<br>&nbsp;&nbsp;- B. Không<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>3. <strong>Câu hỏi:</strong> Giao thức nào trong hai giao thức đã được nêu được coi là giao thức tin cậy (reliable)?<br>&nbsp;&nbsp;- A. TCP (Transmission Control Protocol)<br>&nbsp;&nbsp;- B. UDP (User Datagram Protocol)<br>&nbsp;&nbsp;- C. IP (Internet Protocol)<br>&nbsp;&nbsp;- D. HTTP (Hypertext Transfer Protocol)<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A"
+            ]
+          },
+          {
+            "tag": "UDP_Protocol",
+            "patterns": [
+              "- User Datagram Protocol [RFC 768]<br>- “no frill”, “bare bones” Internet transport protocol.<br>&nbsp;&nbsp;+ chỉ cần những thủ tục cơ bản nhất.<br>&nbsp;&nbsp;+ thông tin điều khiển cũng chỉ cần cơ bản nhất.<br>- “best effort” service: dữ liệu có thể mất mát, sai sót nhưng luôn “cố gắng hết sức” để giảm thiểu.<br>- Connectionless:<br>&nbsp;&nbsp;+ Không có cơ chế bắt tay (handshaking): thiết lập -> truyền dữ liệu -> kết thúc.<br>&nbsp;&nbsp;+ Không nắm giữ trạng thái.<br>&nbsp;&nbsp;+ Các segments được xử lý độc lập với nhau."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm từ đoạn văn về giao thức User Datagram Protocol (UDP):<br><br>1. <strong>Câu hỏi:</strong> UDP được mô tả như gì trong văn bản?<br>&nbsp;&nbsp;- A. Giao thức có nhiều tính năng<br>&nbsp;&nbsp;- B. Giao thức đầy đủ<br>&nbsp;&nbsp;- C. Giao thức cơ bản, ít tính năng (no frill)<br>&nbsp;&nbsp;- D. Giao thức không tin cậy<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>2. <strong>Câu hỏi:</strong> Dịch vụ của UDP được gọi là gì?<br>&nbsp;&nbsp;- A. Best effort service<br>&nbsp;&nbsp;- B. Reliable service<br>&nbsp;&nbsp;- C. Guaranteed service<br>&nbsp;&nbsp;- D. Congestion control service<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>3. <strong>Câu hỏi:</strong> UDP có cơ chế thiết lập kết nối không?<br>&nbsp;&nbsp;- A. Có<br>&nbsp;&nbsp;- B. Không<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B"
+            ]
+          },
+          {
+            "tag": "Error_Control",
+            "patterns": [
+              "- Tầng dưới:<br>&nbsp;&nbsp;+ Có thể có lỗi.<br>&nbsp;&nbsp;+ Có thể gây mất mát gói tin.<br>- Giải pháp:<br>&nbsp;&nbsp;+ Sender truyền lại gói tin nếu như chờ ACK một thời gian nhất định nào đó mà không thấy (cần countdown timer).<br>&nbsp;&nbsp;+ Nếu ACK hay gói tin chỉ bị chậm thôi?<br>- truyền lại sẽ gây ra hiện tượng lặp gói tin.<br>- cần sequence number."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm từ đoạn văn về điều khiển lỗi trong truyền thông:<br><br>1. <strong>Câu hỏi:</strong> Đặc điểm nào của tầng dưới có thể gây ra mất mát gói tin?<br>&nbsp;&nbsp;- A. Có lỗi<br>&nbsp;&nbsp;- B. Gây mất mát gói tin<br>&nbsp;&nbsp;- C. Đều đúng<br>&nbsp;&nbsp;- D. Không gây ra vấn đề gì<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>2. <strong>Câu hỏi:</strong> Giải pháp nào được đề xuất khi sender không nhận được ACK sau một khoảng thời gian nhất định?<br>&nbsp;&nbsp;- A. Gửi lại gói tin<br>&nbsp;&nbsp;- B. Chờ thêm một khoảng thời gian khác<br>&nbsp;&nbsp;- C. Xóa gói tin<br>&nbsp;&nbsp;- D. Không làm gì cả<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>3. <strong>Câu hỏi:</strong> Làm thế nào để tránh hiện tượng lặp gói tin khi sender gửi lại gói tin?<br>&nbsp;&nbsp;- A. Sử dụng ACK<br>&nbsp;&nbsp;- B. Sử dụng countdown timer<br>&nbsp;&nbsp;- C. Sử dụng sequence number<br>&nbsp;&nbsp;- D. Không thể tránh được<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C"
+            ]
+          },
+          {
+            "tag": "Error_Control_Sender",
+            "patterns": [
+              "- Receiver gửi ACK cho từng packet tới đích<br>&nbsp;+ Lưu trữ packets vào buffers (nếu cần thiết) để chuyển lên layer phía trên<br>- Sender gửi lại những packet không nhận được ACK sau khoảng timeout<br>&nbsp;+ Cần cơ chế định thời timeout cho từng packet (chưa được ACK)<br>- Sender window<br>&nbsp;+ N consecutive seq #’s<br>&nbsp;+ again limits seq #s of sent, unACKed pkts"
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm từ đoạn văn về điều khiển lỗi trong truyền thông (phần sender):<br><br>1. <strong>Câu hỏi:</strong> Receiver thường gửi ACK cho mỗi gói tin đã nhận về đích. Điều gì xảy ra sau khi nhận được ACK?<br>&nbsp;&nbsp;- A. Gói tin được xóa khỏi buffer<br>&nbsp;&nbsp;- B. Gói tin được lưu trữ vào buffer<br>&nbsp;&nbsp;- C. Sender gửi lại gói tin<br>&nbsp;&nbsp;- D. Không có hành động gì xảy ra<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>2. <strong>Câu hỏi:</strong> Khi sender không nhận được ACK cho một gói tin sau một khoảng thời gian timeout, điều gì xảy ra?<br>&nbsp;&nbsp;- A. Gói tin đó được bỏ qua<br>&nbsp;&nbsp;- B. Sender tiếp tục chờ<br>&nbsp;&nbsp;- C. Sender gửi lại gói tin đó<br>&nbsp;&nbsp;- D. Gói tin đó được gán nhãn là lỗi và bị xóa khỏi buffer<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>3. <strong>Câu hỏi:</strong> Sender window là gì?<br>&nbsp;&nbsp;- A. Số lượng gói tin nhận ACK<br>&nbsp;&nbsp;- B. Số lượng gói tin đã gửi nhưng chưa nhận ACK<br>&nbsp;&nbsp;- C. Số lượng gói tin có thể gửi mà không cần ACK<br>&nbsp;&nbsp;- D. Số lượng gói tin nhận được ACK trong một khoảng thời gian timeout<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C"
+            ]
+          },
+          {
+            "tag": "Transmission_Control_Protocol",
+            "patterns": [
+              "- Transmission Control Protocol [RFCs: 793,1122, 1323, 2018, 2581]<br>- Point-to-point: 1 sender, 1 receiver.<br>- Giao thức tin cậy (reliable).<br>- Kiểm soát luồng (flow control).<br>- Kiểm soát nghẽn mạng (congestion control).<br>- full duplex: Gửi & Nhận trên cùng một liên kết.<br>- send/receive buffers"
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm từ đoạn văn về Transmission Control Protocol:<br><br>1. <strong>Câu hỏi:</strong> TCP là giao thức nào trong các giao thức sau đây?<br>&nbsp;&nbsp;- A. Transmission Control Protocol<br>&nbsp;&nbsp;- B. User Datagram Protocol<br>&nbsp;&nbsp;- C. Internet Protocol<br>&nbsp;&nbsp;- D. Simple Mail Transfer Protocol<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>2. <strong>Câu hỏi:</strong> Giao thức TCP là giao thức nào trong số các giao thức sau?<br>&nbsp;&nbsp;- A. Tin cậy<br>&nbsp;&nbsp;- B. Không tin cậy<br>&nbsp;&nbsp;- C. Đa kết nối<br>&nbsp;&nbsp;- D. Không có kiểm soát luồng<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>3. <strong>Câu hỏi:</strong> TCP sử dụng kiểu kết nối nào?<br>&nbsp;&nbsp;- A. Point-to-point<br>&nbsp;&nbsp;- B. Broadcast<br>&nbsp;&nbsp;- C. Multicast<br>&nbsp;&nbsp;- D. All-to-all<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A"
+            ]
+          },    
+          {
+            "tag": "data_rcvd_from_app",
+            "patterns": [
+              "- data rcvd from app:<br>- Tạo ra segment với STT<br>- STT là stt trên luồng-byte của byte dữ liệu đầu tiên trong segment<br>- khởi động bộ đếm t/g nếu nó chưa chạy (bộ đếm t/g cho segment chưa nhận ACK lâu nhất)<br>- khoảng t/g hết hạn: TimeOutInterval"
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm từ đoạn văn về việc nhận dữ liệu từ ứng dụng:<br><br>1. <strong>Câu hỏi:</strong> Trong quá trình nhận dữ liệu từ ứng dụng, segment được tạo ra với thông tin gì?<br>&nbsp;&nbsp;- A. Địa chỉ IP<br>&nbsp;&nbsp;- B. Số thứ tự (STT)<br>&nbsp;&nbsp;- C. Loại giao thức<br>&nbsp;&nbsp;- D. Độ dài dữ liệu<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>2. <strong>Câu hỏi:</strong> STT trong segment được xác định như thế nào?<br>&nbsp;&nbsp;- A. Là số thứ tự của segment<br>&nbsp;&nbsp;- B. Là số thứ tự của byte đầu tiên trong segment trên luồng-byte<br>&nbsp;&nbsp;- C. Là số thứ tự của byte cuối cùng trong segment trên luồng-byte<br>&nbsp;&nbsp;- D. Là số thứ tự của byte trung bình trong segment trên luồng-byte<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>3. <strong>Câu hỏi:</strong> Bộ đếm thời gian sẽ được khởi động khi nào?<br>&nbsp;&nbsp;- A. Khi segment đã nhận ACK<br>&nbsp;&nbsp;- B. Khi segment được gửi từ sender<br>&nbsp;&nbsp;- C. Khi segment chưa nhận được ACK trong một khoảng thời gian nhất định<br>&nbsp;&nbsp;- D. Khi segment gặp lỗi<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C"
+            ]
+          },
+          {
+            "tag": "timeout_ack_rcvd",
+            "patterns": [
+              "- timeout:<br>- gửi lại segment gây nên timeout<br>- đặt lại timer",
+              "- Ack rcvd:<br>- Nếu đó là ACK cho các khúc trước đó chưa được ACK<br>&nbsp;&nbsp;+ Cập nhật danh sách các gói đã được ACK<br>&nbsp;&nbsp;+ chạy lại timer nếu như còn có các segment chưa ACK"
+            ],
+            "responses": [
+              "Dưới đây là một số câu hỏi từ đoạn văn về timeout và khi nhận ACK:<br><br>1. <strong>Câu hỏi:</strong> Khi gặp timeout, điều gì xảy ra?<br>&nbsp;&nbsp;- A. Không có hành động nào được thực hiện<br>&nbsp;&nbsp;- B. Segment gây ra timeout được gửi lại<br>&nbsp;&nbsp;- C. Timer bị dừng lại<br>&nbsp;&nbsp;- D. Segment gây ra timeout được bỏ qua<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>2. <strong>Câu hỏi:</strong> Khi nhận được một ACK, điều gì xảy ra nếu đó là ACK cho các segment chưa được ACK trước đó?<br>&nbsp;&nbsp;- A. Timer không được đặt lại<br>&nbsp;&nbsp;- B. Cập nhật danh sách các gói đã được ACK<br>&nbsp;&nbsp;- C. Segment chưa được ACK trước đó được gửi lại ngay lập tức<br>&nbsp;&nbsp;- D. Timer được đặt lại cho các segment chưa được ACK<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> D"
+            ]
+          },
+          {
+            "tag": "web_application_layers",
+            "patterns": [
+              "Trong lập trình web chúng ta chia ra 3 tầng như sau:<br>- Presentation Layer (tầng 3): tầng này giúp hiển thị giao diện<br>- Business Logic Layer (tầng 2): tầng này chứa các hàm thực thi, giúp xử lý sự kiện xảy ra trên tầng Presentation Layer.<br>- Data Access Layer (tầng 1): tầng này chứa hàm kết nối với các hệ quản trị cở sở dữ liệu như SQL Server, Mysql, Oracle, ..."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm từ đoạn văn về các tầng trong lập trình web:<br><br>1. <strong>Câu hỏi:</strong> Tầng nào trong lập trình web chịu trách nhiệm hiển thị giao diện?<br>&nbsp;&nbsp;- A. Data Access Layer<br>&nbsp;&nbsp;- B. Business Logic Layer<br>&nbsp;&nbsp;- C. Presentation Layer<br>&nbsp;&nbsp;- D. Application Layer<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>2. <strong>Câu hỏi:</strong> Tầng nào chứa các hàm thực thi và xử lý sự kiện xảy ra trên tầng Presentation Layer?<br>&nbsp;&nbsp;- A. Data Access Layer<br>&nbsp;&nbsp;- B. Business Logic Layer<br>&nbsp;&nbsp;- C. Presentation Layer<br>&nbsp;&nbsp;- D. Application Layer<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>3. <strong>Câu hỏi:</strong> Tầng nào trong lập trình web kết nối với các hệ quản trị cơ sở dữ liệu như SQL Server, MySQL, Oracle?<br>&nbsp;&nbsp;- A. Data Access Layer<br>&nbsp;&nbsp;- B. Business Logic Layer<br>&nbsp;&nbsp;- C. Presentation Layer<br>&nbsp;&nbsp;- D. Application Layer<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A"
+            ]
+          },        
+          {
+            "tag": "ASP_Net_web_forms_disadvantages",
+            "patterns": [
+              "Nhược điểm khi lập trình với ASP.Net web forms:<br>- Web Forms không có sự tách biệt rõ ràng 3 tầng trong mô hình lập trình web.<br>- Web Forms sử dụng đối tượng View State mà đối tượng này làm cho trang web bị tăng kích thước vì vậy làm giảm hiệu năng của ứng dụng.<br>- Giao diện của Web Forms được thiết kế dựa trên toolbox có sẵn gây khó khăn trong việc thiết kế web hiện nay, việc thiết kế trở nên mất linh hoạt."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm từ đoạn văn về nhược điểm khi lập trình với ASP.Net web forms:<br><br>1. <strong>Câu hỏi:</strong> Nhược điểm nào sau đây đúng về ASP.Net web forms?<br>&nbsp;&nbsp;- A. Có sự tách biệt rõ ràng 3 tầng trong mô hình lập trình web<br>&nbsp;&nbsp;- B. Sử dụng đối tượng View State làm tăng kích thước trang web<br>&nbsp;&nbsp;- C. Giao diện được thiết kế linh hoạt<br>&nbsp;&nbsp;- D. Tăng hiệu năng của ứng dụng<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>2. <strong>Câu hỏi:</strong> Web Forms không có sự tách biệt rõ ràng giữa mấy tầng trong mô hình lập trình web?<br>&nbsp;&nbsp;- A. 1 tầng<br>&nbsp;&nbsp;- B. 2 tầng<br>&nbsp;&nbsp;- C. 3 tầng<br>&nbsp;&nbsp;- D. 4 tầng<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>3. <strong>Câu hỏi:</strong> Giao diện của Web Forms được thiết kế dựa trên công cụ gì?<br>&nbsp;&nbsp;- A. HTML5<br>&nbsp;&nbsp;- B. CSS3<br>&nbsp;&nbsp;- C. JavaScript<br>&nbsp;&nbsp;- D. Toolbox có sẵn<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> D<br><br>4. <strong>Câu hỏi:</strong> Việc sử dụng đối tượng View State trong Web Forms có tác động gì đến ứng dụng?<br>&nbsp;&nbsp;- A. Tăng hiệu năng của ứng dụng<br>&nbsp;&nbsp;- B. Tăng tính bảo mật của ứng dụng<br>&nbsp;&nbsp;- C. Làm cho trang web bị tăng kích thước, giảm hiệu năng của ứng dụng<br>&nbsp;&nbsp;- D. Tăng tính linh hoạt trong thiết kế<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C"
+            ]
+          },
+          {
+            "tag": "MVC_working",
+            "patterns": [
+              "MVC làm việc như thế nào?<br>- User tương tác với View, bằng cách click vào button, gửi yêu cầu đi.<br>- Controller nhận và điều hướng đến phương thức xử lý ở Model.<br>- Model nhận thông tin và thực thi các yêu cầu, View sẽ nhận kết quả từ Model và hiển thị lại cho người dùng."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm từ đoạn văn về cách MVC làm việc:<br><br>1. <strong>Câu hỏi:</strong> Khi người dùng tương tác với View trong mô hình MVC, hành động nào sau đây sẽ xảy ra?<br>&nbsp;&nbsp;- A. View nhận và xử lý yêu cầu trực tiếp<br>&nbsp;&nbsp;- B. View gửi yêu cầu đến Controller<br>&nbsp;&nbsp;- C. View gửi yêu cầu đến Model<br>&nbsp;&nbsp;- D. View không gửi yêu cầu đi đâu<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>2. <strong>Câu hỏi:</strong> Trong mô hình MVC, Controller có vai trò gì khi nhận được yêu cầu từ View?<br>&nbsp;&nbsp;- A. Controller xử lý yêu cầu trực tiếp<br>&nbsp;&nbsp;- B. Controller lưu trữ yêu cầu trong cơ sở dữ liệu<br>&nbsp;&nbsp;- C. Controller điều hướng đến phương thức xử lý ở Model<br>&nbsp;&nbsp;- D. Controller gửi yêu cầu lại cho View<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>3. <strong>Câu hỏi:</strong> Sau khi Model nhận được thông tin từ Controller, bước tiếp theo là gì?<br>&nbsp;&nbsp;- A. Model gửi yêu cầu lại cho Controller<br>&nbsp;&nbsp;- B. Model thực thi các yêu cầu và gửi kết quả cho View<br>&nbsp;&nbsp;- C. Model hiển thị kết quả trực tiếp cho người dùng<br>&nbsp;&nbsp;- D. Model lưu trữ yêu cầu trong cơ sở dữ liệu<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>4. <strong>Câu hỏi:</strong> Kết quả từ Model được hiển thị lại cho người dùng thông qua thành phần nào trong mô hình MVC?<br>&nbsp;&nbsp;- A. View<br>&nbsp;&nbsp;- B. Controller<br>&nbsp;&nbsp;- C. Model<br>&nbsp;&nbsp;- D. Tất cả các thành phần<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A"
+            ]
+          },
+          {
+            "tag": "MVC_Models",
+            "patterns": [
+              "Models:<br>- Lưu trữ thông tin, trạng thái của các đối tượng, là 1 lớp được ánh xạ từ 1 bảng trong CSDL.<br>- Chứa tất cả các nghiệp vụ logic, phương thức xử lý, truy xuất database, các class, hàm xử lý,..."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm từ đoạn văn về Models trong MVC:<br><br>1. <strong>Câu hỏi:</strong> Models trong MVC có chức năng gì?<br>&nbsp;&nbsp;- A. Hiển thị giao diện người dùng<br>&nbsp;&nbsp;- B. Lưu trữ thông tin, trạng thái của các đối tượng<br>&nbsp;&nbsp;- C. Điều hướng các yêu cầu từ người dùng<br>&nbsp;&nbsp;- D. Xử lý các yêu cầu HTTP<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>2. <strong>Câu hỏi:</strong> Models trong MVC được ánh xạ từ đâu?<br>&nbsp;&nbsp;- A. Một file văn bản<br>&nbsp;&nbsp;- B. Một bảng trong cơ sở dữ liệu (CSDL)<br>&nbsp;&nbsp;- C. Một trang web<br>&nbsp;&nbsp;- D. Một giao diện người dùng<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>3. <strong>Câu hỏi:</strong> Những gì được chứa trong Models?<br>&nbsp;&nbsp;- A. Giao diện người dùng và các sự kiện<br>&nbsp;&nbsp;- B. Phương thức xử lý, truy xuất database, các class, hàm xử lý<br>&nbsp;&nbsp;- C. Chỉ có các class<br>&nbsp;&nbsp;- D. Chỉ có các hàm xử lý<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B"
+            ]
+          },
+          {
+            "tag": "MVC_Views",
+            "patterns": [
+              "Views:<br>- Chịu trách nhiệm hiển thị các thông tin lên cho người dùng thông qua giao diện.<br>- Chứa các đối tượng GUI (Textbox, images,...).<br>- Các thông tin cần hiển thị được lấy từ thành phần Models."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm từ đoạn văn về Views trong MVC:<br><br>1. <strong>Câu hỏi:</strong> Chức năng chính của Views trong MVC là gì?<br>&nbsp;&nbsp;- A. Xử lý logic nghiệp vụ<br>&nbsp;&nbsp;- B. Hiển thị các thông tin lên cho người dùng thông qua giao diện<br>&nbsp;&nbsp;- C. Quản lý cơ sở dữ liệu<br>&nbsp;&nbsp;- D. Điều hướng các yêu cầu từ người dùng<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>2. <strong>Câu hỏi:</strong> Views trong MVC chứa gì?<br>&nbsp;&nbsp;- A. Các đối tượng GUI (Textbox, images,...)<br>&nbsp;&nbsp;- B. Các phương thức xử lý<br>&nbsp;&nbsp;- C. Các logic nghiệp vụ<br>&nbsp;&nbsp;- D. Các truy vấn cơ sở dữ liệu<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>3. <strong>Câu hỏi:</strong> Thông tin hiển thị trong Views được lấy từ thành phần nào?<br>&nbsp;&nbsp;- A. Controllers<br>&nbsp;&nbsp;- B. Database<br>&nbsp;&nbsp;- C. Models<br>&nbsp;&nbsp;- D. GUI<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C"
+            ]
+          },
+          {
+            "tag": "MVC_Controllers",
+            "patterns": [
+              "Controllers:<br>- Xử lý các tác động về mặt giao diện, các thao tác đối với models, và chọn view để hiển thị ra màn hình.<br>- Điều hướng các yêu cầu từ người dùng và gọi phương thức xử lý.<br>- Trong MVC, view chỉ có tác dụng hiển thị giao diện, còn điều khiển vẫn do Controllers đảm trách."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm từ đoạn văn về Controllers trong MVC:<br><br>1. <strong>Câu hỏi:</strong> Controllers trong MVC chịu trách nhiệm chính về việc gì?<br>&nbsp;&nbsp;- A. Hiển thị giao diện người dùng<br>&nbsp;&nbsp;- B. Xử lý các tác động về mặt giao diện, thao tác với models và chọn view để hiển thị ra màn hình<br>&nbsp;&nbsp;- C. Quản lý cơ sở dữ liệu<br>&nbsp;&nbsp;- D. Xử lý logic nghiệp vụ<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>2. <strong>Câu hỏi:</strong> Điều khiển các yêu cầu từ người dùng trong MVC được thực hiện bởi thành phần nào?<br>&nbsp;&nbsp;- A. Models<br>&nbsp;&nbsp;- B. Views<br>&nbsp;&nbsp;- C. Controllers<br>&nbsp;&nbsp;- D. Database<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>3. <strong>Câu hỏi:</strong> Trong MVC, thành phần nào chỉ có tác dụng hiển thị giao diện?<br>&nbsp;&nbsp;- A. Models<br>&nbsp;&nbsp;- B. Controllers<br>&nbsp;&nbsp;- C. Views<br>&nbsp;&nbsp;- D. Database<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>4. <strong>Câu hỏi:</strong> Thành phần nào trong MVC điều hướng các yêu cầu từ người dùng và gọi phương thức xử lý?<br>&nbsp;&nbsp;- A. Models<br>&nbsp;&nbsp;- B. Views<br>&nbsp;&nbsp;- C. Controllers<br>&nbsp;&nbsp;- D. Database<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C"
+            ]
+          },
+          {
+            "tag": "ASP_Net_MVC_advantages",
+            "patterns": [
+              "Ưu điểm:<br>- Do sử dụng mô hình MVC nên trong ASP.Net MVC đã tách biệt được các tầng trong mô hình lập trình web vì vậy giúp tối ưu ứng dụng và dễ dàng trong việc viết code, giao diện<br>- Giao diện trong ASP.Net MVC sử dụng công nghệ thiết kế web HTML, CSS nên việc thiết kế giao diện trở nên dễ dàng và giúp cho designer linh hoạt trong việc thiết kế<br>- ASP.Net MVC không sử dụng view state vì vậy trang web không bị tăng kích thước do đó hiệu năng hoạt động không bị giảm"
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm từ đoạn văn về ưu điểm của ASP.Net MVC:<br><br>1. <strong>Câu hỏi:</strong> Tại sao ASP.Net MVC giúp tối ưu ứng dụng và dễ dàng trong việc viết code, giao diện?<br>&nbsp;&nbsp;- A. Do sử dụng công nghệ thiết kế web HTML, CSS<br>&nbsp;&nbsp;- B. Do không sử dụng view state<br>&nbsp;&nbsp;- C. Do sử dụng mô hình MVC tách biệt các tầng trong lập trình web<br>&nbsp;&nbsp;- D. Do sử dụng công cụ thiết kế GUI<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>2. <strong>Câu hỏi:</strong> Giao diện trong ASP.Net MVC sử dụng công nghệ thiết kế web nào?<br>&nbsp;&nbsp;- A. JavaScript và PHP<br>&nbsp;&nbsp;- B. HTML và CSS<br>&nbsp;&nbsp;- C. ASP và VBScript<br>&nbsp;&nbsp;- D. Java và XML<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>3. <strong>Câu hỏi:</strong> Lợi ích của việc không sử dụng view state trong ASP.Net MVC là gì?<br>&nbsp;&nbsp;- A. Trang web tăng kích thước<br>&nbsp;&nbsp;- B. Hiệu năng hoạt động không bị giảm<br>&nbsp;&nbsp;- C. Tăng tính bảo mật<br>&nbsp;&nbsp;- D. Giảm độ phức tạp của mã nguồn<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>4. <strong>Câu hỏi:</strong> Việc thiết kế giao diện trong ASP.Net MVC trở nên dễ dàng và linh hoạt nhờ sử dụng công nghệ gì?<br>&nbsp;&nbsp;- A. HTML và CSS<br>&nbsp;&nbsp;- B. JavaScript và PHP<br>&nbsp;&nbsp;- C. ASP và VBScript<br>&nbsp;&nbsp;- D. Java và XML<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A"
+            ]
+          },
+          {
+            "tag": "MVC_web_benefits",
+            "patterns": [
+              "Lợi ích web dựa trên mô hình MVC:<br>- Dễ dàng quản lý sự phức tạp của ứng dụng bằng cách chia ứng dụng thành Model, View, Controller<br>- Không sử dụng view state hoặc server-based form. Điều này tốt cho những lập trình viên muốn quản lý hết các khía cạnh của một ứng dụng.<br>- Sử dụng mẫu Front Controller, mẫu này giúp quản lý các requests (yêu cầu) chỉ thông qua một Controller. Hỗ trợ tốt hơn cho mô hình phát triển ứng dụng hướng kiểm thử (TDD)<br>- Hỗ trợ tốt cho các ứng dụng được xây dựng bởi những đội có nhiều lập trình viên và thiết kế mà vẫn quản lý được tính năng của ứng dụng"
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm từ đoạn văn về lợi ích của web dựa trên mô hình MVC:<br><br>1. <strong>Câu hỏi:</strong> Mô hình MVC giúp dễ dàng quản lý sự phức tạp của ứng dụng bằng cách nào?<br>&nbsp;&nbsp;- A. Sử dụng view state<br>&nbsp;&nbsp;- B. Sử dụng server-based form<br>&nbsp;&nbsp;- C. Chia ứng dụng thành Model, View, Controller<br>&nbsp;&nbsp;- D. Sử dụng một Controller duy nhất<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>2. <strong>Câu hỏi:</strong> Việc không sử dụng view state hoặc server-based form có lợi ích gì?<br>&nbsp;&nbsp;- A. Giúp lập trình viên dễ dàng quản lý các khía cạnh của ứng dụng<br>&nbsp;&nbsp;- B. Giảm tính bảo mật của ứng dụng<br>&nbsp;&nbsp;- C. Tăng kích thước của trang web<br>&nbsp;&nbsp;- D. Giảm hiệu năng của ứng dụng<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>3. <strong>Câu hỏi:</strong> Mẫu Front Controller trong MVC giúp gì cho việc quản lý các yêu cầu (requests)?<br>&nbsp;&nbsp;- A. Quản lý các yêu cầu thông qua nhiều Controller<br>&nbsp;&nbsp;- B. Quản lý các yêu cầu thông qua một Controller<br>&nbsp;&nbsp;- C. Quản lý các yêu cầu trực tiếp tại View<br>&nbsp;&nbsp;- D. Quản lý các yêu cầu tại Model<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>4. <strong>Câu hỏi:</strong> Mô hình MVC hỗ trợ tốt cho các ứng dụng được xây dựng bởi đội ngũ nào?<br>&nbsp;&nbsp;- A. Đội ngũ chỉ có một lập trình viên<br>&nbsp;&nbsp;- B. Đội ngũ chỉ có một nhà thiết kế<br>&nbsp;&nbsp;- C. Đội ngũ có nhiều lập trình viên và thiết kế<br>&nbsp;&nbsp;- D. Đội ngũ không có lập trình viên nào<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>5. <strong>Câu hỏi:</strong> Mô hình MVC hỗ trợ tốt hơn cho mô hình phát triển ứng dụng nào?<br>&nbsp;&nbsp;- A. Mô hình phát triển ứng dụng hướng đối tượng<br>&nbsp;&nbsp;- B. Mô hình phát triển ứng dụng hướng chức năng<br>&nbsp;&nbsp;- C. Mô hình phát triển ứng dụng hướng kiểm thử (TDD)<br>&nbsp;&nbsp;- D. Mô hình phát triển ứng dụng hướng thủ công<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C"
+            ]
+          },
+          {
+            "tag": "MVC_Controller_Functionality",
+            "patterns": [
+              "Controller trong Framework MVC xử lý mọi yêu cầu URL đến. Controller là một lớp trong namespace System.Web.Mvc.Controller. Lớp Controller chứa các phương thức public gọi là các phương thức Action. Controller và phương thức action của nó xử lý các yêu cầu trình duyệt đến, lấy dữ liệu mô hình cần thiết và trả về cho trình duyệt."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm từ đoạn văn về Controller trong Framework MVC:<br><br>1. <strong>Câu hỏi:</strong> Trong Framework MVC, Controller xử lý điều gì?<br>&nbsp;&nbsp;- A. Giao diện người dùng<br>&nbsp;&nbsp;- B. Mọi yêu cầu URL đến<br>&nbsp;&nbsp;- C. Dữ liệu mô hình<br>&nbsp;&nbsp;- D. Cơ sở dữ liệu<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>2. <strong>Câu hỏi:</strong> Controller là một lớp trong namespace nào?<br>&nbsp;&nbsp;- A. System.Web.Mvc.Controller<br>&nbsp;&nbsp;- B. System.Web.Mvc.Model<br>&nbsp;&nbsp;- C. System.Web.Mvc.View<br>&nbsp;&nbsp;- D. System.Web.Mvc.Action<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A<br><br>3. <strong>Câu hỏi:</strong> Các phương thức public trong lớp Controller được gọi là gì?<br>&nbsp;&nbsp;- A. Phương thức Model<br>&nbsp;&nbsp;- B. Phương thức View<br>&nbsp;&nbsp;- C. Phương thức Action<br>&nbsp;&nbsp;- D. Phương thức Controller<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>4. <strong>Câu hỏi:</strong> Controller và phương thức Action của nó xử lý điều gì?<br>&nbsp;&nbsp;- A. Xử lý yêu cầu trình duyệt đến, lấy dữ liệu mô hình và trả về cho trình duyệt<br>&nbsp;&nbsp;- B. Xử lý giao diện người dùng<br>&nbsp;&nbsp;- C. Xử lý cơ sở dữ liệu<br>&nbsp;&nbsp;- D. Xử lý logic nghiệp vụ<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A"
+            ]
+          },
+          {
+            "tag": "ASP.NET_MVC_Controller_Naming",
+            "patterns": [
+              "Trong ASP.NET MVC, mọi tên lớp của trình điều khiển phải kết thúc bằng một từ 'Controller'."
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm từ đoạn văn về quy tắc đặt tên lớp trình điều khiển trong ASP.NET MVC:<br><br>1. <strong>Câu hỏi:</strong> Trong ASP.NET MVC, mọi tên lớp trình điều khiển phải kết thúc bằng từ gì?<br>&nbsp;&nbsp;- A. Model<br>&nbsp;&nbsp;- B. View<br>&nbsp;&nbsp;- C. Controller<br>&nbsp;&nbsp;- D. Action<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>2. <strong>Câu hỏi:</strong> Đặc điểm nào phải có ở cuối tên của một lớp trình điều khiển trong ASP.NET MVC?<br>&nbsp;&nbsp;- A. Model<br>&nbsp;&nbsp;- B. View<br>&nbsp;&nbsp;- C. Controller<br>&nbsp;&nbsp;- D. Action<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>3. <strong>Câu hỏi:</strong> Quy tắc đặt tên lớp trình điều khiển trong ASP.NET MVC giúp làm gì?<br>&nbsp;&nbsp;- A. Xác định chức năng của trình điều khiển<br>&nbsp;&nbsp;- B. Tạo tên cho giao diện người dùng<br>&nbsp;&nbsp;- C. Định dạng dữ liệu mô hình<br>&nbsp;&nbsp;- D. Xác định kiểu dữ liệu của dữ liệu<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> A"
+            ]
+          },
+          {
+            "tag": "ASP.NET_MVC_Controller_Creation",
+            "patterns": [
+              "Tạo và sử dụng controller"
+            ],
+            "responses": [
+              "Dưới đây là một số câu trắc nghiệm từ đoạn văn về cách tạo và sử dụng controller trong ASP.NET MVC:<br><br>1. <strong>Câu hỏi:</strong> Controller trong ASP.NET MVC xử lý các yêu cầu nào?<br>&nbsp;&nbsp;- A. Dữ liệu mô hình<br>&nbsp;&nbsp;- B. URL gửi đến<br>&nbsp;&nbsp;- C. Giao diện người dùng<br>&nbsp;&nbsp;- D. Dữ liệu cơ sở dữ liệu<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> B<br><br>2. <strong>Câu hỏi:</strong> Controller trong ASP.NET MVC kế thừa từ lớp nào?<br>&nbsp;&nbsp;- A. System.Web.Mvc.View<br>&nbsp;&nbsp;- B. System.Web.Mvc.Model<br>&nbsp;&nbsp;- C. System.Web.Mvc.Controller<br>&nbsp;&nbsp;- D. System.Web.Mvc.Action<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> C<br><br>3. <strong>Câu hỏi:</strong> Một Controller mới có thể được tạo như thế nào?<br>&nbsp;&nbsp;- A. Bằng cách sử dụng mẫu scaffolding duy nhất<br>&nbsp;&nbsp;- B. Bằng cách tạo mẫu scaffolding duy nhất<br>&nbsp;&nbsp;- C. Bằng cách sử dụng một số mẫu scaffolding khác nhau<br>&nbsp;&nbsp;- D. Bằng cách sử dụng mẫu scaffolding tùy ý<br>&nbsp;&nbsp;- <strong>Đáp án:</strong> D"
+            ]
+          }
+          
+    ]}

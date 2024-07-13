@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #121212;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #121212;
+            padding: 20px 0;
+            font-size: 24px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            text-align: center;
+            color: white;
+        }
+        .container-fluid {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+
+        #chat-container {
+            /* background-color: #121212;
+            border-radius: 10px;
+            border: 1px solid #dee2e6;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            overflow-y: auto;
+            /* flex: 1; */
+            margin-bottom: 50px;
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex: 1;
+            padding-top: 80px;
+            overflow-y: auto;
+        }
+
+        .message {
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px 0;
+            max-width: 60%;
+            word-wrap: break-word;
+            display: flex;
+            align-items: center;
+        }
+
+        .message .icon {
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #121212;
+        }
+
+        .user-message {
+            background-color: gray;
+            align-self: flex-end;
+            text-align: left;
+            flex-direction: row-reverse;
+            margin-left: auto;
+            color: white;
+        }
+
+        .bot-message {
+            background-color: #1f1f1f;
+            align-self: flex-start;
+            margin-right: auto;
+            color: white;
+        }
+
+        .input-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            background-color: #121212;
+            box-sizing: border-box;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 70%;
+            border: none;
+            border-radius: 20px;
+            margin-right: 10px;
+            background-color: #1f1f1f;
+            color: white;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            .message {
+                max-width: 100%;
+            }
+
+            #chat-container {
+                padding: 10px;
+                
+            }
+
+            .input-group {
+                padding: 5px;
+            }
+
+            .input-group .form-control {
+                font-size: 14px;
+            }
+
+            .input-group-append .btn {
+                width: 30px;
+                height: 30px;
+                margin-left: -35px;
+            }
+
+            .input-group-append .btn i {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Chat Bot Hỗ Trợ Giảng Viên Trong Việc Tạo Câu Hỏi Trắc Nghiệm</div>
+    <div class="container-fluid d-flex flex-column vh-100">
+        <div id="chat-container" class="flex-grow-1 overflow-auto p-3">
+        </div>
+        <div class="input-container">
+            <input type="text" placeholder="Nhập tin nhắn của bạn..." id="user-input">
+            <button class="btn btn-primary" onclick="sendMessage()" style="border-radius: 50%;"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script>
+        function sendMessage() {
+            var message = document.getElementById("user-input").value;
+            if (message.trim() === "") return; // Do not send empty messages
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+                    if (xmlhttp.status == 200) {
+                        var response = xmlhttp.responseText;
+                        var chatContainer = document.getElementById("chat-container");
+                        chatContainer.innerHTML += "<div class='message user-message'><div class='icon'><i class='fas fa-user'></i></div><div><strong>You:</strong> " + message + "</div></div>";
+                        chatContainer.innerHTML += "<div class='message bot-message'><div class='icon'><i class='fas fa-robot'></i></div><div><strong>Bot:</strong> " + response + "</div></div>";
+
+                        document.getElementById("user-input").value = "";
+                    }
+                }
+            };
+            xmlhttp.open("GET", "/get?msg=" + message, true);
+            xmlhttp.send();
+        }
+
+        // Send message on Enter key press
+        document.getElementById("user-input").addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                sendMessage();
+            }
+        });
+    </script>
+</body>
+</html>

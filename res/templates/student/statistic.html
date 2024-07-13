@@ -1,0 +1,74 @@
+<style type="text/css">
+    .title {
+        font-size: 25px;
+    }
+    .chart-container {
+        height: auto;
+        max-width: 100%;
+        margin: 30px auto;
+    }
+    .note {
+        text-align: center;
+        font-style: italic;
+        margin-top: 15px;
+    }
+    .action {
+        margin-left: 20px;
+        display: block;
+        max-width: 200px;
+        margin-bottom: 30px;
+    }
+    
+    .note-chart {
+        order: 1;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        width: 15%;
+    }
+    
+    .score-percent-chart{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        justify-content: center;
+    }
+    
+    .tested-time-chart {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+    
+    .chart-content {
+        width: 50%;
+        position: relative;
+    }
+    
+    .empty-chart {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+    }
+    </style>
+    <div class="title">Thống kê</div>
+    <div class="chart">
+        <div class="chart-container tested-time-chart">
+            <canvas id="graph"></canvas>
+            <div class="note">Biểu đồ thống kê lượt làm bài</div>
+        </div>
+        <div class="action">	
+            <select name="subject_id" onchange="student_subject_statistic(this)">
+            </select>
+        </div>
+        <div class="chart-container score-percent-chart">
+            <div class="chart-content">
+                <canvas id="student-line-chart"></canvas>
+                <div class="note">Biểu đồ thống kê điểm trung bình bài</div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="res/libs/Chart/chart.min.js"></script>
+    <script type="text/javascript" src="res/libs/Chart/chartjs-plugin-datalabels.min.js"></script>
+    <script type="text/javascript" src="res/js/statistic.js"></script>
